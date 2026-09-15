@@ -1,187 +1,113 @@
-# Party Boat Punta Cana
+# Shared Party Boat Excursion
 
-## Tour Overview
+## Overview
 
-The Party Boat Punta Cana experience is a shared ocean excursion combining hotel transportation, music, snorkeling, drinks, snacks, and approximately three hours at sea.
+The Shared Party Boat is an adults-only catamaran excursion in Punta Cana featuring music, snorkeling, an open bar, tropical snacks, animation, and a natural pool experience.
 
-Perico Ripiao Tours offers this experience through multiple operating suppliers, including Infinity, Going On Tours, and Point.
+Perico Ripiao Tours works with three shared Party Boat suppliers:
+
+- Infinity Catamarans Punta Cana
+- Going Party Boat Punta Cana
+- Point Tours RD
+
+Customers book through Perico Ripiao Tours. The assigned supplier may vary depending on availability and operational scheduling.
+
+## Price
+
+- US$65 per person
 
 ## Duration
 
-- Total excursion duration: Approximately 4–5 hours, including transportation.
-- Time at sea: Approximately 3 hours.
+- Approximately 4–5 hours total, including transportation.
+- Approximately 3 hours onboard the catamaran.
 
-## Hotel Pickup and Transportation
+## Availability and Booking
 
-Hotel transportation is included.
+- Available 7 days per week.
+- Same-day reservations are allowed.
+- Same-day reservations are accepted only when made at least 3 hours before departure and availability is confirmed.
+- Booking cutoff: 3 hours before the excursion starts.
 
-Pickup times are generally between 1:20 PM and 2:40 PM, depending on the hotel's location and transportation zone.
+## Pickup
 
-Airbnb guests are picked up at designated meeting points rather than directly at the accommodation.
-
-Exact pickup instructions must be confirmed before booking.
+- Hotel pickup and return transportation are included.
+- Pickup time is approximately 1:20–2:40 PM, depending on the hotel and pickup zone.
+- The exact pickup time is confirmed after receiving the customer's hotel information.
+- Airbnb guests must use designated meeting points.
+- Pickup zones follow the established Perico Ripiao Tours transportation zones.
 
 ## Departure Locations
 
-The departure location depends on the operating supplier and may be:
+The departure location may be:
 
 - Jellyfish
 - Los Corales
 
-The specific departure location must be confirmed for each reservation.
-
-## Suppliers
-
-Perico Ripiao Tours may use the following suppliers for this experience:
-
-- Infinity
-- Going On Tours
-- Point
-
-The assigned supplier may vary depending on availability and operational arrangements.
-
-## Activities and Experience
-
-The Party Boat experience includes:
-
-- Approximately three hours at sea.
-- Snorkeling.
-- Music and onboard entertainment.
-- A festive social atmosphere.
-- A natural pool visit when offered by the operating supplier.
-
-The exact route and stops may vary depending on the supplier and sea conditions.
+The assigned location depends on the supplier and operating schedule.
 
 ## Included
 
-- Hotel transportation.
-- Approximately three hours at sea.
-- Snorkeling.
+- Shared catamaran excursion.
+- Hotel pickup and return transportation.
+- Approximately 3 hours onboard.
+- Snorkeling, subject to sea conditions.
 - Snorkeling equipment.
-- Life vests.
-- Music and entertainment.
+- Life jackets or flotation equipment.
+- Music.
+- Animation.
+- Open bar.
 - Beer.
 - Rum.
 - Vodka.
-- Coke.
+- Coca-Cola.
 - Sprite.
 - Water.
-- Snacks, including nachos, salsa, and fruits.
+- Nachos with sauces.
+- Tropical fruit.
+- Natural pool stop, always included.
 
-## Food and Drinks
+## Additional Cost
 
-This excursion does not include a full meal.
+Premium drinks and premium liquor are available at an additional cost.
 
-Included snacks are:
+## Not Included
 
-- Nachos.
-- Salsa.
-- Fruits.
+- Full lunch.
+- Professional photography.
+- Souvenirs.
+- Personal expenses.
+- Tips.
 
-Included beverages are:
-
-- Beer.
-- Rum.
-- Vodka.
-- Coke.
-- Sprite.
-- Water.
-
-## Availability
-
-Available 7 days a week.
-
-Availability depends on the operating supplier and the selected date.
-
-## Pricing
-
-- US$69 per person.
-
-Prices should be reconfirmed before quoting customers if supplier rates change.
-
-## Booking Requirements
-
-Before confirming a reservation, collect:
-
-- Customer name.
-- Number of passengers.
-- Hotel or accommodation name.
-- Preferred date.
-- Contact telephone number.
-- Airbnb meeting point, when applicable.
-
-## Pickup Information
-
-For hotel guests:
-
-- Pickup is provided at the hotel.
-- Pickup times generally range from 1:20 PM to 2:40 PM, depending on the hotel zone.
-
-For Airbnb guests:
-
-- Pickup is provided at a designated meeting point.
-- The meeting point must be confirmed before the reservation is finalized.
-
-## Restrictions and Requirements
+## Restrictions
 
 - Adults only.
-- Children are not allowed.
-- Not suitable for wheelchair users.
-- Not recommended for pregnant women.
+- Children are not accepted.
+- Pregnant women are not accepted.
+- Wheelchair users are not accepted.
+- Guests should be comfortable entering and exiting a boat.
 
-Customers should be informed of these restrictions before booking.
+## Weather and Sea Conditions
 
-## Weather and Cancellation Policy
+- Snorkeling is subject to sea conditions.
+- Rain alone does not automatically cancel the excursion.
+- If weather or unsafe sea conditions prevent the supplier from operating on the scheduled day, Perico Ripiao Tours handles the customer's refund.
 
-The excursion is cancelled due to severe weather conditions such as:
+## Cancellation Policy
 
-- Tropical storms.
-- Hurricanes.
+- Free cancellation up to 24 hours before the excursion.
+- Cancellation at the time of pickup: Only 50% of the payment is refundable.
+- If weather or unsafe sea conditions prevent the supplier from operating on the scheduled day, Perico Ripiao Tours handles the customer's refund.
 
-Rain alone does not result in cancellation.
+## Customer-Facing Sales Guidance
 
-The final operating decision may depend on sea conditions and the assigned supplier.
+The AI Concierge should:
 
-## AI Concierge Instructions
-
-The AI should present this as an adults-only Party Boat experience operated through Perico Ripiao Tours.
-
-The AI should:
-
-- Mention the approximate 4–5-hour total duration.
-- Explain that approximately three hours are spent at sea.
-- Highlight snorkeling, music, drinks, and snacks.
-- Mention that snorkeling equipment and life vests are included.
-- Explain that hotel transportation is included.
-- Inform Airbnb guests that pickup is from meeting points.
-- Explain that departure may be from Jellyfish or Los Corales, depending on the supplier.
-- Mention the natural pool only when confirmed for the assigned supplier.
-- Clearly state that children are not allowed.
-- Clearly state that the experience is not suitable for wheelchair users or pregnant women.
-- Explain that rain alone does not cancel the excursion.
-- Confirm the assigned supplier, pickup instructions, and departure location before finalizing the booking.
-
-## Sales Description
-
-Enjoy an adults-only Party Boat adventure in Punta Cana with hotel transportation included. Spend approximately three hours at sea with snorkeling, music, unlimited drinks, snacks, and a fun Caribbean atmosphere.
-
-## Short Customer Description
-
-Adults-only Party Boat in Punta Cana with hotel pickup, snorkeling, music, drinks, snacks, and approximately three hours at sea. Available daily for US$69 per person.
-
-## Information Requiring Confirmation
-
-The following details should be confirmed for each reservation:
-
-- Assigned supplier.
-- Exact pickup time.
-- Exact hotel pickup location.
-- Airbnb meeting point.
-- Departure location.
-- Whether the natural pool stop is included.
-- Specific route and stops.
-- Availability for the requested date.
-
-## Source
-
-Operational information provided by Perico Ripiao Tours.
+1. Quote the price as US$65 per person.
+2. Explain that the tour is adults-only.
+3. Mention that snorkeling is included but subject to sea conditions.
+4. Confirm the customer's hotel and pickup zone.
+5. Confirm the exact pickup time after receiving the hotel information.
+6. Explain that the exact supplier and departure location may vary.
+7. Never promise premium drinks as included.
+8. Apply the 24-hour cancellation policy.
+9. Allow same-day reservations only when made at least 3 hours before departure and availability is confirmed.
