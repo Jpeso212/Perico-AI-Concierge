@@ -1,0 +1,729 @@
+# Shared Deep-Sea Fishing – Punta Cana
+
+## Internal Product Name
+Shared Deep-Sea Fishing – Punta Cana
+
+## Product Category
+Fishing / Shared Fishing / Deep-Sea Fishing
+
+## Location
+Punta Cana, Dominican Republic
+
+## Status
+ACTIVE
+
+---
+
+# PRODUCT SUMMARY
+
+Shared Deep-Sea Fishing is an offshore fishing experience in Punta Cana where customers join other fishing guests aboard the same boat.
+
+This is a:
+
+SHARED FISHING EXPERIENCE.
+
+The boat is NOT reserved exclusively for one customer or group.
+
+Customers interested in having the entire boat exclusively for their group must be routed to:
+
+Private Deep-Sea Fishing – Punta Cana.
+
+---
+
+# EXPERIENCE TYPE
+
+- Shared deep-sea fishing
+- Offshore fishing
+- Recreational fishing
+- Sport fishing
+- Group fishing experience
+
+---
+
+# DURATION
+
+Approximately:
+
+3 hours.
+
+This duration comes directly from the current Perico Ripiao Tours catalog.
+
+AI should still treat timing as approximate and never guarantee exact return time.
+
+---
+
+# OPERATION
+
+Current Perico catalog:
+
+DAILY / TWICE A DAY.
+
+This means the product normally has two operating opportunities during the day.
+
+IMPORTANT:
+
+AI must NOT invent exact departure times.
+
+Actual departure and pickup times must be retrieved from the current booking/operational information.
+
+---
+
+# SHARED FORMAT
+
+Customers share the fishing boat with other guests.
+
+The boat is NOT exclusive to the customer's reservation.
+
+Depending on:
+
+- Number of guests
+- Fishing setup
+- Number of rods/lines
+- Crew instructions
+- Current fishing activity
+
+customers may need to take turns participating in the fishing action.
+
+AI should clearly explain the shared format whenever a customer asks whether the boat is private.
+
+---
+
+# SHARED VS PRIVATE
+
+## SHARED FISHING
+
+- Boat shared with other customers
+- Sold per person
+- Current Perico catalog reference: US$125 per person
+- Approximately 3 hours
+- Daily / twice a day
+
+## PRIVATE FISHING
+
+- Boat reserved exclusively for customer's group
+- Charter-based pricing
+- Boat/capacity depends on confirmed charter
+- Separate product
+
+AI must NEVER confuse these products.
+
+---
+
+# CURRENT PERICO CATALOG PRICE
+
+US$125 per person.
+
+SOURCE:
+
+Perico Ripiao Tours 2026 Catalog.
+
+IMPORTANT:
+
+This is the current catalog reference price.
+
+Before quoting a customer, AI should retrieve the current approved Perico selling price whenever a live pricing source is available.
+
+If the operational pricing system contains a newer approved price, the newer approved price takes precedence over this static catalog reference.
+
+NEVER use:
+
+US$125 per person
+
+as the price of Private Deep-Sea Fishing.
+
+---
+
+# INCLUDED
+
+Confirmed by the Perico catalog:
+
+- Transportation
+- Bait
+- Fishing equipment
+- Water
+- Soft drinks
+
+---
+
+# FISHING EQUIPMENT
+
+Fishing equipment and bait are included.
+
+Customers do not need to bring their own standard fishing equipment for the normal shared excursion.
+
+AI must NOT invent:
+
+- Rod brands
+- Reel brands
+- Number of rods
+- Number of fishing lines
+- Tackle brands
+- Fighting chair
+- Outriggers
+- Specialized fishing equipment
+
+unless operationally confirmed.
+
+---
+
+# TRANSPORTATION
+
+Transportation is included according to the current Perico catalog.
+
+AI should collect:
+
+- Hotel or accommodation
+- Number of guests
+
+Then determine:
+
+- Pickup eligibility
+- Pickup location
+- Exact pickup time
+
+AI must NEVER invent an exact pickup time.
+
+---
+
+# DRINKS
+
+Confirmed included:
+
+- Water
+- Soft drinks
+
+Do NOT automatically promise:
+
+- Beer
+- Rum
+- Alcohol
+- Open bar
+- Premium drinks
+
+because these are not listed as included for this product in the current Perico catalog.
+
+---
+
+# FOOD
+
+Lunch is NOT included.
+
+Snacks are NOT included.
+
+AI must not tell customers that food is provided unless updated operational information confirms otherwise.
+
+---
+
+# NOT INCLUDED
+
+Confirmed by current Perico catalog:
+
+- Snacks
+- Photos
+- Lunch
+- Tips
+
+Tips are voluntary unless current operational policy states otherwise.
+
+---
+
+# WHAT TO BRING
+
+Current Perico catalog recommends:
+
+- Sunscreen
+- Sunglasses
+- Extra cash
+
+Additional sensible preparation may be communicated when operationally appropriate, but AI should distinguish general recommendations from catalog-confirmed requirements.
+
+---
+
+# EXPERIENCE LEVEL
+
+Previous fishing experience is not stated as a requirement in the current Perico catalog.
+
+Therefore AI should NOT invent an experience requirement.
+
+Customers can ask the crew for assistance with the fishing equipment and procedures.
+
+---
+
+# FISHING STYLE
+
+This is a deep-sea / offshore fishing experience.
+
+The current Perico catalog does NOT specify:
+
+- Exact fishing technique
+- Trolling configuration
+- Number of rods
+- Fishing grounds
+- Maximum offshore distance
+
+AI must not invent these details.
+
+---
+
+# TARGET SPECIES
+
+Different offshore species may be encountered or targeted around Punta Cana.
+
+However, the current Perico catalog does NOT list guaranteed target species for this product.
+
+AI may explain generally that offshore species vary by:
+
+- Season
+- Weather
+- Water conditions
+- Fish movement
+- Current fishing activity
+
+But AI must NEVER guarantee:
+
+- Marlin
+- Mahi-Mahi
+- Wahoo
+- Tuna
+- Barracuda
+- Sailfish
+- Any other species
+
+---
+
+# CATCH GUARANTEE
+
+NO FISH CATCH IS GUARANTEED.
+
+Fishing involves wild marine life.
+
+AI must NEVER say:
+
+"You will catch fish."
+
+"You are guaranteed to catch something."
+
+"We guarantee marlin."
+
+Correct wording:
+
+"The crew will fish according to the conditions and current activity, but catches and specific species can never be guaranteed."
+
+---
+
+# CATCH POLICY
+
+The current Perico catalog does NOT specify what happens to fish that are caught.
+
+Therefore AI must NOT promise:
+
+- Customers can keep the fish
+- Fish will be cleaned
+- Fish will be filleted
+- Fish can be taken to the hotel
+- A restaurant will cook the fish
+- Catch-and-release procedures
+
+without operational confirmation.
+
+---
+
+# BOAT
+
+The current Perico catalog does NOT specify:
+
+- Boat model
+- Boat length
+- Boat capacity
+- Cabin
+- Bathroom
+- Air conditioning
+- Fighting chair
+- Number of fishing lines
+
+AI must not invent these details.
+
+---
+
+# CAPACITY
+
+Exact boat capacity:
+
+TO BE CONFIRMED.
+
+Because this is a shared excursion, individual reservations may be combined with other customers.
+
+AI should collect:
+
+- Number of participants
+- Adults
+- Children and ages
+
+before checking availability.
+
+---
+
+# CHILDREN
+
+The current catalog does not establish a specific minimum age for this fishing product.
+
+AI must NOT invent a minimum age.
+
+When children are participating:
+
+Collect their ages and verify eligibility operationally.
+
+---
+
+# WEATHER & SEA CONDITIONS
+
+Deep-sea fishing is subject to:
+
+- Weather
+- Wind
+- Sea conditions
+- Marine safety conditions
+
+The captain/operator makes the final operational safety decision.
+
+AI must never override the captain or operator.
+
+---
+
+# MOTION SICKNESS
+
+Offshore waters may sometimes be rough.
+
+Customers who are susceptible to seasickness may wish to take appropriate precautions.
+
+AI must not prescribe medication.
+
+Correct response:
+
+"If you're prone to seasickness, consider speaking with a healthcare professional or pharmacist about appropriate precautions before the excursion."
+
+---
+
+# CUSTOMER QUALIFICATION
+
+Collect:
+
+1. Requested date
+2. Number of participants
+3. Adults and children
+4. Ages of children
+5. Hotel/accommodation
+6. Fishing experience if relevant
+7. Any special requests
+
+Do not ask questions already answered.
+
+---
+
+# EXAMPLE AI RESPONSE
+
+Customer:
+
+"How much is fishing in Punta Cana?"
+
+AI:
+
+"We offer shared and private deep-sea fishing.
+
+Our shared fishing experience is approximately 3 hours and includes transportation, fishing equipment, bait, water and soft drinks. The current catalog price is US$125 per person.
+
+If you'd prefer the entire fishing boat exclusively for your group, we can also check a private charter.
+
+Are you interested in shared or private fishing, and how many people will be going?"
+
+---
+
+# SHARED CUSTOMER EXAMPLE
+
+Customer:
+
+"We're two people and don't mind going with other people."
+
+AI:
+
+"Shared Deep-Sea Fishing would fit what you're looking for. The trip is approximately 3 hours and includes transportation, fishing equipment, bait, water and soft drinks.
+
+I'll check the available departure for your date. What date would you like to go, and which hotel or accommodation are you staying at?"
+
+---
+
+# PRIVATE REQUEST EXAMPLE
+
+Customer:
+
+"Will anybody else be on the boat?"
+
+AI:
+
+"Yes. This particular fishing option is shared, so other guests may be aboard.
+
+If you want the fishing boat exclusively for your group, I can instead check our Private Deep-Sea Fishing charter."
+
+---
+
+# CATCH QUESTION EXAMPLE
+
+Customer:
+
+"Are we guaranteed to catch fish?"
+
+AI:
+
+"No fishing operator can responsibly guarantee a catch because fish movement depends on natural conditions. The crew will fish according to the season and current activity, but catches and specific species can't be guaranteed."
+
+---
+
+# BOOKING FLOW
+
+AI ACTION:
+
+1. Determine whether customer wants SHARED or PRIVATE fishing.
+2. If SHARED, route to this product.
+3. Collect requested date.
+4. Collect number of participants.
+5. Collect ages when children are included.
+6. Collect hotel/accommodation.
+7. Check transportation eligibility.
+8. Check live departure availability.
+9. Retrieve current approved Perico price.
+10. Present confirmed price and schedule.
+11. Collect required customer information.
+12. Apply current fishing cancellation/payment policy.
+13. Collect required payment.
+14. Create reservation.
+15. Send confirmation and pickup instructions.
+
+Do NOT tell the customer the reservation is confirmed until reservation creation succeeds.
+
+---
+
+# INTENT MAPPING
+
+Customer says:
+
+"Shared fishing."
+
+→ Shared Deep-Sea Fishing.
+
+"Fishing per person."
+
+→ Shared Deep-Sea Fishing unless customer indicates private intent.
+
+"We don't mind other people."
+
+→ Shared Deep-Sea Fishing.
+
+"Cheapest fishing option."
+
+→ Compare current approved shared/private prices without assuming static pricing.
+
+"Fishing for two people."
+
+→ Ask whether they prefer shared or private if preference is unclear.
+
+"We want the whole boat."
+
+→ Private Deep-Sea Fishing.
+
+"Private fishing."
+
+→ Private Deep-Sea Fishing.
+
+"$125 fishing."
+
+→ Shared Deep-Sea Fishing catalog product.
+
+---
+
+# COMPARISON LOGIC
+
+## SHARED VS PRIVATE
+
+SHARED:
+
+- Shared boat
+- Other customers may participate
+- Per-person pricing
+- Current catalog reference US$125/person
+- Approximately 3 hours
+
+PRIVATE:
+
+- Boat exclusively for customer's group
+- No unrelated fishing guests
+- Charter pricing
+- Boat and duration depend on confirmed private charter
+
+AI must preserve this distinction throughout the conversation.
+
+---
+
+# CROSS-SELL LOGIC
+
+Customer wants:
+
+Lower per-person cost
+→ Shared fishing may be appropriate.
+
+Customer wants:
+
+Privacy / exclusive boat
+→ Private fishing.
+
+Customer wants:
+
+Family-only experience
+→ Consider Private Fishing.
+
+Customer wants:
+
+Fishing but has a small party and is comfortable sharing
+→ Shared Fishing.
+
+Never redirect a customer from private to shared solely because shared is cheaper unless price/budget is relevant to their stated needs.
+
+---
+
+# CANCELLATION POLICY
+
+IMPORTANT:
+
+The current Perico catalog specifically identifies:
+
+FISHING
+
+as NON-REFUNDABLE.
+
+AI must communicate the current approved fishing cancellation terms before payment/confirmation.
+
+Do not apply the standard general excursion refund schedule when the specific fishing policy applies.
+
+If a newer approved operational policy exists, the newest approved Perico policy takes precedence.
+
+---
+
+# AI ACCURACY RULES
+
+NEVER INVENT:
+
+- Availability
+- Departure time
+- Pickup time
+- Boat model
+- Boat capacity
+- Number of fishing lines
+- Fishing technique
+- Fishing grounds
+- Target species
+- Catch
+- Fish size
+- Catch policy
+- Alcohol inclusion
+- Food inclusion
+- Child minimum age
+
+NEVER describe this product as:
+
+PRIVATE.
+
+NEVER quote:
+
+US$125/person
+
+for the Private Deep-Sea Fishing charter.
+
+---
+
+# CONFIRMED PERICO DATA
+
+Product:
+Deep-Sea Fishing — Punta Cana
+
+Commercial Type:
+Per-person / Shared Fishing Product
+
+Catalog Price:
+US$125 per person
+
+Location:
+Punta Cana
+
+Duration:
+Approximately 3 hours
+
+Operation:
+Daily / twice a day
+
+Included:
+- Transportation
+- Bait
+- Fishing equipment
+- Water
+- Soft drinks
+
+Recommended:
+- Sunscreen
+- Sunglasses
+- Extra cash
+
+Not Included:
+- Snacks
+- Photos
+- Lunch
+- Tips
+
+Specific Perico Policy:
+Fishing is non-refundable according to the current catalog.
+
+---
+
+# SOURCE
+
+Perico Ripiao Tours
+2026 Catalog
+
+Primary operational source:
+PericoCatalogue+PRICE_EN.pdf
+
+---
+
+# INTERNAL PERICO NOTE
+
+This is the SHARED/PER-PERSON fishing product.
+
+DO NOT MERGE WITH:
+
+private-deep-sea-fishing-punta-cana.md
+
+The two products must remain separate in AI retrieval.
+
+SHARED:
+US$125/person catalog reference
+Approx. 3 hours
+Shared boat
+
+PRIVATE:
+Exclusive boat
+Charter price
+Private price must be retrieved separately
+
+If the customer simply asks:
+
+"How much is fishing?"
+
+AI should identify whether the customer wants:
+
+SHARED
+
+or
+
+PRIVATE
+
+before assuming which product applies.
+
+The $125 catalog reference must never contaminate private-charter pricing.
