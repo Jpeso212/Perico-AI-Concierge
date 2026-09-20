@@ -9,14 +9,14 @@ Guests interact and swim with one dolphin while learning about dolphin behavior,
 ## Pricing
 
 - Adult, age 13+: US$155 per person
-- Child, ages 1–12: US$109 per person
+- Child, ages 1–12: US$120 per person
 
 Prices are subject to change and availability.
 
 ## Duration
 
 - Approximately 2 hours total.
-- Includes approximately 40 minutes in the water.
+- Includes approximately 50 minutes in the water.
 - Guests should arrive 30 minutes before the scheduled program.
 
 ## Schedule
@@ -42,7 +42,7 @@ Punta Cana, Dominican Republic
 - Guided dolphin interaction
 - Swimming with one dolphin
 - Dolphin behavior and conservation information
-- Approximately 40 minutes of water activities
+- Approximately 50 minutes of water activities
 
 ## Group Information
 
@@ -93,10 +93,11 @@ Before quoting transportation, confirm:
 ## AI Booking Rules
 
 - Quote US$155 per adult.
-- Quote US$109 per child.
+- Quote US$120 per child.
 - Ask for all guest ages.
 - Confirm the date and preferred session.
 - Confirm the hotel and pickup zone.
 - Add transportation only after availability and pricing are confirmed.
 - Explain that this product includes swimming with one dolphin.
 - If the guest wants a more extensive experience with two dolphins, offer Dolphin Excellence.
+
