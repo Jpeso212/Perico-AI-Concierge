@@ -341,6 +341,34 @@ Punta Cana and Bayahibe.
 
 Some locations may require an additional transportation supplement.
 
+### Transportation Supplement
+
+An additional transportation charge of US$10 per person applies to
+customers staying in:
+
+- Uvero Alto
+- Cap Cana
+- Punta Cana
+
+This supplement is charged per person, not per booking or vehicle.
+
+The AI must ask for the customer's hotel or accommodation before
+calculating the final price.
+
+For customers staying in Uvero Alto, Cap Cana, or Punta Cana:
+
+Final price = applicable excursion price + US$10 per person
+transportation supplement.
+
+Example:
+
+Adult base price: US$95
+Transportation supplement: US$10
+Final adult price: US$105
+
+Do not apply this supplement to other areas unless specifically
+confirmed.
+
 The AI must ask:
 
 1. Hotel or accommodation name
