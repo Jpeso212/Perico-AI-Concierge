@@ -17,10 +17,13 @@ Prices are per person:
 - Adult ages 13+: US$75
 - Child ages 3–12: US$50
 
-Early booking promotion:
+### Perico Pricing Rule
 
-- Promo code EARLY10 may provide 10% off when booking 10 or more days in advance.
-- Promotional pricing is subject to supplier terms and availability.
+- Adult ages 13+: US$75
+- Child ages 3–12: US$50
+- These are the current Perico selling prices.
+- Supplier website promotions, promotional codes, early-booking discounts, flash sales, or direct-customer offers do not apply to Perico agency bookings unless Perico explicitly authorizes them.
+- The Concierge must not apply the supplier's EARLY10 promotion.
 
 ## Main Highlights
 
@@ -101,7 +104,8 @@ Confirm additional restrictions, swimming requirements, and suitability before b
 - Confirm availability before promising a departure time.
 - Confirm the hotel and pickup zone.
 - Confirm whether the customer wants the morning or afternoon departure.
-- Confirm current promotional pricing before applying a discount.
+- Quote the established Perico selling price.
+- Do not apply supplier promotional codes or direct-booking discounts.
 - Confirm current cancellation and refund terms before finalizing a reservation.
 - Do not promise specific snorkeling conditions or marine-life sightings.
 - Explain that the experience depends on weather and sea conditions.
