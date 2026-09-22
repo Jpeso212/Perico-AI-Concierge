@@ -17,73 +17,89 @@ Active
 
 ---
 
-## Product Structure
+# PRODUCT STRUCTURE
 
-This is ONE excursion with different machine configurations.
+Adventure Buggies Punta Cana is ONE daytime excursion with multiple machine options.
 
-Do NOT create separate products simply because the customer selects a different machine.
+The different machines are NOT separate excursions.
 
-Machine type and occupancy are booking options within the same Adventure Buggies Punta Cana excursion.
+Customers can select among the available machine types and passenger configurations while following the same core Adventure Boogies daytime experience.
+
+Machine options currently documented in this master:
+
+- Quad / ATV
+- Buggy
+- Family Buggy
+- Terra Cross
+- Honda Pioneer
+
+Do not create separate excursion files simply because the customer chooses a different machine.
 
 This product must remain completely separate from Tours Point Buggies and from other buggy operators.
 
 ---
 
-## Product Summary
+# PRODUCT SUMMARY
 
 Adventure Buggies Punta Cana is a daytime off-road experience operated by Adventure Boogies in the Macao area of Punta Cana.
 
-Guests travel through private muddy and off-road trails before visiting Domitai Park, where they can learn about and taste traditional Dominican products.
+Guests travel through private muddy and off-road trails before visiting Domitai Park, where they can experience Dominican culture and taste traditional Dominican products.
 
-The experience also includes a visit to Yara Cave, also known as Iguanaboina Cenote, where guests can swim in the freshwater cave.
+The experience also includes a visit to Yara Cave, also known as Iguanaboina Cenote, where guests can enjoy the freshwater cave.
 
-A Dominican village and shopping opportunity are also part of the experience.
+A Dominican village/local shopping opportunity is also part of the experience.
 
 Round-trip transportation from eligible hotels/accommodations is included.
 
+Customers can choose from several machine types depending on their group size, preference and availability.
+
 ---
 
-## Experience Type
+# EXPERIENCE TYPE
 
 - Off-road adventure
-- Buggy / ATV / quad experience
+- Buggy experience
+- ATV / Quad experience
+- Side-by-side vehicle experience
 - Dominican countryside
 - Cultural experience
 - Dominican product tasting
-- Cave / cenote swimming
+- Cave / cenote experience
+- Swimming opportunity
 - Shopping opportunity
 - Shared excursion
 - Transportation included
 
 ---
 
-## Duration
+# DURATION
 
 Approximately 4 hours.
 
-Actual total time may vary depending on:
+Actual total duration may vary depending on:
 
 - Hotel or accommodation
 - Pickup route
 - Traffic
 - Group size
+- Selected departure
 - Operational conditions
 
 Do not guarantee an exact hotel return time.
 
 ---
 
-## Schedule
+# SCHEDULE
 
-The excursion normally operates with three general pickup/shift windows:
+The excursion normally operates with three general pickup/shift windows.
 
-### First Shift
+## First Shift
 Approximately 7:30 AM–8:30 AM hotel pickup.
 
-### Second Shift
+## Second Shift
 Approximately 10:30 AM–11:30 AM hotel pickup.
 
-### Third Shift
+## Third Shift
 Approximately 1:30 PM–2:30 PM hotel pickup.
 
 Exact pickup time must be confirmed according to the customer's hotel/accommodation and selected departure.
@@ -92,7 +108,7 @@ Do not promise an exact pickup time before confirmation.
 
 ---
 
-## First Shift Reference Itinerary
+# FIRST SHIFT REFERENCE ITINERARY
 
 The supplier publishes the following approximate schedule for the first shift:
 
@@ -104,35 +120,35 @@ The supplier publishes the following approximate schedule for the first shift:
 - Around 11:15 AM — Dominican village and shopping opportunity
 - Around 12:00 PM — Transfer back toward hotels
 
-This itinerary is approximate.
+This schedule is approximate.
 
-The second and third shifts generally follow the same experience at later times.
+The second and third shifts generally follow the same core experience at later times.
 
 Do not present these times as guaranteed.
 
 ---
 
-## Main Experiences
+# MAIN EXPERIENCES
 
-### Off-Road Adventure
+## Off-Road Adventure
 
-Guests drive through private off-road and muddy trails in the Macao countryside.
+Guests travel through private off-road and muddy trails in the Macao countryside using their selected machine.
 
 Terrain and mud conditions can vary depending on weather and recent rainfall.
 
-Guests should expect to get dirty.
+Guests should expect an off-road experience and should be prepared to get dirty.
 
 ---
 
-## Domitai Park
+# DOMITAI PARK
 
 The excursion includes a visit to Domitai Park.
 
-Guests can experience Dominican culture and learn about traditional local products.
+Guests have an opportunity to experience elements of Dominican culture and learn about traditional local products.
 
 ---
 
-## Dominican Product Tasting
+# DOMINICAN PRODUCT TASTING
 
 The experience includes tastings of traditional Dominican products that may include:
 
@@ -140,7 +156,7 @@ The experience includes tastings of traditional Dominican products that may incl
 - Chocolate
 - Tea
 - Mamajuana
-- Other locally produced items presented during the experience
+- Other locally presented Dominican products
 
 Exact tasting items may vary operationally.
 
@@ -148,42 +164,42 @@ Do not promise specific quantities.
 
 ---
 
-## Yara Cave
+# YARA CAVE
 
-### Customer-Facing Name
+## Preferred Customer-Facing Name
 Yara Cave
 
-### Full Reference
+## Full Reference
 Yara Cave (Iguanaboina Cenote)
 
-The excursion includes a stop at Yara Cave, a freshwater cave/cenote where guests can swim.
+The excursion includes a stop at Yara Cave, a freshwater cave/cenote where guests have an opportunity to swim.
 
-### Concierge Recognition Aliases
+## Concierge Recognition Aliases
 
-The AI should recognize the following names as references to the same cave/location for this Adventure Boogies product:
+The Concierge should recognize the following references as the same cave/location for this product:
 
 - Yara Cave
 - Iguanaboina Cenote
 - Cueva Iguanaboina
 - Cueva Chiquita
 
-When speaking naturally with customers, prefer:
+When communicating naturally with customers, normally use:
 
 **Yara Cave**
 
-If additional clarification is useful, use:
+When clarification is useful, use:
 
 **Yara Cave (Iguanaboina Cenote)**
 
-Do not create separate stops or separate attractions merely because different supplier material uses different names.
+Do not create separate attractions simply because different supplier materials use different names.
 
 ---
 
-## Dominican Village
+# DOMINICAN VILLAGE / SHOPPING
 
 The excursion includes time in a Dominican village/local shopping area.
 
-Guests may have the opportunity to browse or purchase:
+Guests may have an opportunity to browse or purchase:
 
 - Local products
 - Souvenirs
@@ -193,82 +209,273 @@ Purchases are optional and are not included in the excursion price.
 
 ---
 
-# MACHINE OPTIONS & PRICING
+# MACHINE OPTIONS
 
-## Important Pricing Structure
+Adventure Buggies Punta Cana currently includes the following documented machine choices:
 
-This excursion is priced according to the selected machine/configuration.
+## Quad / ATV
 
-Do NOT automatically calculate the price per passenger.
+Available configurations:
 
-The Concierge must distinguish between:
+- Single — 1 passenger
+- Double — 2 passengers
 
-- Machine price
-- Machine occupancy
-- Number of machines required
+## Buggy
 
----
+Available configurations:
 
-## Verified Perico Selling Prices
-
-| Machine / Configuration | Occupancy | Perico Selling Price |
-|---|---:|---:|
-| Single ATV / Quad | 1 person | US$109 total |
-| Double ATV / Quad | 2 people | US$110 total |
-| Family Buggy | Up to 4 people | Confirm price |
-
-### Important
-
-US$109 is the total price for the verified single configuration.
-
-US$110 is the total price for the verified two-person configuration.
-
-Do NOT quote US$110 per person.
-
-Do NOT multiply US$110 by two when two guests are sharing the verified double configuration.
-
----
+- Single — 1 passenger
+- Double — 2 passengers
 
 ## Family Buggy
 
-Family buggies for up to four passengers are available on request according to supplier information.
+Documented configurations:
 
-The current Perico selling price has not yet been verified.
+- 3 passengers
+- 4 passengers
 
-The Concierge must NOT invent a Family Buggy price.
+## Terra Cross
 
-If a customer requests this configuration:
+Documented configurations:
 
-1. Collect the number of passengers.
-2. Confirm that they want to ride together.
-3. Mark the Family Buggy price for confirmation.
-4. Do not quote an unverified amount.
+- 1 passenger
+- 2 passengers
+- 3 passengers
+- 4 passengers
 
----
+## Honda Pioneer
 
-## Additional Machine Types
+Documented configurations:
 
-If Adventure Boogies offers additional machine types, they remain options within this master excursion when they follow the same daytime route and experience.
+- 1 passenger
+- 2 passengers
+- 3 passengers
+- 4 passengers
 
-Do NOT create a separate excursion merely because the machine changes.
-
-Before quoting an additional machine:
-
-- Verify machine type
-- Verify maximum occupancy
-- Verify regular supplier public price
-- Verify Perico selling price
-- Verify whether restrictions differ
-
-Never invent missing machine prices.
+Machine availability must always be verified for the requested date and shift.
 
 ---
 
-# PRICING RULES
+# VERIFIED PERICO SELLING PRICES
 
-## Supplier Website Pricing Rule
+| Machine | Passengers | Perico Selling Price |
+|---|---:|---:|
+| Quad / ATV | 1 | US$109 total |
+| Quad / ATV | 2 | US$110 total |
+| Buggy | 1 | US$109 total |
+| Buggy | 2 | US$110 total |
+| Family Buggy | 3 | US$150 total |
+| Family Buggy | 4 | US$200 total |
+| Terra Cross | 1 | US$159 total |
+| Terra Cross | 2 | US$198 total |
+| Terra Cross | 3 | US$280 total |
+| Terra Cross | 4 | US$360 total |
+| Honda Pioneer | 1 | US$159 total |
+| Honda Pioneer | 2 | US$198 total |
+| Honda Pioneer | 3 | US$280 total |
+| Honda Pioneer | 4 | US$360 total |
 
-For supplier-operated excursions, Perico normally uses the supplier's regular public website price unless Perico has established a different selling price.
+---
+
+# QUAD / ATV PRICING
+
+## Single Quad / ATV
+1 passenger:
+
+**US$109 total**
+
+## Double Quad / ATV
+2 passengers sharing the machine:
+
+**US$110 total**
+
+The US$110 price is the TOTAL price for the double configuration.
+
+Do NOT quote US$110 per person.
+
+Do NOT multiply US$110 by two.
+
+---
+
+# BUGGY PRICING
+
+## Single Buggy
+1 passenger:
+
+**US$109 total**
+
+## Double Buggy
+2 passengers sharing the machine:
+
+**US$110 total**
+
+The US$110 price is the TOTAL price for the double configuration.
+
+Do NOT quote US$110 per person.
+
+Do NOT multiply US$110 by two.
+
+---
+
+# FAMILY BUGGY PRICING
+
+Family Buggy pricing is:
+
+**US$50 per passenger**
+
+Verified calculations:
+
+- 3 passengers = US$150 total
+- 4 passengers = US$200 total
+
+Do NOT quote US$50 as the total price for the Family Buggy.
+
+Do NOT apply the Single/Double Buggy pricing to the Family Buggy.
+
+---
+
+# TERRA CROSS PRICING
+
+## Regular Supplier Pricing Reference
+
+The established regular prices provided for Terra Cross are:
+
+- 1 passenger — US$180
+- 2 passengers — US$198
+- 3 passengers — US$280
+- 4 passengers — US$360
+
+## Perico Selling Prices
+
+Perico has established the following selling prices:
+
+- 1 passenger — US$159 total
+- 2 passengers — US$198 total
+- 3 passengers — US$280 total
+- 4 passengers — US$360 total
+
+### Important Perico Override
+
+The regular 1-person price is US$180.
+
+Perico has intentionally established a more attractive selling price of:
+
+**US$159 total for 1 passenger**
+
+Therefore, the Concierge must quote US$159 for the 1-person Terra Cross configuration unless Perico later changes this price.
+
+This is an explicit Perico pricing override.
+
+Do NOT automatically change it back to US$180 based on the supplier's regular price.
+
+---
+
+# HONDA PIONEER PRICING
+
+## Regular Supplier Pricing Reference
+
+Honda Pioneer follows the same established regular pricing structure as Terra Cross:
+
+- 1 passenger — US$180
+- 2 passengers — US$198
+- 3 passengers — US$280
+- 4 passengers — US$360
+
+## Perico Selling Prices
+
+Perico has established the following selling prices:
+
+- 1 passenger — US$159 total
+- 2 passengers — US$198 total
+- 3 passengers — US$280 total
+- 4 passengers — US$360 total
+
+### Important Perico Override
+
+The regular 1-person price is US$180.
+
+Perico has intentionally established a more attractive selling price of:
+
+**US$159 total for 1 passenger**
+
+Therefore, the Concierge must quote US$159 for the 1-person Honda Pioneer configuration unless Perico later changes this price.
+
+This is an explicit Perico pricing override.
+
+Do NOT automatically change it back to US$180 based on the supplier's regular price.
+
+---
+
+# MACHINE SELECTION LOGIC
+
+The Concierge must distinguish between:
+
+- Quad / ATV
+- Buggy
+- Family Buggy
+- Terra Cross
+- Honda Pioneer
+
+These are different machine choices within the SAME Adventure Buggies Punta Cana excursion.
+
+Do not create separate excursion products based only on machine type.
+
+If the customer already specifies a machine, do not ask them to choose again.
+
+If the customer does not specify a machine, determine:
+
+1. Number of passengers
+2. Whether they want to ride together
+3. Whether they prefer an ATV/Quad or side-by-side style vehicle
+4. Number of drivers when relevant
+5. Desired date
+6. Preferred shift
+
+Then present the appropriate verified machine options.
+
+Never invent availability.
+
+---
+
+# PRICING LOGIC
+
+Machine prices must be interpreted according to the configuration shown in this file.
+
+Do not automatically treat these prices as per-person rates.
+
+For example:
+
+Two guests sharing a Double Buggy:
+
+**US$110 total**
+
+NOT:
+
+US$110 × 2.
+
+Two guests sharing a Double Quad / ATV:
+
+**US$110 total**
+
+NOT:
+
+US$110 × 2.
+
+Family Buggy is different because its established pricing is:
+
+**US$50 per passenger**
+
+Therefore:
+
+3 passengers = US$150 total.
+
+4 passengers = US$200 total.
+
+---
+
+# SUPPLIER WEBSITE PRICING RULE
+
+For supplier-operated excursions, Perico normally uses the supplier's regular public website price unless Perico has explicitly established a different selling price.
 
 Supplier website promotions do NOT automatically apply to Perico agency bookings.
 
@@ -279,28 +486,43 @@ This includes:
 - Flash sales
 - Website-only discounts
 - Direct-booking promotions
+- Newsletter promotions
+- First-order promotions
 - Limited-time promotions
 - Early-booking discounts
-- Other supplier offers intended for direct customers
+- Other direct-customer offers
 
-When the supplier website shows both a regular price and a promotional price, use the regular public price for Perico unless Perico explicitly authorizes the promotional price.
+When a supplier website shows both a regular price and promotional price, use the regular public price unless Perico explicitly authorizes another price.
 
-Perico-confirmed operational pricing always takes priority.
+## Explicit Perico Pricing Overrides
+
+An explicit price documented by Perico in this master takes priority over the supplier's regular website price.
+
+Current explicit overrides include:
+
+- Terra Cross — 1 passenger — US$159
+- Honda Pioneer — 1 passenger — US$159
+
+These override their US$180 regular single-person prices.
 
 ---
 
-## Pricing Accuracy Rule
+# PRICE ACCURACY RULES
 
-Never quote an unverified machine configuration.
+The Concierge must:
 
-If the group does not fit a verified configuration, determine whether:
+- Use only verified prices.
+- Distinguish machine price from per-person price.
+- Respect documented passenger capacity.
+- Never invent another occupancy.
+- Never invent another machine price.
+- Never apply another supplier's prices.
+- Never automatically apply supplier promotions.
+- Apply documented Perico price overrides.
+- Verify machine availability before final confirmation.
+- Never substitute one machine for another without informing the customer.
 
-- Multiple machines are required
-- A Family Buggy is appropriate
-- Another verified machine option is available
-- Manual confirmation is required
-
-Do not invent combinations or prices.
+If a requested configuration is not documented, obtain confirmation rather than calculating or guessing a price.
 
 ---
 
@@ -308,7 +530,7 @@ Do not invent combinations or prices.
 
 The Adventure Buggies daytime experience includes:
 
-- Selected verified machine/configuration
+- Selected machine/configuration
 - Guided off-road experience
 - Private muddy/off-road trails
 - Visit to Domitai Park
@@ -337,7 +559,9 @@ Unless specifically confirmed otherwise:
 - Additional beverages not specifically included
 - Premium products purchased during tasting/shopping stops
 
-Because some supplier website inclusion/exclusion formatting has been unclear, the Concierge must not promise photos, videos, lockers, alcoholic beverages or other extras as included unless specifically verified.
+Supplier website inclusion/exclusion formatting may not always clearly distinguish certain extras.
+
+The Concierge must not promise photos, videos, lockers, alcoholic beverages or other extras as included unless specifically verified.
 
 ---
 
@@ -345,7 +569,7 @@ Because some supplier website inclusion/exclusion formatting has been unclear, t
 
 Round-trip transportation is included from eligible hotels/accommodations.
 
-The Concierge must ask for the customer's:
+The Concierge should collect:
 
 - Hotel name
 - Resort name
@@ -365,26 +589,28 @@ Drivers must be over 18 years old according to Adventure Boogies supplier inform
 
 The Concierge must not tell a customer under 18 that they can drive.
 
-If license requirements or other documentation requirements are not explicitly verified, do not invent them.
+If a specific machine has additional driver or license requirements that have not been verified, do not invent them.
+
+Request confirmation when necessary.
 
 ---
 
 # CHILDREN & PASSENGERS
 
-A verified universal minimum passenger age for this daytime Adventure Boogies product has not yet been established in the Concierge database.
+A universal minimum passenger age for every machine configuration has not yet been established in this Concierge record.
 
-Do not invent a minimum age.
+Do not invent a minimum passenger age.
 
-If traveling with children, collect:
+When children are participating, collect:
 
 - Number of children
 - Ages of children
 - Total group size
 - Preferred machine arrangement
 
-Then verify the appropriate machine and eligibility before confirmation.
+Then verify eligibility for the requested machine before confirmation.
 
-Do not apply Tours Point children's rules to Adventure Boogies.
+Do NOT apply Tours Point children's rules to Adventure Boogies.
 
 ---
 
@@ -403,9 +629,11 @@ The off-road portion may involve:
 - Bumps
 - Rough surfaces
 
-Guests must follow the safety instructions provided by the operator.
+Guests must follow operator safety instructions.
 
-If a customer reports a medical, mobility or safety concern, do not make a medical judgment. Escalate eligibility for confirmation when necessary.
+If a customer reports a medical, mobility or safety concern, do not make a medical judgment.
+
+Escalate eligibility for confirmation when necessary.
 
 ---
 
@@ -420,113 +648,167 @@ Recommended:
 - Comfortable closed footwear
 - Sunscreen
 - Cash or payment method for optional purchases
-- Change of clothes when desired
+- Change of clothes if desired
 
-Do not present optional recommendations as mandatory unless the supplier requires them.
+Do not present recommendations as mandatory unless specifically required by the operator.
 
 ---
 
 # IDEAL FOR
 
-This excursion may appeal to customers looking for:
+Adventure Buggies Punta Cana may appeal to customers looking for:
 
 - Off-road adventure
-- Buggy or ATV experience
+- Buggy experience
+- ATV / Quad experience
+- Side-by-side experience
 - Muddy trails
 - Dominican countryside
 - Cave swimming
 - Dominican culture
 - Local product tasting
-- A half-day adventure
-- Groups
+- Half-day adventure
 - Couples
-- Families using an appropriate machine configuration
+- Families
+- Groups
 
 ---
 
 # CUSTOMER QUALIFICATION
 
-Before recommending or booking, the Concierge should determine:
+Before recommending or booking, determine the missing information from:
 
 1. Number of participants
 2. Number and ages of children, if any
 3. Number of drivers
 4. Ages of drivers
-5. Preferred machine/configuration
-6. Whether guests want to ride together or use separate machines
+5. Preferred machine
+6. Whether guests want to ride together
 7. Hotel/accommodation
 8. Preferred date
 9. Preferred shift
-10. Any relevant mobility, pregnancy or safety restrictions
+10. Relevant mobility, pregnancy or safety restrictions
 
-Do not ask questions that the customer has already answered.
+Do not ask questions the customer has already answered.
 
 ---
 
 # AI BOOKING FLOW
 
-When a customer wants to book Adventure Buggies Punta Cana:
+## Step 1 — Identify the Correct Product
 
-### Step 1 — Identify Product
+Confirm the customer wants the Adventure Boogies daytime excursion.
 
-Confirm they want the Adventure Boogies daytime off-road excursion.
+Do not confuse this product with:
 
-Do not confuse it with Tours Point Buggies.
+- Tours Point Buggies
+- Adventure Boogies Night Tour
+- Bávaro Adventure Park
+- Jungle Buggies
+- Other buggy suppliers
 
-Do not confuse it with the Adventure Boogies Night Tour.
+---
 
-### Step 2 — Collect Group Information
+## Step 2 — Collect Missing Information
 
-Ask for missing information only:
+Collect only information that is still needed:
 
 - Date
 - Number of guests
-- Children's ages if applicable
+- Children's ages when applicable
 - Number of drivers
 - Machine preference
 - Hotel/accommodation
 - Preferred shift
 
-### Step 3 — Determine Machine Configuration
+---
 
-Use verified machine occupancy and pricing.
+## Step 3 — Determine Machine Configuration
+
+Use the verified machine and passenger configurations in this file.
+
+Do not invent configurations.
+
+---
+
+## Step 4 — Calculate the Correct Price
 
 Examples:
 
-One guest requesting a verified single ATV/quad:
+### One Guest — Single Buggy
+US$109 total.
 
-**US$109 total**
+### Two Guests — Double Buggy
+US$110 total.
 
-Two guests sharing the verified double ATV/quad:
+### One Guest — Single Quad / ATV
+US$109 total.
 
-**US$110 total**
+### Two Guests — Double Quad / ATV
+US$110 total.
 
-Family Buggy:
+### Three Guests — Family Buggy
+US$150 total.
 
-**Price must be confirmed.**
+### Four Guests — Family Buggy
+US$200 total.
 
-### Step 4 — Verify Availability
+### One Guest — Terra Cross
+US$159 total.
 
-Check the selected:
+### Two Guests — Terra Cross
+US$198 total.
+
+### Three Guests — Terra Cross
+US$280 total.
+
+### Four Guests — Terra Cross
+US$360 total.
+
+### One Guest — Honda Pioneer
+US$159 total.
+
+### Two Guests — Honda Pioneer
+US$198 total.
+
+### Three Guests — Honda Pioneer
+US$280 total.
+
+### Four Guests — Honda Pioneer
+US$360 total.
+
+---
+
+## Step 5 — Verify Availability
+
+Verify:
 
 - Date
 - Shift
 - Machine
+- Passenger configuration
 - Pickup location
 
 Never claim availability without verification.
 
-### Step 5 — Present Price
+---
 
-Clearly state whether the quoted amount is:
+## Step 6 — Present the Offer
 
-- Per machine
-- Per configuration
-- Total for the selected passengers
+Clearly state:
 
-Avoid ambiguous "per person" wording when the price is machine-based.
+- Machine selected
+- Number of passengers
+- Total price
+- Main inclusions
+- Transportation status
+- Requested shift
 
-### Step 6 — Booking and Payment
+Avoid ambiguous per-person language when the configuration is sold at a total machine price.
+
+---
+
+## Step 7 — Booking and Payment
 
 Proceed through the approved Perico booking/payment flow.
 
@@ -536,21 +818,25 @@ Do not state that a reservation is confirmed until the required booking/payment 
 
 # EXAMPLE AI RESPONSES
 
-## One Person
+## Single Buggy
 
-"For one guest, the verified single ATV/quad configuration is US$109 total. The Adventure Boogies experience includes the off-road trails, Domitai Park, Yara Cave, Dominican product tasting and round-trip transportation from eligible hotels. What date are you looking for?"
+"For one guest, the Single Buggy is US$109 total. The experience includes the off-road trails, Domitai Park, Yara Cave, Dominican tastings and round-trip transportation from eligible hotels. What date are you looking for?"
 
----
+## Double Buggy
 
-## Two People Sharing
+"For two guests sharing a Double Buggy, the price is US$110 total for the machine — not per person. What date and hotel will you be staying at?"
 
-"For two adults sharing the verified double ATV/quad, the price is US$110 total for the machine — not per person. The experience includes the off-road adventure, Domitai Park, Yara Cave, Dominican tastings and transportation. What date and hotel will you be staying at?"
+## Family Buggy
 
----
+"For three guests, the Family Buggy is US$150 total. For four guests, it's US$200 total. Send me your date and hotel and I'll check the appropriate departure and availability."
 
-## Family Request
+## Terra Cross
 
-"We can also check a Family Buggy so your group can ride together. Send me the number of adults, children's ages, your date and hotel, and I'll verify the correct configuration and price."
+"The Terra Cross is available in configurations for 1 to 4 passengers. For one guest, our Perico price is US$159 total. Tell me how many people are riding and I'll give you the correct total."
+
+## Honda Pioneer
+
+"The Honda Pioneer is available in configurations for 1 to 4 passengers. For one guest, our Perico price is US$159 total. How many people will be riding?"
 
 ---
 
@@ -560,9 +846,9 @@ Availability must be checked before final confirmation.
 
 Do not assume:
 
-- A specific machine is available
+- A particular machine is available
 - A specific shift is available
-- Family Buggies are available
+- A requested passenger configuration is available
 - Hotel pickup is available
 - A requested date is open
 
@@ -574,9 +860,9 @@ Never fabricate availability.
 
 Adventure Boogies publishes free cancellation up to 48 hours in advance for a full refund for this excursion.
 
-For cancellations inside the supplier's permitted cancellation window or special situations, follow the applicable confirmed Perico/supplier booking conditions.
+For cancellations within 48 hours or situations not clearly covered by the verified supplier terms, follow the applicable confirmed reservation conditions.
 
-Do not invent a refund when the reservation-specific conditions are unknown.
+Do not invent refund eligibility.
 
 ---
 
@@ -598,27 +884,40 @@ Do not describe Domitai Park, Yara Cave or Iguanaboina Cenote as the excursion o
 
 ## Adventure Boogies Daytime
 
-This file represents the daytime:
+This file represents:
 
 **Adventure Buggies Punta Cana**
 
-It includes different machine configurations under one master excursion.
+Different machine choices remain inside this ONE master product.
+
+---
 
 ## Adventure Boogies Night Tour
 
 The Adventure Boogies Night Tour is a separate excursion.
 
-Do not merge the Night Tour into this file because it has a materially different nighttime experience, entertainment and inclusions.
+Do not merge the Night Tour into this master because it has a materially different nighttime experience, entertainment and inclusions.
+
+---
 
 ## Tours Point Buggies
 
 Tours Point RD is a different supplier with a different route, stops, machines and pricing.
 
-Tours Point Buggies must remain in:
+Tours Point Buggies remains in:
 
 `business/tours/tours-point-buggies-atabey-macao-beach.md`
 
-Never borrow Tours Point pricing, age rules, driver requirements, transportation rules or itinerary for Adventure Boogies.
+Never borrow Tours Point:
+
+- Prices
+- Age rules
+- Driver requirements
+- Transportation rules
+- Machine capacities
+- Itinerary
+
+for Adventure Boogies.
 
 ---
 
@@ -627,13 +926,16 @@ Never borrow Tours Point pricing, age rules, driver requirements, transportation
 If the customer mentions:
 
 - Adventure Boogies
+- Adventure Buggies
 - Domitai Park
 - Yara Cave
 - Iguanaboina Cenote
+- Cueva Iguanaboina
 - Cueva Chiquita
-- Adventure Buggies daytime
+- Terra Cross
+- Honda Pioneer
 
-Route toward this Adventure Boogies master when the rest of the request matches the daytime excursion.
+and the context matches the Adventure Boogies daytime excursion, route toward this master.
 
 If the customer mentions:
 
@@ -642,9 +944,9 @@ If the customer mentions:
 - Tours Point
 - Tours Point RD
 
-Route toward the Tours Point master.
+route toward the Tours Point master.
 
-If the customer specifically asks for:
+If the customer specifically requests:
 
 - Night Buggies
 - Adventure Boogies Night Tour
@@ -652,9 +954,9 @@ If the customer specifically asks for:
 - DJ cave experience
 - Dinner/carnival night experience
 
-Route toward the separate Adventure Boogies Night Tour product.
+route toward the separate Adventure Boogies Night Tour.
 
-When the request is ambiguous, ask a short clarification rather than guessing.
+When ambiguous, ask a short clarification rather than guessing.
 
 ---
 
@@ -670,42 +972,87 @@ The Concierge must:
 - Never invent availability.
 - Never invent accessibility.
 - Never invent cancellation/refund eligibility.
-- Never treat supplier promotions as Perico agency pricing unless authorized.
+- Never automatically apply supplier promotions.
 - Never confuse machine price with per-person price.
-- Never mix information from Tours Point with Adventure Boogies.
-- Never merge the daytime Adventure Buggies excursion with the Night Tour.
-- Ask only for missing information.
+- Never mix Tours Point information with Adventure Boogies.
+- Never merge the daytime excursion with the Night Tour.
+- Never create separate products merely because the machine changes.
+- Apply explicit Perico pricing overrides exactly as documented.
+- Ask only for missing customer information.
 - Escalate uncertain operational details instead of guessing.
 
 ---
 
 # SOURCE / DATA AUTHORITY
 
-## Official Supplier
+## Supplier
 Adventure Boogies
 
-## Official Product Reference
-Adventure ATV Drive Punta Cana — Extreme Off-Road Fun
+## Adventure Boogies Product Reference
+Adventure Boogies Drive Punta Cana — Extreme Off-Road Fun
 
-Official supplier product page:
-https://www.adventureboogies.com/tours/adventure-atv-drive-punta-cana-extreme-off-road-fun
+Supplier reference:
+https://www.adventureboogies.com/tours/adventure-boogies-drive-punta-cana-extreme-off-road-fun
 
-## Pricing Authority
+## Additional Machine / Pricing Reference
+Adventure Drive
 
-Verified by Perico from the supplier booking selector:
+Reference:
+https://adventurepuntacana.com/es-DO/tours/adventure-drive
 
-- Single configuration / 1 person — US$109 total
-- Double configuration / 2 adults — US$110 total
+## Perico-Verified Pricing
 
-Family Buggy price remains pending verification.
+### Quad / ATV
+- 1 passenger — US$109
+- 2 passengers — US$110
 
-## Cave Naming Authority
+### Buggy
+- 1 passenger — US$109
+- 2 passengers — US$110
 
-Perico operational clarification:
+### Family Buggy
+- US$50 per passenger
+- 3 passengers — US$150
+- 4 passengers — US$200
 
-Yara Cave, Iguanaboina Cenote and supplier references to Cueva Chiquita refer to the same cave/location for this product.
+### Terra Cross
+Regular reference:
+- 1 — US$180
+- 2 — US$198
+- 3 — US$280
+- 4 — US$360
 
-Customer-facing preferred name:
+Perico selling price:
+- 1 — US$159
+- 2 — US$198
+- 3 — US$280
+- 4 — US$360
+
+### Honda Pioneer
+Regular reference:
+- 1 — US$180
+- 2 — US$198
+- 3 — US$280
+- 4 — US$360
+
+Perico selling price:
+- 1 — US$159
+- 2 — US$198
+- 3 — US$280
+- 4 — US$360
+
+---
+
+# CAVE NAMING AUTHORITY
+
+Perico operational clarification establishes that the following names refer to the same cave/location for this excursion:
+
+- Yara Cave
+- Iguanaboina Cenote
+- Cueva Iguanaboina
+- Cueva Chiquita
+
+Preferred customer-facing name:
 
 **Yara Cave**
 
@@ -713,8 +1060,18 @@ Customer-facing preferred name:
 
 # INTERNAL PERICO NOTE
 
-This master record is intended to become the authoritative Concierge product record for the Adventure Boogies daytime excursion.
+This master is the authoritative Concierge record for the Adventure Boogies daytime excursion.
 
-The old catalog should not override verified information in this file.
+The old catalog should not override verified information contained in this file.
 
-As additional Adventure Boogies machine configurations and prices are verified, add them to this master rather than creating duplicate excursion files.
+Different machines are options within the same excursion and should not be separated into duplicate product files.
+
+If additional machines, capacities or prices are verified later, update this master.
+
+Current documented machine families:
+
+- Quad / ATV
+- Buggy
+- Family Buggy
+- Terra Cross
+- Honda Pioneer
