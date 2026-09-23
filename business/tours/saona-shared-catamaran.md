@@ -1,4 +1,4 @@
-# Saona Island Shared Tour
+﻿# Saona Island Shared Tour
 
 ## Tour Overview
 
@@ -172,18 +172,60 @@ Do not advertise snorkeling, snorkeling equipment, or reef snorkeling as part of
 
 ## Pricing
 
-Pricing information must be confirmed with Caribbean Saona.
+### Standard Selling Price
 
-Do not publish or quote prices from this file until the current rates are verified.
+| Passenger Type | Price |
+|---|---:|
+| Adult | US$89 |
+| Child 4-11 years | US$50 |
+| Infant 0-3 years | FREE |
 
-Pending information:
+### Transportation Zone Supplements
 
-- Adult retail price.
-- Child retail price.
-- Infant pricing, if applicable.
-- Agency or wholesale rate.
-- Seasonal pricing.
-- Any applicable taxes or additional charges.
+#### Bavaro - Included
+
+Standard transportation is included from **Cabeza de Toro through Hard Rock**.
+
+#### Punta Cana Zone - US$40 Per Group
+
+The following properties require a **US$40 supplement per reservation/group**, not per person:
+
+- Four Points
+- Tortuga Bay
+- The Westin
+- Club Med
+
+#### Cap Cana - US$40 Per Group
+
+Cap Cana requires a **US$40 supplement per reservation/group**, not per person.
+
+#### Uvero Alto - US$10 Per Person
+
+Uvero Alto requires a **US$10 transportation supplement per passenger**.
+
+#### Dreams Macao
+
+For this product, **Dreams Macao is treated as Uvero Alto**.
+
+Apply the **US$10 per-person Uvero Alto supplement**.
+
+### AI Pricing Rules
+
+Before quoting the final price, determine the number of adults, children, infants, and the exact hotel or accommodation.
+
+AI must:
+
+- Charge adults **US$89 per person**.
+- Charge children ages 4-11 **US$50 per person**.
+- Charge infants ages 0-3 **US$0**.
+- Include transportation from Cabeza de Toro through Hard Rock.
+- Add **US$40 once per group** for the specified Punta Cana zone.
+- Add **US$40 once per group** for Cap Cana.
+- Add **US$10 per person** for Uvero Alto.
+- Treat Dreams Macao as Uvero Alto.
+- Never multiply the Punta Cana or Cap Cana US$40 group supplement by passenger count.
+- Never treat the Uvero Alto US$10 supplement as a group charge.
+- Confirm the transportation zone before quoting the final total when the hotel classification is unclear.
 
 ## Booking Requirements
 
