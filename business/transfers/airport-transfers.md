@@ -352,10 +352,33 @@ The following are valid transfer destinations, but their Perico rates have not y
 
 \## SDQ → Uvero Alto
 
+| Passengers | Round Trip | One Way |
+|---:|---:|---:|
+| 1–2 | US$375 | US$185 |
+| 3–4 | US$395 | US$200 |
+| 5–7 | US$575 | US$310 |
+| 8–12 | US$575 | US$310 |
+| 13–17 | US$575 | US$310 |
+| 18–21 | US$600 | US$330 |
+| 22–26 | US$710 | US$385 |
+| 27–33 | US$735 | US$400 |
+| 34–39 | US$1,000 | US$545 |
+| 40–45 | US$1,025 | US$560 |
+| 46–54 | US$1,250 | US$675 |
 
+These are total private-transfer prices for the passenger group, not per-person prices.
 
-\*\*QUOTE REQUIRED\*\*
+Use this table only for SDQ / Las Américas International Airport transfers to or from the Uvero Alto zone.
 
+Do not substitute PUJ ↔ Uvero Alto pricing.
+
+For groups of 17 or more passengers, vehicle configuration must be verified before final confirmation.
+
+Do not promise seatbelts unless the assigned transportation provider has confirmed them.
+
+If seatbelts are specifically required for every passenger, escalate for vehicle confirmation. Multiple smaller vehicles may be required instead of a single bus.
+
+Customer-facing AI must quote only the approved Perico selling price. Do not disclose supplier cost, agency discount, internal margin, or competitor pricing.
 
 
 \## SDQ → Miches
