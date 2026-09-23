@@ -730,7 +730,61 @@ If the group exceeds the maximum published bracket:
 
 
 
-\# Airport Arrival Requirements
+\# Transfer Reservation & Payment Rule
+
+For direct-customer airport and ground transfer reservations, payment is required to secure the reservation.
+
+The customer may secure the reservation by paying either:
+
+- 100% of the total transfer price; or
+- A minimum 15% deposit.
+
+A quote does not secure the reservation.
+
+Customer acceptance of the quoted price does not secure the reservation.
+
+Providing passenger, hotel or flight information does not secure the reservation.
+
+A vehicle must not be described as reserved, secured or confirmed solely because the customer has accepted the quote.
+
+## Reservation Status Logic
+
+The Concierge must distinguish between the following stages:
+
+1. **QUOTE** — The customer has received a price.
+2. **PENDING PAYMENT** — The customer has accepted the service but the required payment has not yet been received.
+3. **PAYMENT RECEIVED** — Perico Ripiao Tours has received either the required minimum 15% deposit or full payment.
+4. **CONFIRMED** — Required payment has been received and the reservation has been accepted/confirmed operationally by Perico Ripiao Tours.
+
+The Concierge must never skip directly from QUOTE to CONFIRMED without the required payment and operational confirmation.
+
+## Balance
+
+If the customer pays only the minimum 15% deposit, the remaining balance is still due according to the payment instructions provided by Perico Ripiao Tours.
+
+Do not invent a balance due date or payment method if one has not been established for the reservation.
+
+## Direct Customer vs B2B
+
+The 15% minimum deposit rule in this section applies to direct-customer airport and ground transfer reservations.
+
+It does not replace separate B2B / travel-agency payment terms.
+
+## AI Accuracy Rule
+
+Never tell a customer:
+
+- "Your transfer is confirmed."
+- "Your vehicle is secured."
+- "Your reservation is guaranteed."
+- "Your booking is complete."
+
+until the required payment has been received and the reservation has been operationally accepted.
+
+If payment has not been received, clearly communicate that payment is required to secure the reservation.
+
+---
+# Airport Arrival Requirements
 
 
 
@@ -1033,5 +1087,6 @@ Additional airport and destination pricing tables should be added here as Perico
 
 
 Do not create transfer rates by inference.
+
 
 
