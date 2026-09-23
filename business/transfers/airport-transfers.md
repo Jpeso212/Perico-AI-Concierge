@@ -1,4 +1,4 @@
-\# Perico Ripiao Tours — Airport Transfers
+﻿\# Perico Ripiao Tours — Airport Transfers
 
 
 
@@ -342,15 +342,9 @@ Do not reverse another directional price table unless that direction is explicit
 
 
 
-\# SDQ Routes Awaiting Approved Rates
+\# SDQ — Additional Approved Routes
 
-
-
-The following are valid transfer destinations, but their Perico rates have not yet been entered into this master.
-
-
-
-\## SDQ → Uvero Alto
+## SDQ ↔ Uvero Alto
 
 | Passengers | Round Trip | One Way |
 |---:|---:|---:|
@@ -378,92 +372,257 @@ Do not promise seatbelts unless the assigned transportation provider has confirm
 
 If seatbelts are specifically required for every passenger, escalate for vehicle confirmation. Multiple smaller vehicles may be required instead of a single bus.
 
-Customer-facing AI must quote only the approved Perico selling price. Do not disclose supplier cost, agency discount, internal margin, or competitor pricing.
+---
 
+## SDQ ↔ Miches
 
-\## SDQ → Miches
+**QUOTE REQUIRED**
 
+Miches is a valid transfer destination.
 
+Do not use Sabana de la Mar, Uvero Alto or another destination as a pricing substitute.
 
-\*\*QUOTE REQUIRED\*\*
+---
 
+## SDQ ↔ Bayahibe / La Romana / Casa de Campo
 
+For SDQ-origin transfer pricing, Bayahibe, La Romana and Casa de Campo use this approved pricing table.
 
-\## SDQ → Bayahibe / La Romana
+| Passengers | Round Trip | One Way |
+|---:|---:|---:|
+| 1–2 | US$230 | US$140 |
+| 3–4 | US$250 | US$150 |
+| 5–7 | US$270 | US$165 |
+| 8–12 | US$310 | US$190 |
+| 13–17 | US$460 | US$280 |
+| 18–21 | US$500 | US$300 |
+| 22–26 | US$550 | US$330 |
+| 27–33 | US$600 | US$360 |
+| 34–39 | US$650 | US$390 |
+| 40–45 | US$700 | US$420 |
+| 46+ | QUOTE REQUIRED | QUOTE REQUIRED |
 
+### AI Rule
 
+This table is specific to transfers between SDQ / Santo Domingo and the approved Bayahibe / La Romana / Casa de Campo pricing zone.
 
-\*\*QUOTE REQUIRED\*\*
+Do not use the PUJ ↔ Bayahibe / La Romana table for SDQ transfers.
 
+Do not use this table for Playa Nueva Romana.
 
+For 46 or more passengers, request a live quote.
 
-\## SDQ → Casa de Campo
+---
 
+## SDQ ↔ Playa Nueva Romana
 
+This pricing applies to the Playa Nueva Romana destination, including the Bahia Principe resort complex in Playa Nueva Romana.
 
-\*\*QUOTE REQUIRED\*\*
+| Passengers | Round Trip | One Way |
+|---:|---:|---:|
+| 1–2 | US$190 | US$115 |
+| 3–4 | US$200 | US$120 |
+| 5–7 | US$230 | US$140 |
+| 8–12 | US$270 | US$165 |
+| 13–17 | US$360 | US$220 |
+| 18–21 | US$420 | US$255 |
+| 22–26 | US$500 | US$300 |
+| 27–33 | US$575 | US$345 |
+| 34–39 | US$650 | US$390 |
+| 40–45 | US$700 | US$420 |
+| 46+ | QUOTE REQUIRED | QUOTE REQUIRED |
 
+### AI Rule
 
+Playa Nueva Romana is a separate SDQ pricing destination.
 
-\## SDQ → Playa Nueva Romana
+Do not substitute Bayahibe, La Romana, Casa de Campo, Juan Dolio or Boca Chica pricing.
 
+For 46 or more passengers, request a live quote.
 
+---
 
-\*\*QUOTE REQUIRED\*\*
+# Nationwide Interconnected Transfer Network
 
+Perico Ripiao Tours accepts transfer requests between locations throughout the Dominican Republic.
 
+A transfer request must not be rejected merely because the requested route does not have a fixed price in this master.
 
-These destinations will receive their own approved pricing when confirmed.
+The Concierge must use the following decision order:
 
+1. Identify the exact origin.
+2. Identify the exact destination.
+3. Check whether an exact approved Perico fixed-rate route exists.
+4. If an exact approved fixed rate exists, quote that rate immediately using the correct passenger bracket and One Way or Round Trip column.
+5. If no exact approved fixed rate exists, initiate the live quote workflow immediately.
 
+**FIXED RATE FOUND = USE APPROVED FIXED RATE**
 
-Do not use another destination's rate as a substitute.
+**NO FIXED RATE FOUND = QUOTE REQUIRED**
 
+The nationwide quote fallback must never override an existing approved fixed-rate table.
 
+---
 
-\---
+## Nationwide Coverage
 
+The Concierge may accept transfer requests involving any legitimate pickup and drop-off locations in the Dominican Republic, including:
 
+- Airport to hotel or resort.
+- Hotel or resort to airport.
+- Airport to airport.
+- Hotel to hotel.
+- Resort to resort.
+- City to city.
+- Villa or Airbnb transfers.
+- Private-address transfers.
+- Long-distance and cross-country transfers.
 
-\# Nationwide Transfers
+Coverage includes, but is not limited to:
 
+- Punta Cana / Bávaro / Cap Cana.
+- Uvero Alto.
+- Miches.
+- Santo Domingo.
+- Boca Chica.
+- Juan Dolio.
+- La Romana.
+- Casa de Campo.
+- Bayahibe.
+- Playa Nueva Romana.
+- Santiago.
+- Puerto Plata.
+- Samaná.
+- Las Terrenas.
+- Las Galeras.
+- Jarabacoa.
+- Constanza.
+- Barahona.
+- Pedernales.
+- Cabo Rojo.
+- Bahía de las Águilas.
+- Other legitimate destinations throughout the Dominican Republic.
 
+Absence from this example list does not mean that the destination is rejected.
 
-Perico Ripiao Tours may provide transportation to other areas of the Dominican Republic.
+---
 
+## Airports and Long-Distance Requests
 
+The Concierge should recognize transfer requests involving Dominican airports and their surrounding destinations.
 
-If the requested origin/destination combination does not have an approved rate in the Concierge:
+Examples include:
 
+- PUJ — Punta Cana International Airport.
+- SDQ — Las Américas International Airport / Santo Domingo.
+- STI — Cibao International Airport / Santiago.
+- POP — Gregorio Luperón International Airport / Puerto Plata.
+- AZS — Samaná El Catey International Airport.
+- LRM — La Romana International Airport.
+- JBQ — La Isabela International Airport / Santo Domingo.
+- Cabo Rojo / Pedernales airport requests when applicable.
 
+An airport being recognized does not mean that every route from that airport has a fixed price.
 
-\*\*QUOTE REQUIRED\*\*
+If the exact airport/destination combination has no approved fixed rate:
 
+**QUOTE REQUIRED**
 
+---
 
-The Concierge must never calculate an unlisted price using:
+## Explicit Long-Distance Quote Examples
 
+Unless an exact approved fixed rate exists elsewhere in this master, routes such as the following require a live quote:
 
+- PUJ ↔ Puerto Plata / POP.
+- PUJ ↔ Santiago / STI.
+- PUJ ↔ Samaná.
+- PUJ ↔ Las Terrenas.
+- PUJ ↔ Barahona.
+- PUJ ↔ Pedernales / Cabo Rojo.
+- PUJ ↔ Bahía de las Águilas.
+- SDQ ↔ Puerto Plata / POP.
+- SDQ ↔ Santiago / STI.
+- SDQ ↔ Samaná.
+- SDQ ↔ Las Terrenas.
+- SDQ ↔ Barahona.
+- SDQ ↔ Pedernales / Cabo Rojo.
+- SDQ ↔ Bahía de las Águilas.
+- Other long-distance or cross-country routes without an approved fixed table.
 
-\- Distance.
+These examples are not a complete list.
 
-\- Driving time.
+The same quote logic applies in the reverse direction.
 
-\- A nearby destination.
+---
 
-\- Another company's rate.
+## Bidirectional Quote Rule
 
-\- A similar Perico route.
+If a customer requests transportation:
 
-\- A per-mile or per-kilometer formula.
+- From PUJ or SDQ to another destination in the Dominican Republic.
+- From another destination in the Dominican Republic to PUJ or SDQ.
+- Between two other Dominican destinations.
+- Between two Dominican airports.
+- Between hotels, resorts, cities, villas or other legitimate locations.
 
+and no exact approved fixed rate exists:
 
+**QUOTE REQUIRED**
 
-\---
+Do not tell the customer that Perico does not provide the transfer solely because the route is not stored as a fixed-price route.
 
+Instead, collect the information required to obtain a current quote.
 
+---
 
-\# Destination Separation Rules
+## Live Quote Information Required
+
+For a quote-required route, collect:
+
+1. Exact pickup location.
+2. Exact destination.
+3. Travel date.
+4. Requested pickup time when known.
+5. Number of passengers.
+6. One-way or round trip.
+7. Airline and flight number when an airport is involved.
+8. Arrival or departure time when applicable.
+9. Relevant luggage information.
+10. Special vehicle, mobility or transportation requirements when applicable.
+11. Lead passenger/contact information when required.
+
+Once the required information is collected, route the request for current pricing as soon as possible.
+
+Do not continue asking unnecessary questions after the information needed for the quote has been collected.
+
+A quote request is not a confirmed reservation.
+
+Vehicle availability, final price and booking confirmation remain subject to operational confirmation.
+
+---
+
+## Nationwide Pricing Prohibitions
+
+When an exact fixed rate does not exist, the Concierge must never create a price using:
+
+- Distance.
+- Driving time.
+- Fuel calculations.
+- A nearby destination.
+- Another company's rate.
+- Another Perico route.
+- The reverse direction of a different rate.
+- A per-mile or per-kilometer formula.
+- An old or expired quote.
+- A guessed vehicle cost.
+
+Long-distance transportation costs can change.
+
+For this reason, a live quote is the approved pricing method for unlisted routes.
+
+---
+# Destination Separation Rules
 
 
 
@@ -874,4 +1033,5 @@ Additional airport and destination pricing tables should be added here as Perico
 
 
 Do not create transfer rates by inference.
+
 
