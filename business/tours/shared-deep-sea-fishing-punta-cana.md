@@ -46,7 +46,7 @@ Approximately:
 
 3 hours.
 
-This duration comes directly from the current Perico Ripiao Tours catalog.
+This duration comes directly from the current approved Perico product information.
 
 AI should still treat timing as approximate and never guarantee exact return time.
 
@@ -54,7 +54,7 @@ AI should still treat timing as approximate and never guarantee exact return tim
 
 # OPERATION
 
-Current Perico catalog:
+current approved Perico product information:
 
 DAILY / TWICE A DAY.
 
@@ -94,7 +94,7 @@ AI should clearly explain the shared format whenever a customer asks whether the
 
 - Boat shared with other customers
 - Sold per person
-- Current Perico catalog reference: US$125 per person
+- current approved Perico product information reference: US$125 per person
 - Approximately 3 hours
 - Daily / twice a day
 
@@ -109,21 +109,21 @@ AI must NEVER confuse these products.
 
 ---
 
-# CURRENT PERICO CATALOG PRICE
+# current approved Perico product information PRICE
 
 US$125 per person.
 
 SOURCE:
 
-Perico Ripiao Tours 2026 Catalog.
+legacy Perico product material.
 
 IMPORTANT:
 
-This is the current catalog reference price.
+This is the current approved product information reference price.
 
 Before quoting a customer, AI should retrieve the current approved Perico selling price whenever a live pricing source is available.
 
-If the operational pricing system contains a newer approved price, the newer approved price takes precedence over this static catalog reference.
+If the operational pricing system contains a newer approved price, the newer approved price takes precedence over this static legacy product reference.
 
 NEVER use:
 
@@ -135,7 +135,7 @@ as the price of Private Deep-Sea Fishing.
 
 # INCLUDED
 
-Confirmed by the Perico catalog:
+Confirmed by the legacy Perico product material:
 
 - Transportation
 - Bait
@@ -203,7 +203,7 @@ Do NOT automatically promise:
 - Open bar
 - Premium drinks
 
-because these are not listed as included for this product in the current Perico catalog.
+because these are not listed as included for this product in the current approved Perico product information.
 
 ---
 
@@ -219,7 +219,7 @@ AI must not tell customers that food is provided unless updated operational info
 
 # NOT INCLUDED
 
-Confirmed by current Perico catalog:
+Confirmed by current approved Perico product information:
 
 - Snacks
 - Photos
@@ -232,7 +232,7 @@ Tips are voluntary unless current operational policy states otherwise.
 
 # WHAT TO BRING
 
-Current Perico catalog recommends:
+current approved Perico product information recommends:
 
 - Sunscreen
 - Sunglasses
@@ -244,7 +244,7 @@ Additional sensible preparation may be communicated when operationally appropria
 
 # EXPERIENCE LEVEL
 
-Previous fishing experience is not stated as a requirement in the current Perico catalog.
+Previous fishing experience is not stated as a requirement in the current approved Perico product information.
 
 Therefore AI should NOT invent an experience requirement.
 
@@ -256,7 +256,7 @@ Customers can ask the crew for assistance with the fishing equipment and procedu
 
 This is a deep-sea / offshore fishing experience.
 
-The current Perico catalog does NOT specify:
+The current approved Perico product information does NOT specify:
 
 - Exact fishing technique
 - Trolling configuration
@@ -272,7 +272,7 @@ AI must not invent these details.
 
 Different offshore species may be encountered or targeted around Punta Cana.
 
-However, the current Perico catalog does NOT list guaranteed target species for this product.
+However, the current approved Perico product information does NOT list guaranteed target species for this product.
 
 AI may explain generally that offshore species vary by:
 
@@ -316,7 +316,7 @@ Correct wording:
 
 # CATCH POLICY
 
-The current Perico catalog does NOT specify what happens to fish that are caught.
+The current approved Perico product information does NOT specify what happens to fish that are caught.
 
 Therefore AI must NOT promise:
 
@@ -333,7 +333,7 @@ without operational confirmation.
 
 # BOAT
 
-The current Perico catalog does NOT specify:
+The current approved Perico product information does NOT specify:
 
 - Boat model
 - Boat length
@@ -368,7 +368,7 @@ before checking availability.
 
 # CHILDREN
 
-The current catalog does not establish a specific minimum age for this fishing product.
+The current approved product information does not establish a specific minimum age for this fishing product.
 
 AI must NOT invent a minimum age.
 
@@ -462,7 +462,7 @@ AI:
 
 "We offer shared and private deep-sea fishing.
 
-Our shared fishing experience is approximately 3 hours and includes transportation, fishing equipment, bait, water and soft drinks. The current catalog price is US$125 per person.
+Our shared fishing experience is approximately 3 hours and includes transportation, fishing equipment, bait, water and soft drinks. The current approved product information price is US$125 per person.
 
 If you'd prefer the entire fishing boat exclusively for your group, we can also check a private charter.
 
@@ -581,7 +581,7 @@ SHARED:
 - Shared boat
 - Other customers may participate
 - Per-person pricing
-- Current catalog reference US$125/person
+- current approved product information reference US$125/person
 - Approximately 3 hours
 
 PRIVATE:
@@ -625,7 +625,7 @@ Never redirect a customer from private to shared solely because shared is cheape
 
 IMPORTANT:
 
-The current Perico catalog specifically identifies:
+The current approved Perico product information specifically identifies:
 
 FISHING
 
@@ -679,7 +679,7 @@ Deep-Sea Fishing — Punta Cana
 Commercial Type:
 Per-person / Shared Fishing Product
 
-Catalog Price:
+legacy price:
 US$125 per person
 
 Location:
@@ -710,7 +710,7 @@ Not Included:
 - Tips
 
 Specific Perico Policy:
-Fishing is non-refundable according to the current catalog.
+Fishing is non-refundable according to the current approved product information.
 
 ---
 
@@ -735,7 +735,7 @@ private-deep-sea-fishing-punta-cana.md
 The two products must remain separate in AI retrieval.
 
 SHARED:
-US$125/person catalog reference
+US$125/person legacy product reference
 Approx. 3 hours
 Shared boat
 
@@ -758,7 +758,7 @@ PRIVATE
 
 before assuming which product applies.
 
-The $125 catalog reference must never contaminate private-charter pricing.
+The $125 legacy product reference must never contaminate private-charter pricing.
 
 ## BEER QUANTITY RULE
 

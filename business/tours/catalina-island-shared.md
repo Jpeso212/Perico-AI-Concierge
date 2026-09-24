@@ -81,7 +81,7 @@ This is the current Perico-established selling price for the Shared Catalina Isl
 
 ### Important Price Authority
 
-An older Perico catalogue lists this excursion at US$99 per person.
+An older legacy Perico product material lists this excursion at US$99 per person.
 
 The current operational selling price established by Perico is:
 
@@ -129,7 +129,7 @@ Do not guarantee an exact return time unless operationally confirmed.
 
 # OPERATING DAYS
 
-Daily according to the current catalogue reference.
+Daily according to the current approved product informationue reference.
 
 Availability must still be checked for the requested date.
 
@@ -279,7 +279,7 @@ Do not guarantee an exact number of hours on the island unless confirmed.
 
 # BEACH CHAIRS
 
-Beach chairs are included according to the Perico catalogue.
+Beach chairs are included according to the legacy Perico product material.
 
 Do not promise a particular chair location or reserved seating unless specifically confirmed.
 
@@ -336,7 +336,7 @@ The standard Shared Catalina excursion includes:
 
 # NOT INCLUDED
 
-According to the Perico catalogue, the following are not included:
+According to the legacy Perico product material, the following are not included:
 
 - Professional/photos taken during the excursion
 - Souvenirs
@@ -607,7 +607,7 @@ Do not aggressively redirect a customer who has already clearly chosen the Share
 The Concierge must:
 
 - Quote US$79 per person as the current Perico selling price.
-- Never automatically revert to the older US$99 catalogue price.
+- Never automatically revert to the older US$99 legacy price.
 - Never invent a child price.
 - Never invent child age brackets.
 - Never invent pickup times.
@@ -629,7 +629,7 @@ The Concierge must:
 
 # SOURCE / DATA AUTHORITY
 
-## Perico Catalogue Reference
+## legacy Perico product material Reference
 
 Perico Ripiao Tours Catalogue of Excursions & Experiences 2026.
 
@@ -637,7 +637,7 @@ Catalogue product:
 
 **Catalina Island — Full Day + Snorkelling**
 
-Catalogue reference establishes:
+legacy product reference establishes:
 
 - Punta Cana origin
 - Approximately 12 hours

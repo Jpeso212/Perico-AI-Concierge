@@ -150,7 +150,7 @@ These are the correct current Perico selling prices.
 
 
 
-Do NOT use the outdated catalog prices of:
+Do NOT use the outdated legacy prices of:
 
 
 
@@ -1198,7 +1198,7 @@ NEVER INVENT:
 
 
 
-The current catalog contains outdated information for the Family Party Boat.
+The current approved product information contains outdated information for the Family Party Boat.
 
 
 
@@ -1256,7 +1256,7 @@ US$45
 
 
 
-These operational overrides take priority over conflicting catalog information.
+These operational overrides take priority over conflicting legacy information.
 
 
 
@@ -1276,11 +1276,11 @@ For Family Party Boat, use information in this order:
 
 2\. Current approved Perico pricing information
 
-3\. Perico catalog for non-conflicting product details and inclusions
+3\. legacy Perico product material for non-conflicting product details and inclusions
 
 
 
-When catalog information conflicts with a confirmed operational update, the confirmed operational update takes priority.
+When legacy information conflicts with a confirmed operational update, the confirmed operational update takes priority.
 
 
 
@@ -1412,7 +1412,7 @@ IMPORTANT:
 
 
 
-The Perico 2026 catalog currently contains outdated Family Party Boat information.
+The legacy Perico product material currently contains outdated Family Party Boat information.
 
 
 

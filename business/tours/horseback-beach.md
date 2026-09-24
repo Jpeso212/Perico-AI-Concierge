@@ -58,7 +58,7 @@ The AI must confirm the pickup zone before calculating the final price and must 
 
 - Confirm the guest count, hotel name, and pickup zone before quoting the final price.
 - Confirm exact departure times with the supplier.
-- Minimum age requirements are not specified in the available catalogue information; ask for the children's ages, if applicable, and confirm eligibility with the supplier.
+- Minimum age requirements are not specified in the available approved product information; ask for the children's ages, if applicable, and confirm eligibility with the supplier.
 - Guests should disclose pregnancy, medical limitations, or mobility concerns before booking so suitability can be confirmed.
 - Do not promise a specific beach route, horse, or departure time unless confirmed by the supplier.
 - The general cancellation policy applies unless a specific activity cancellation policy has been confirmed.

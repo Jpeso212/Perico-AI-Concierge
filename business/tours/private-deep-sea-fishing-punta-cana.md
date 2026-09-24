@@ -521,7 +521,7 @@ When an operational detail is not confirmed, AI must say it requires confirmatio
 
 This file is the operational master for **Private Deep-Sea Fishing – Punta Cana**.
 
-Confirmed Perico information in this file takes precedence over old catalog references, generic market research or supplier promotions.
+Confirmed Perico information in this file takes precedence over old legacy product references, generic market research or supplier promotions.
 
 Shared Deep-Sea Fishing must remain a separate product with its own pricing and operational rules.
 
