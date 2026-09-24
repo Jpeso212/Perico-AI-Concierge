@@ -10,7 +10,11 @@ Fishing / Private Charter / Deep-Sea Fishing
 Punta Cana, Dominican Republic
 
 ## Status
-ACTIVE PRODUCT FRAMEWORK — Exact Perico price, assigned supplier, boat, capacity, duration options, departure point and transportation must be confirmed before booking.
+ACTIVE
+
+Perico pricing, charter durations, standard capacity, core inclusions and transportation-zone supplements are confirmed.
+
+Assigned boat, exact departure point, departure time, catch policy, child suitability and other booking-specific operational details must be confirmed when applicable.
 
 ---
 
@@ -20,130 +24,83 @@ Private Deep-Sea Fishing is an offshore fishing experience where the fishing boa
 
 Unlike shared fishing, customers do not share the charter with unrelated guests.
 
-The experience is suitable for:
-
-- First-time anglers
-- Experienced fishermen
-- Families
-- Couples
-- Groups of friends
-- Private groups
-- Customers wanting more privacy
-- Customers who want the fishing experience centered around their own group
-
-The captain and fishing crew manage the boat and fishing operation and assist guests throughout the experience.
+The captain and fishing crew operate the boat and assist guests throughout the fishing experience.
 
 ---
 
 # PRIVATE CHARTER DEFINITION
 
-PRIVATE means:
+PRIVATE means the fishing boat is reserved exclusively for the customer's confirmed group.
 
-The fishing boat is reserved exclusively for the customer's confirmed group.
+No unrelated customers are added to the charter.
 
-There are no unrelated customers added to the fishing charter.
-
-AI must NEVER confuse this product with:
-
-Shared Deep-Sea Fishing.
+AI must NEVER confuse this product with Shared Deep-Sea Fishing.
 
 ---
 
-# EXPERIENCE TYPE
+# DURATION & PRICING
 
-- Private fishing charter
-- Deep-sea fishing
-- Offshore fishing
-- Sport fishing
-- Trolling-style fishing may be used
+Approved Perico private-charter options:
 
-IMPORTANT:
+| Duration | Total Private Charter Price |
+|---|---:|
+| 4 hours | US$600 |
+| 6 hours | US$750 |
+| 8 hours | US$1,000 |
 
-Fishing technique can depend on:
+These are total prices for the **private boat**, not per-person prices.
 
-- Assigned boat
-- Supplier
-- Season
-- Target species
-- Weather
-- Sea conditions
-- Current fishing activity
+AI must:
 
-AI must not guarantee a specific fishing technique unless operationally confirmed.
+- Quote only the approved 4-hour, 6-hour or 8-hour options.
+- Never multiply the charter price by passenger count.
+- Never use shared-fishing per-person pricing for this product.
+- Never invent another duration or price.
 
 ---
 
-# DURATION
+# CAPACITY
 
-Private fishing duration:
+Standard maximum configuration:
 
-TO BE CONFIRMED.
+- Up to **5 fishing participants**
+- Up to **2 additional observers**
 
-Common Punta Cana private charter formats include:
+Maximum configuration:
 
-- 4 hours
-- 5 hours
-- 6 hours
-- 8 hours
+**5 fishing participants + 2 observers**
 
-These durations come from market research and MUST NOT automatically be presented as Perico options.
+AI must collect fishing participants and observers separately.
 
-AI must retrieve the currently approved Perico private fishing duration options before quoting or booking.
+Do not quote more than 5 guests as fishing participants.
 
 ---
 
 # BOAT
 
-Boat:
+The exact assigned boat depends on operational availability.
 
-TO BE CONFIRMED according to availability and group size.
-
-Private fishing boats can vary significantly in:
-
-- Length
-- Capacity
-- Layout
-- Fishing equipment
-- Number of fishing lines
-- Shaded area
-- Cabin
-- Bathroom
-- Fighting chair
-- Other amenities
-
-AI must NEVER invent:
+AI must not invent:
 
 - Boat model
 - Boat length
-- Maximum capacity
 - Number of fishing lines
 - Cabin
 - Bathroom
 - Air conditioning
 - Fighting chair
 - Luxury features
+- Other boat-specific amenities
 
-unless confirmed for the actual charter.
-
----
-
-# CAPACITY
-
-Maximum capacity:
-
-TO BE CONFIRMED BY ASSIGNED BOAT.
-
-AI must collect the total number of guests before checking availability.
-
-Do NOT assume that every private fishing boat can accommodate the same number of passengers.
+unless confirmed for the assigned charter.
 
 ---
 
 # FISHING EQUIPMENT
 
-Private deep-sea fishing charters normally provide the equipment required for the fishing experience.
+Fishing equipment required for the excursion is provided according to the assigned fishing operation.
 
-Expected core fishing equipment may include:
+This may include:
 
 - Rods
 - Reels
@@ -151,21 +108,9 @@ Expected core fishing equipment may include:
 - Tackle
 - Bait
 
-However, exact equipment is supplier and boat dependent.
+Exact equipment specifications can vary.
 
-AI should confirm operational inclusions before making detailed equipment promises.
-
-Never promise specific:
-
-- Equipment brands
-- Rod types
-- Reel brands
-- Line weights
-- Lures
-- Fighting chairs
-- Outriggers
-
-unless confirmed.
+AI must not promise specific brands, rod types, reel models, line weights, lures or other specialized equipment unless operationally confirmed.
 
 ---
 
@@ -182,31 +127,23 @@ The crew assists with:
 - Safety procedures
 - General fishing guidance
 
-The exact number of crew members depends on the assigned boat.
+Exact crew configuration can depend on the assigned boat.
 
 ---
 
 # EXPERIENCE LEVEL
 
-Previous fishing experience is generally not required for recreational private deep-sea fishing.
+Previous fishing experience is not required.
 
-Private fishing can be suitable for:
+The excursion can accommodate first-time anglers as well as experienced fishermen.
 
-BEGINNERS
-→ Crew assists with equipment and fishing procedures.
-
-EXPERIENCED ANGLERS
-→ Private charter provides a more dedicated fishing environment.
-
-IMPORTANT:
-
-AI must not promise advanced/custom fishing arrangements without confirming them with the operator.
+AI must not promise advanced or customized fishing arrangements unless confirmed by the operator.
 
 ---
 
 # TARGET FISH
 
-Species commonly associated with offshore fishing around Punta Cana include:
+Species commonly targeted offshore around Punta Cana may include:
 
 - Mahi-Mahi / Dorado
 - Wahoo
@@ -218,11 +155,11 @@ Species commonly associated with offshore fishing around Punta Cana include:
 - Bonito
 - Other seasonal offshore species
 
-IMPORTANT:
+Species vary according to season, sea conditions and current fishing activity.
 
-Fish populations and species vary according to season and conditions.
+There is **NO CATCH GUARANTEE**.
 
-AI must NEVER guarantee:
+AI must never guarantee:
 
 - A catch
 - A particular species
@@ -234,260 +171,217 @@ AI must NEVER guarantee:
 - Mahi-Mahi
 - Any specific fishing result
 
-Correct wording:
-
-"Different species are targeted depending on the season and current fishing conditions."
-
----
-
-# FISHING SEASONS
-
-Different offshore species may be more active during different periods of the year.
-
-AI may explain that fishing is seasonal.
-
-However:
-
-AI must NOT guarantee that a species will be available simply because the customer's date falls within a commonly referenced fishing season.
-
-Current conditions and recent fishing activity matter.
-
----
-
-# CATCH GUARANTEE
-
-THERE IS NO CATCH GUARANTEE.
-
-Fishing depends on:
-
-- Nature
-- Season
-- Weather
-- Water conditions
-- Fish movement
-- Current fishing activity
-
-AI must never say:
-
-"You will catch fish."
-
-"You are guaranteed to catch mahi-mahi."
-
-"You will catch marlin."
-
-Correct wording:
+Recommended wording:
 
 "The crew will target the species that are active during your trip, but catches can never be guaranteed."
 
 ---
 
-# PRIVATE VS SHARED
-
-## PRIVATE FISHING
-
-Boat reserved for customer's group.
-
-Advantages may include:
-
-- Privacy
-- No unrelated guests
-- Fishing experience focused on the customer's group
-- More personalized experience
-
-## SHARED FISHING
-
-Customers share the boat with other fishing guests.
-
-Usually sold per person.
-
-Guests may take turns fishing depending on the fishing setup and operator procedures.
-
-AI must treat these as:
-
-TWO DIFFERENT PRODUCTS.
-
-Never quote the shared fishing price for a private charter.
-
----
-
-# PRICE
-
-PRIVATE CHARTER PRICE:
-
-TO BE CONFIRMED.
-
-IMPORTANT:
-
-The Perico catalog currently contains a separate Deep-Sea Fishing price of:
-
-US$125 per person.
-
-DO NOT USE THAT PRICE FOR THIS PRIVATE CHARTER.
-
-That catalog price belongs to the per-person fishing product and must remain separate from private fishing.
-
-Private fishing should be priced according to:
-
-- Charter duration
-- Boat
-- Capacity
-- Supplier
-- Date
-- Availability
-- Approved Perico rate
-
-AI must retrieve the approved private-charter price before quoting.
-
----
-
 # TRANSPORTATION
 
-Private fishing transportation:
+Standard transportation from the applicable **Bávaro area is included**.
 
-TO BE CONFIRMED FOR THE ACTUAL BOOKING.
+| Pickup Zone | Transportation Supplement |
+|---|---:|
+| Bávaro | Included |
+| Uvero Alto | +US$50 per group |
+| Cap Cana | +US$75 per group |
+| Punta Cana | +US$75 per group |
 
-Hotel transportation is common among Punta Cana fishing operators but is not universal across the market.
+Transportation supplements are charged **once per private group/reservation**, not per passenger.
 
-Therefore AI must NOT automatically promise transportation until the Perico product configuration or assigned supplier confirms it.
+AI must collect the hotel or accommodation before calculating the final total.
 
-Collect:
+Never multiply a transportation supplement by passenger count.
 
-- Hotel or accommodation
-- Area
-- Number of guests
-
-Then verify:
-
-- Transportation inclusion
-- Pickup eligibility
-- Pickup location
-- Exact pickup time
-- Any transportation supplement
-
-Never invent pickup times.
+Exact pickup time remains booking-specific and must not be invented.
 
 ---
 
-# DEPARTURE POINT
+# 4-HOUR CHARTER
 
-Marina / beach departure location:
+Price:
 
-TO BE CONFIRMED.
+**US$600 per private boat**
 
-Fishing operations in Punta Cana may depart from different areas or marinas depending on the operator.
+Includes:
 
-AI must never assume:
+- Private fishing charter
+- Fishing equipment
+- Captain and crew
+- Water
+- Soft drinks
+- Beer
+- Peanuts
+- One bottle of Barceló rum
+- Applicable Bávaro transportation
 
-- Cap Cana Marina
-- Cabeza de Toro
-- Bávaro
-- Any particular marina
-
-unless the assigned charter confirms it.
+Lunch is not included.
 
 ---
 
-# SCHEDULE
+# 6-HOUR CHARTER
 
-Exact departure time:
+Price:
 
-TO BE CONFIRMED.
+**US$750 per private boat**
 
-Morning and afternoon fishing departures are common in Punta Cana.
+Includes everything in the 4-hour charter plus:
 
-However:
+- Snacks
 
-AI must not promise a specific departure until availability is checked.
+Lunch is not included.
+
+---
+
+# 8-HOUR CHARTER
+
+Price:
+
+**US$1,000 per private boat**
+
+Includes everything in the 6-hour charter plus:
+
+- Lunch
 
 ---
 
 # DRINKS
 
-Exact Perico private-charter drink package:
+All three charter durations include:
 
-TO BE CONFIRMED.
-
-Water and soft drinks are commonly provided by Punta Cana fishing operators.
-
-Some operators also include beer or other alcoholic beverages.
-
-AI must NOT automatically promise:
-
+- Water
+- Soft drinks
 - Beer
-- Rum
-- Open bar
-- Premium drinks
+- One bottle of Barceló rum
 
-until the actual Perico charter inclusion is confirmed.
+Do not describe the beverage service as an unlimited open bar.
+
+Do not promise additional bottles, premium liquor or additional alcoholic beverages unless confirmed by Perico.
 
 ---
 
 # FOOD
 
-Food inclusion:
+Food varies by charter duration.
 
-TO BE CONFIRMED.
+## 4 Hours
+- Peanuts
 
-Depending on operator and charter duration, fishing trips may include:
-
-- No food
+## 6 Hours
+- Peanuts
 - Snacks
-- Sandwiches
-- Lunch on longer charters
 
-AI must NEVER assume meals are included.
+## 8 Hours
+- Peanuts
+- Snacks
+- Lunch
+
+AI must not promise lunch on the 4-hour or 6-hour charter.
+
+---
+
+# DEPARTURE POINT
+
+Exact marina or beach departure location must be confirmed for the actual booking.
+
+AI must not assume:
+
+- Cap Cana Marina
+- Cabeza de Toro
+- Bávaro
+- Any specific marina or beach departure point
+
+unless confirmed operationally.
+
+---
+
+# SCHEDULE
+
+Exact departure time depends on availability and must be confirmed.
+
+AI must not invent or guarantee a specific departure time before availability is checked.
 
 ---
 
 # CATCH POLICY
 
-What happens to caught fish:
-
-TO BE CONFIRMED WITH THE ASSIGNED OPERATOR.
-
-Possible policies can vary.
+The policy regarding caught fish must be confirmed with the assigned operator.
 
 AI must not promise that customers can:
 
-- Keep all fish
-- Take fish back to the hotel
-- Have fish cleaned
-- Have fish filleted
-- Have a restaurant cook the catch
-- Release or retain a specific species
+- Keep all caught fish
+- Take fish back to their hotel
+- Have all fish cleaned
+- Have the catch prepared by a restaurant
 
-without confirmation.
-
-Fishing regulations and operator policies must be respected.
+unless confirmed.
 
 ---
 
-# WEATHER & SEA CONDITIONS
+# SEASICKNESS POLICY
 
-Private deep-sea fishing is subject to:
+Deep-sea fishing takes place offshore and boat movement can cause seasickness or motion sickness.
 
-- Weather
-- Wind
-- Sea conditions
-- Marine safety conditions
+This can affect both **adults and children**.
 
-The captain/operator determines whether conditions are safe.
+Children can also become seasick, and families should be informed of this possibility before departure.
 
-AI must never override a captain's operational decision.
+Once the boat has departed, **seasickness does not qualify for a refund**.
+
+If the customer agrees to depart and later:
+
+- Becomes seasick
+- Feels uncomfortable
+- Requests to return early
+- Decides not to continue fishing
+- Chooses to shorten the excursion
+
+there is **no full or partial refund for unused charter time**.
+
+If a private group decides to return early because one or more participants become seasick, the unused portion of the charter remains non-refundable.
 
 ---
 
-# MOTION SICKNESS
+# WEATHER & MARINE CONDITIONS
 
-Offshore waters can sometimes be rough.
+Marine conditions are monitored before departure.
 
-Customers who are prone to motion sickness should consider appropriate precautions before the excursion.
+Safety-related cancellation, postponement or rescheduling may occur because of:
 
-AI must not prescribe medication or provide medical advice.
+- Unsafe tide or sea conditions
+- Excessive wind
+- Hurricane conditions
+- Tropical-storm conditions
+- Other marine conditions considered unsafe by the captain/operator
 
-Correct wording:
+**Rain alone does not cancel the fishing excursion.**
 
-"If you're prone to seasickness, consider speaking with a healthcare professional or pharmacist about appropriate precautions before the trip."
+If marine conditions are reviewed, the excursion is cleared to operate, and the customer agrees to depart, a later decision by the customer to return early does not qualify for a full or partial refund.
+
+Final operational and safety decisions remain with the captain/operator.
+
+AI must distinguish between:
+
+**Rain**
+→ The excursion normally continues unless associated marine conditions make operation unsafe.
+
+**Unsafe sea/tide conditions, excessive wind or hurricane/tropical-storm conditions**
+→ The excursion may be cancelled, postponed or rescheduled for safety.
+
+AI must never promise that an excursion will be cancelled simply because rain is forecast or occurring.
+
+---
+
+# CHILDREN
+
+Children may participate only when appropriate for the assigned fishing operation.
+
+Exact minimum age and child suitability must be confirmed.
+
+AI must advise families that offshore conditions and boat movement can cause seasickness in children as well as adults.
+
+Do not invent a minimum age.
 
 ---
 
@@ -495,327 +389,140 @@ Correct wording:
 
 Recommended:
 
-- Sunscreen
+- Comfortable clothing
+- Sun protection
+- Hat
 - Sunglasses
-- Hat or cap
-- Comfortable lightweight clothing
+- Sunscreen
 - Appropriate footwear
-- Camera or phone
-- Waterproof protection for valuables
-- Extra cash for optional expenses and tips
+- Personal medication when required
 
-Additional items depend on the assigned charter.
+Guests concerned about motion sickness should prepare accordingly before departure and seek appropriate medical/pharmacy guidance when necessary.
 
----
-
-# NOT INCLUDED
-
-Until operational details are confirmed, AI must NOT automatically state that the following are included:
-
-- Lunch
-- Snacks
-- Alcohol
-- Photos
-- Fish preparation
-- Premium drinks
-- Gratuities
-- Special transportation
-- Fishing trophies/taxidermy
-- Additional charter hours
-
-Tips are generally voluntary unless otherwise stated by the confirmed supplier.
+AI must not provide individualized medical advice.
 
 ---
 
-# CHILDREN & FAMILIES
+# PRIVATE VS SHARED FISHING
 
-Private fishing may be suitable for families.
+## Private Fishing
 
-However:
+- Boat reserved exclusively for the customer's group
+- Total charter pricing
+- Up to 5 fishing participants
+- Up to 2 observers
+- 4, 6 and 8-hour options
 
-Minimum age and child suitability are:
+## Shared Fishing
 
-TO BE CONFIRMED.
+- Separate Perico product
+- Boat may be shared with unrelated guests
+- Different pricing structure
+- Different operational capacity and booking logic
 
-AI should collect children's ages and request operational confirmation when minors are included.
+AI must treat these as **two separate products**.
 
-Do not independently determine whether sea conditions are appropriate for a child.
+Never quote the shared fishing price for a private charter.
 
 ---
 
-# CUSTOMER QUALIFICATION
+# AI CUSTOMER QUALIFICATION
 
-Collect:
+Before quoting or booking, collect:
 
 1. Requested date
-2. Number of guests
-3. Adults and children
-4. Ages of children
-5. Hotel/accommodation
-6. Desired charter duration
-7. Fishing experience level
-8. Main fishing interest
-9. Whether anyone is joining as an observer/non-fisher
-10. Any special requests
+2. Desired duration: 4, 6 or 8 hours
+3. Number of fishing participants
+4. Number of observers
+5. Ages of any children
+6. Hotel or accommodation
+7. Any relevant special requirements
 
-Do not ask questions already answered.
+Then determine the transportation zone and calculate the total.
 
 ---
 
-# EXAMPLE AI RESPONSE
+# AI PRICING LOGIC
 
-Customer:
+Formula:
 
-"Do you have private fishing?"
+**Private charter price + applicable transportation supplement = customer total**
 
-AI:
+Examples:
 
-"Yes. We can arrange private deep-sea fishing in Punta Cana, where the fishing boat is reserved exclusively for your group rather than shared with other guests.
+- 4 hours from Bávaro = **US$600**
+- 4 hours from Uvero Alto = **US$650**
+- 6 hours from Cap Cana = **US$825**
+- 8 hours from Punta Cana = **US$1,075**
 
-The captain and fishing crew handle the equipment and assist both first-time and experienced anglers. Different offshore species can be targeted depending on the season and current fishing conditions, but catches and specific species can't be guaranteed.
+These totals are for the private group/boat.
 
-What date are you interested in, how many people are in your group, and which hotel or accommodation are you staying at?"
-
----
-
-# EXPERIENCED ANGLER EXAMPLE
-
-Customer:
-
-"I want a private boat and want to catch marlin."
-
-AI:
-
-"We can look at a private deep-sea fishing charter for your group. Marlin are among the offshore species targeted around Punta Cana during appropriate periods, but no specific species or catch can be guaranteed.
-
-I'll check the best available charter based on your date and group. How many guests will be fishing, what date would you like to go, and where are you staying?"
+They are not per-person prices.
 
 ---
 
-# FAMILY EXAMPLE
+# AI PRE-BOOKING SAFETY NOTICE
 
-Customer:
+Before completing the reservation, the customer should be informed:
 
-"We're a family of six and want our own fishing boat."
-
-AI:
-
-"A private fishing charter would be the appropriate option because the boat is reserved for your group.
-
-I'll need the ages of any children, your preferred date, and your hotel or accommodation so we can check the appropriate boat, availability, duration and price."
+"Deep-sea fishing takes place offshore, so seasickness can occur in both adults and children. Marine conditions are monitored before departure. Rain alone does not cancel the excursion. If the trip is cleared to depart and you choose to proceed, seasickness or deciding to return early after departure does not qualify for a full or partial refund."
 
 ---
 
-# BOOKING FLOW
+# AVAILABILITY & BOOKING RULES
 
-AI ACTION:
+AI must never claim availability without checking the applicable booking/operational system.
 
-1. Determine whether customer wants PRIVATE or SHARED fishing.
-2. If PRIVATE, route to this product.
-3. Collect requested date.
-4. Collect number of guests.
-5. Collect ages when children are participating.
-6. Determine number of fishermen and observers if relevant.
-7. Ask preferred charter duration.
-8. Ask fishing experience/interests when relevant.
-9. Collect hotel/accommodation.
-10. Retrieve approved private fishing supplier/boat.
-11. Verify boat capacity.
-12. Verify duration.
-13. Verify transportation.
-14. Verify inclusions.
-15. Verify departure schedule.
-16. Check live availability.
-17. Retrieve approved Perico price.
-18. Present confirmed charter details.
-19. Collect required booking information.
-20. Collect required payment.
-21. Create reservation.
-22. Send confirmation and pickup instructions.
+A quote does not mean the charter is confirmed.
 
-Never confirm the reservation until the booking operation succeeds.
+Before confirmation, verify:
 
----
-
-# INTENT MAPPING
-
-Customer says:
-
-"I want private fishing."
-
-→ Private Deep-Sea Fishing.
-
-"I want the boat just for us."
-
-→ Private Deep-Sea Fishing.
-
-"We don't want other people on the boat."
-
-→ Private Deep-Sea Fishing.
-
-"How much is fishing per person?"
-
-→ Determine whether customer means shared fishing before quoting.
-
-"I want the $125 fishing."
-
-→ Route to the separate per-person/shared fishing product, NOT private fishing.
-
-"I want a fishing charter."
-
-→ Ask whether they want private or shared if context does not establish it.
-
----
-
-# COMPARISON LOGIC
-
-## PRIVATE FISHING VS SHARED FISHING
-
-PRIVATE:
-
-- Boat exclusively for customer's group
-- No unrelated fishing guests
-- Charter-based pricing
-- Capacity depends on boat
-- Duration/options depend on charter
-
-SHARED:
-
-- Boat shared with other customers
-- Generally priced per person
-- Customers may take turns fishing
-- Perico catalog currently lists US$125 per person
-- Approximately 3 hours according to current catalog
-- Separate product file required
-
-NEVER merge these products.
-
----
-
-# CROSS-SELL LOGIC
-
-If private fishing does not fit the customer's:
-
-- Budget
-- Group size
+- Date
+- Charter duration
+- Fishing participants
+- Observers
+- Child ages when applicable
+- Hotel/accommodation
+- Transportation zone
 - Availability
+- Assigned operational details when required
+- Payment/reservation requirements
 
-AI may offer:
-
-Shared Deep-Sea Fishing.
-
-If customer specifically values privacy:
-
-Do not redirect them to shared fishing merely because it is less expensive.
-
----
-
-# CANCELLATION POLICY
-
-IMPORTANT INTERNAL PERICO RULE:
-
-Fishing is classified in the current Perico catalog as:
-
-NON-REFUNDABLE.
-
-AI must use the current approved Perico fishing cancellation policy at booking.
-
-Do not substitute another fishing operator's cancellation policy.
-
-Do not copy a supplier refund policy into Perico's customer terms.
-
-If cancellation terms change in the operational booking system, the current approved Perico policy takes precedence.
+Do not tell the customer the charter is confirmed until the applicable reservation and payment requirements have been completed and Perico has operationally accepted the booking.
 
 ---
 
 # AI ACCURACY RULES
 
-NEVER INVENT:
+AI must NEVER:
 
-- Private charter price
-- Boat capacity
-- Boat model
-- Boat length
-- Exact duration
-- Departure time
-- Pickup time
-- Transportation inclusion
-- Alcohol inclusion
-- Meal inclusion
-- Number of fishing lines
-- Fishing equipment brands
-- Marina
-- Catch
-- Fish species
-- Fish size
-- Fishing conditions
-- Catch-and-keep policy
-- Live availability
+- Invent availability
+- Invent departure time
+- Invent departure point
+- Invent boat specifications
+- Invent child minimum age
+- Guarantee a catch
+- Guarantee a fish species
+- Promise a catch quantity or size
+- Change approved charter pricing
+- Treat private-charter prices as per-person prices
+- Multiply transportation supplements by passenger count
+- Promise lunch on the 4-hour or 6-hour charter
+- Describe the drinks as an unlimited open bar
+- Promise refunds for seasickness after departure
+- Tell customers that rain alone automatically cancels fishing
+- Confuse private fishing with shared fishing
 
-NEVER USE:
-
-US$125 PER PERSON
-
-as the private fishing price.
-
-That belongs to the separate catalog fishing product.
-
----
-
-# RESEARCH REFERENCE
-
-This product framework was created using:
-
-1. Confirmed Perico catalog information
-2. Current Punta Cana fishing-market research
-3. Common operational characteristics found across multiple fishing operators
-
-Third-party operator-specific details are NOT Perico facts.
-
-They are used only to understand the general structure of private deep-sea fishing in Punta Cana.
-
----
-
-# SOURCE PRIORITY
-
-For customer-facing operational information, use this priority:
-
-1. Current Perico operational data
-2. Current Perico approved price/rate sheet
-3. Assigned fishing supplier confirmation
-4. Current reservation/availability system
-5. General market research only for non-operational educational context
-
-Never allow third-party market research to override Perico information.
+When an operational detail is not confirmed, AI must say it requires confirmation rather than inventing an answer.
 
 ---
 
 # INTERNAL PERICO NOTE
 
-This file intentionally separates PRIVATE fishing from the existing per-person Deep-Sea Fishing product.
+This file is the operational master for **Private Deep-Sea Fishing – Punta Cana**.
 
-Current Perico catalog reference:
+Confirmed Perico information in this file takes precedence over old catalog references, generic market research or supplier promotions.
 
-Deep-Sea Fishing — Punta Cana
-US$125 per person
-Approximately 3 hours
-Daily / twice a day
+Shared Deep-Sea Fishing must remain a separate product with its own pricing and operational rules.
 
-That information must NOT automatically be transferred to the private charter.
-
-Before private fishing can be fully automated, Perico should confirm:
-
-- Approved supplier
-- Private charter prices
-- Available durations
-- Boats
-- Capacity per boat
-- Departure point
-- Transportation coverage
-- Drinks
-- Food/snacks
-- Fishing equipment
-- Catch policy
-- Child policy
-
-Until those fields are confirmed, AI may qualify the customer and collect booking information but must verify the operational details before quoting or confirming.
+The seasickness and marine-weather policy also applies to Shared Deep-Sea Fishing and must be maintained in that product's master file.
