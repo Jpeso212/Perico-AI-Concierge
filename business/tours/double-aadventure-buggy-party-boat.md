@@ -13,7 +13,7 @@ Bávaro Adventure Park
 Punta Cana / Bávaro, Dominican Republic
 
 ## Status
-ACTIVE PRODUCT — Perico selling price and live availability must be confirmed before booking.
+ACTIVE PRODUCT — Current Perico selling price verified. Live availability must be confirmed before booking.
 
 ---
 
@@ -198,21 +198,19 @@ Exact pickup time must be retrieved from the confirmed reservation or approved o
 
 ---
 
-# SUPPLIER PUBLIC REFERENCE PRICE
+# PERICO SELLING PRICE
 
-Starting at US$149 per person.
+US$149 per person
 
-IMPORTANT AI RULE:
+This is the current Perico Ripiao Tours selling price and follows the supplier's regular public website price.
 
-This is the supplier's public reference price.
+The price is per person.
 
-It is NOT automatically the Perico Ripiao Tours selling price.
+Supplier website promotions, discount codes, direct-booking discounts, flash sales or other supplier promotional offers do NOT automatically apply to Perico Ripiao Tours agency bookings.
 
-AI must retrieve the approved Perico selling price before quoting the customer.
+The AI must quote the regular Perico selling price shown above unless Perico explicitly approves a different price.
 
-Never calculate or invent the Perico selling price.
-
----
+Live availability must still be confirmed before booking.
 
 # TRANSPORTATION
 
@@ -360,7 +358,7 @@ AI ACTION:
 3. Determine drivers and passengers.
 4. Validate driver's license requirements.
 5. Validate hotel transportation.
-6. Retrieve approved Perico selling price.
+6. Use the verified Perico selling price listed in this product.
 7. Present confirmed price and inclusions.
 8. Collect booking information.
 9. Create reservation.
