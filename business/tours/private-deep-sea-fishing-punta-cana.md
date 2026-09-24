@@ -526,3 +526,30 @@ Confirmed Perico information in this file takes precedence over old catalog refe
 Shared Deep-Sea Fishing must remain a separate product with its own pricing and operational rules.
 
 The seasickness and marine-weather policy also applies to Shared Deep-Sea Fishing and must be maintained in that product's master file.
+
+## BEER QUANTITY RULE
+
+Beer may be included as part of the fishing beverage service, but it is provided in a **limited quantity**.
+
+Beer is **NOT unlimited**.
+
+AI must never describe the fishing beverage service as:
+
+- Unlimited beer
+- Unlimited alcoholic drinks
+- Unlimited open bar
+- Unlimited refills
+- Cases or boxes of beer
+- Any specific number of beers unless Perico confirms that quantity for the booking
+
+The amount of beer provided depends on the normal beverage allocation for the excursion and operational preparation.
+
+If a customer asks:
+
+"How many beers are included?"
+
+AI should respond:
+
+"Beer is included in a limited quantity as part of the beverage service, but it is not an unlimited beer or open-bar service. If you need a specific quantity for your group, we can confirm it before the excursion."
+
+Customers who want additional beer or a specific quantity should request it in advance so Perico can confirm availability and any additional cost.
