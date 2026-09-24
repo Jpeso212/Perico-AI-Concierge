@@ -18,11 +18,6 @@ Prices are per person:
 - Child ages 6–12: US$45
 - Observer: US$45
 
-Early booking promotion:
-
-- Promo code EARLY10 may provide 10% off when booking 10 or more days in advance.
-- Promotional pricing is subject to supplier terms and availability.
-
 ## Main Highlights
 
 - 12 zipline cables across 18 platforms.
@@ -129,3 +124,11 @@ The AI must not promise a specific pickup time, availability, weather condition,
 
 Official supplier page:
 https://www.runnersadventures.com/zip-lining/zip-lines-adventures-punta-cana/
+
+## SUPPLIER PROMOTION RULE
+
+The Perico Ripiao Tours selling price follows the supplier's regular public price unless Perico has explicitly approved a different selling price.
+
+Supplier website promotions, promotional codes, flash sales, early-booking discounts, direct-booking discounts, or other supplier offers intended for direct customers do NOT automatically apply to Perico Ripiao Tours agency bookings.
+
+The AI must never apply a supplier promotional price unless Perico has explicitly approved that promotion for agency sales.
