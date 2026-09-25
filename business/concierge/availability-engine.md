@@ -240,9 +240,13 @@ Never use the terms interchangeably.
 
 ---
 
-# 11. LIVE AVAILABILITY STATES
+# 11. CANONICAL AVAILABILITY STATES
 
-The Concierge should use operational states such as:
+The Availability Engine is the authoritative owner of canonical availability state.
+
+All other Concierge engines, channels, agents, booking platforms, supplier integrations, reseller systems and external providers must map availability terminology into these canonical states.
+
+Canonical availability states:
 
 UNKNOWN
 
