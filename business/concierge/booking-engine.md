@@ -707,9 +707,15 @@ Obtain Perico pricing first.
 
 # 30. BOOKING STATUS MODEL
 
-Use clear internal booking states.
+Booking state and payment state are separate dimensions.
 
-Recommended states:
+The Booking Engine owns the canonical reservation / booking lifecycle.
+
+The Payment & Confirmation Engine owns the canonical payment lifecycle.
+
+Never copy payment states into the booking-state field merely for convenience.
+
+## Canonical Booking States
 
 INQUIRY
 
@@ -721,13 +727,11 @@ AVAILABLE
 
 BOOKING DETAILS INCOMPLETE
 
-READY FOR PAYMENT
+BOOKING DETAILS COMPLETE
 
-PAYMENT PENDING
+PENDING RESERVATION CREATION
 
-PARTIAL PAYMENT RECEIVED
-
-FULL PAYMENT RECEIVED
+RESERVATION CREATED
 
 PENDING OPERATIONAL ACCEPTANCE
 
@@ -735,15 +739,102 @@ CONFIRMED
 
 CHANGE REQUESTED
 
+CANCELLATION REQUESTED
+
 CANCELLED
 
 COMPLETED
 
-REFUND REVIEW
+These states describe the reservation lifecycle only.
 
-Do not collapse these states into one generic "booked" status.
+They do NOT describe whether payment has been submitted, verified, partially received or fully received.
 
 ---
+
+## Separate Payment State
+
+Payment status must be stored and evaluated separately using the canonical states defined by:
+
+payment-confirmation-engine.md
+
+Examples include:
+
+NOT REQUIRED YET
+
+PAYMENT TERMS PENDING
+
+READY FOR PAYMENT
+
+PAYMENT PENDING
+
+PAYMENT SUBMITTED
+
+PAYMENT VERIFICATION PENDING
+
+PARTIAL PAYMENT RECEIVED
+
+FULL PAYMENT RECEIVED
+
+PAYMENT FAILED
+
+PAYMENT EXPIRED
+
+REFUND REVIEW
+
+PARTIAL REFUND
+
+FULL REFUND
+
+These are payment states, not booking states.
+
+---
+
+## Example
+
+A reservation may simultaneously have:
+
+booking_status = RESERVATION CREATED
+
+payment_status = PAYMENT VERIFICATION PENDING
+
+or:
+
+booking_status = PENDING OPERATIONAL ACCEPTANCE
+
+payment_status = FULL PAYMENT RECEIVED
+
+or:
+
+booking_status = CONFIRMED
+
+payment_status = FULL PAYMENT RECEIVED
+
+The existence of a payment state must not automatically determine booking state.
+
+Likewise, booking state must not falsely imply payment state.
+
+---
+
+## Confirmation Rule
+
+CONFIRMED remains a booking state.
+
+It may be reached only after all requirements applicable to that transaction have been satisfied, including when required:
+
+- Approved price established
+- Availability confirmed
+- Required booking information complete
+- Reservation created
+- Required payment verified
+- Operational acceptance completed
+
+The Booking Engine determines the booking lifecycle.
+
+The Payment & Confirmation Engine determines payment status and payment-related confirmation eligibility.
+
+The Orchestrator coordinates both.
+
+Do not collapse booking state and payment state into one generic status.
 
 # 31. READY FOR PAYMENT
 
