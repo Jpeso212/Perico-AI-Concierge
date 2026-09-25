@@ -41,15 +41,30 @@ Never invent a payment requirement.
 
 Determine the applicable payment rule before requesting payment.
 
+The active brand context must be established before applying a brand-sensitive payment rule.
+
 Payment-rule hierarchy:
 
 1. Product-specific approved payment rule
-2. Customer/account-specific approved commercial rule
-3. Approved B2B commercial rule when applicable
-4. Approved Perico global payment rule when applicable
-5. PERICO HUMAN CONFIRMATION when no rule is established
+2. Brand + account-specific approved payment rule
+3. Customer/account/partner-specific approved commercial payment rule
+4. Brand-specific approved payment rule
+5. Approved B2B commercial rule when applicable
+6. Approved platform/global payment rule when applicable
+7. PERICO HUMAN CONFIRMATION when no rule is established
+
+More specific approved payment terms override more general payment terms.
+
+A payment rule belonging to one brand must never be applied to another brand unless explicitly authorized.
 
 A convenient payment percentage must never replace the actual approved rule.
+
+The Payment & Confirmation Engine determines WHAT payment is required.
+
+The Payment Router determines HOW that approved payment may be collected.
+
+Neither component may independently change the other's authority.
+
 
 ---
 
