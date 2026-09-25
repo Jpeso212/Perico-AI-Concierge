@@ -265,24 +265,301 @@ Global Rules include customer sales-channel protection and restrictions against 
 
 ---
 
-# 4. DATA AUTHORITY
+# 4. AUTHORITY AND DATA PRECEDENCE
 
-Operational decisions must use the most authoritative approved Perico information available.
+The platform uses two separate authority concepts:
 
-General authority hierarchy:
+1. GLOBAL GUARDRAIL AUTHORITY
+2. BUSINESS DATA / POLICY PRECEDENCE
 
-1. Explicit current Perico operational override
-2. Product-specific or transfer-specific approved Perico master
-3. Customer/account-specific approved commercial agreement
-4. Approved B2B / reseller commercial rule when applicable
-5. Specialized Concierge engine rule
-6. Approved Perico global business rule
-7. Verified supplier operational information when Perico has not established a conflicting rule
-8. Human confirmation when authoritative information is missing or conflicting
+These must not be confused.
 
-Historical catalogs, obsolete files, supplier promotions, previous quotes, competitor information and external marketplace information must not silently override current approved Perico information.
+---
 
-When two authoritative sources conflict and precedence cannot safely resolve the conflict:
+## 4.1 GLOBAL GUARDRAIL AUTHORITY
+
+global-rules.md defines platform-wide non-negotiable guardrails.
+
+These rules apply across:
+
+- Brands
+- Products
+- Transfers
+- Partners
+- Resellers
+- Virtual agents
+- Channels
+- Booking systems
+- Payment providers
+- Integrations
+
+A lower-level source may provide more specific business information.
+
+It may NOT violate a Global Guardrail.
+
+Examples of Global Guardrails include:
+
+- Never invent business reality
+- Never expose unauthorized supplier sales destinations
+- Never redirect customers to supplier/OTA/competitor product websites
+- Never expose protected internal economics without authorization
+- Never fabricate payment or confirmation
+- Never bypass identity/permission requirements
+- Keep technical state separate from business state
+- Preserve customer and partner privacy
+
+Therefore:
+
+GLOBAL GUARDRAIL
+→ ALWAYS ENFORCED
+
+A more specific commercial rule does not cancel a Global Guardrail.
+
+---
+
+## 4.2 BUSINESS DATA / POLICY PRECEDENCE
+
+After Global Guardrails have been satisfied, the system determines the most specific applicable approved business rule.
+
+General precedence:
+
+1. Explicit current authorized Perico operational override for the specific transaction
+2. Product-specific or transfer-specific approved rule
+3. Brand + account-specific approved commercial rule
+4. Customer/account-specific approved commercial agreement
+5. Brand-specific approved commercial rule
+6. Approved partner/B2B/reseller-specific rule
+7. Applicable specialized Concierge engine rule
+8. Approved Perico general/default business rule
+9. Verified supplier operational information when Perico has not established a conflicting approved rule
+10. Human confirmation when authoritative information is missing or conflicting
+
+This hierarchy applies only when the sources address the same business decision.
+
+A rule from one domain must not override an unrelated authority.
+
+---
+
+## 4.3 DOMAIN AUTHORITY
+
+The specialized component assigned authority for a decision controls that domain.
+
+Examples:
+
+Product operational truth:
+→ Approved product or transfer master
+
+Brand commercial context:
+→ brand-commercial-policy-layer.md
+
+Identity and permissions:
+→ identity-permissions-engine.md
+
+Language:
+→ language-engine.md
+
+Product matching:
+→ product-matching-engine.md
+
+Quote calculation:
+→ quote-engine.md
+
+Availability:
+→ availability-engine.md
+
+Booking lifecycle:
+→ booking-engine.md
+
+Payment requirement and verification:
+→ payment-confirmation-engine.md
+
+Payment method/provider routing:
+→ payment-router.md
+
+Partner/reseller commercial relationship:
+→ partner-reseller-engine.md
+
+Channel transport:
+→ channel-layer.md
+
+Virtual agent scope:
+→ virtual-reseller-agent-layer.md
+
+External integration capabilities:
+→ integration-registry.md
+
+Human escalation:
+→ human-handoff-engine.md
+
+The Orchestrator coordinates these authorities.
+
+It does not replace them.
+
+---
+
+## 4.4 SPECIFIC RULE VS GENERAL DEFAULT
+
+A specific approved rule may override a general default only within the domain where that override is authorized.
+
+Example:
+
+PRODUCT-SPECIFIC CANCELLATION POLICY
+may override
+GENERAL CANCELLATION FALLBACK.
+
+This does NOT mean the product file can override:
+
+- Customer privacy
+- External website protection
+- Payment security
+- Identity permissions
+- Brand isolation
+
+Specificity does not create unlimited authority.
+
+---
+
+## 4.5 BRAND PRECEDENCE
+
+Brand policy applies only after brand_id has been established when brand context is required.
+
+A brand may define:
+
+- Product access
+- Customer-facing price
+- Approved promotions
+- Commercial presentation
+- Payment presentation
+- Customer-facing cancellation terms when authorized
+- Contact identity
+- Sales behavior
+
+Brand policy may not rewrite canonical operational truth.
+
+Example:
+
+A value brand may sell a canonical excursion at an approved lower retail price.
+
+It may not change:
+
+- Actual boat capacity
+- Safety requirements
+- Real availability
+- Supplier restrictions
+
+unless the canonical operational source itself changes.
+
+---
+
+## 4.6 ACCOUNT AND PARTNER PRECEDENCE
+
+Approved account-specific commercial terms may override a general brand or B2B default when explicitly authorized.
+
+Examples:
+
+GENERAL B2B DEPOSIT
+→ 40%
+
+APPROVED PARTNER ACCOUNT CONTRACT
+→ different authorized deposit rule
+
+Use the account-specific rule for that verified partner.
+
+Never infer special terms merely because the actor claims to be an agency or reseller.
+
+---
+
+## 4.7 HUMAN OVERRIDE
+
+An authorized Perico human may approve a transaction-specific exception within their permission scope.
+
+A human override must not automatically become:
+
+- Product policy
+- Brand policy
+- Partner policy
+- Global policy
+- Future precedent
+
+Where practical preserve:
+
+override_authority
+
+override_reason
+
+transaction_id
+
+timestamp
+
+---
+
+## 4.8 EXTERNAL SYSTEM AUTHORITY
+
+External systems may provide authoritative transaction facts within an authorized integration scope.
+
+Examples:
+
+A payment processor may authoritatively report whether its transaction was captured.
+
+A booking system may authoritatively report whether its reservation exists.
+
+An inventory system may authoritatively report inventory it controls.
+
+However:
+
+PAYMENT CAPTURED
+does not automatically mean
+BOOKING CONFIRMED.
+
+BOOKING RECORD CREATED
+does not automatically mean
+OPERATIONALLY ACCEPTED.
+
+API SUCCESS
+does not automatically mean
+BUSINESS SUCCESS.
+
+External systems provide facts and capabilities.
+
+Perico business engines interpret those facts according to approved business rules.
+
+---
+
+## 4.9 HISTORICAL AND NON-AUTHORITATIVE SOURCES
+
+The following must not silently override current approved Perico information:
+
+- Historical catalogs
+- Deprecated files
+- Old customer quotes
+- Old screenshots
+- Supplier promotions
+- Competitor information
+- OTA information
+- Marketplace listings
+- Search-engine results
+- Unverified staff notes
+- Previous conversation assumptions
+
+These may be useful as research evidence.
+
+They are not automatically current operational authority.
+
+---
+
+## 4.10 CONFLICT RESOLUTION
+
+When two apparently authoritative sources conflict:
+
+1. Identify the decision domain.
+2. Apply Global Guardrails.
+3. Identify the domain authority.
+4. Apply the most specific authorized rule.
+5. Check brand/account/partner context when applicable.
+6. Check freshness.
+7. Do not silently choose the more convenient value.
+
+If the conflict remains unresolved:
 
 DATA CONFLICT
 → PERICO HUMAN ASSISTANCE
