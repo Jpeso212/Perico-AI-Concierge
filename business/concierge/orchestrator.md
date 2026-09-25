@@ -49,23 +49,209 @@ ONE PERICO SOURCE OF TRUTH.
 
 ---
 
-# 2. CORE ENGINES
+# 2. CORE ARCHITECTURE LAYERS AND ENGINES
 
-The Orchestrator coordinates the following engines:
+The Orchestrator coordinates the following authoritative architecture components:
+
+## Global Authority
 
 1. global-rules.md
-2. language-engine.md
-3. conversation-engine.md
-4. product-matching-engine.md
-5. quote-engine.md
-6. availability-engine.md
-7. booking-engine.md
-8. payment-confirmation-engine.md
-9. human-handoff-engine.md
 
-Each engine has a specialized responsibility.
+Defines the highest-level rules that apply across the entire Perico AI Platform.
 
-The Orchestrator must not duplicate detailed business logic already maintained by these engines.
+---
+
+## Brand and Commercial Context
+
+2. brand-commercial-policy-layer.md
+
+Defines:
+
+- brand_id
+- Brand isolation
+- Brand-specific product access
+- Brand offers
+- Brand-specific commercial policy
+- Brand pricing context
+- Brand payment presentation
+- Brand channel authorization
+- Brand transaction persistence
+
+Brand context must be established before brand-sensitive commercial execution.
+
+---
+
+## Identity and Permissions
+
+3. identity-permissions-engine.md
+
+Determines:
+
+- Actor identity
+- Verification level
+- Permissions
+- Data visibility
+- Staff authorization
+- Partner authorization
+- Virtual agent authorization
+- Protected information access
+
+Identity and permission decisions must occur before protected commercial or transactional actions.
+
+---
+
+## Communication and Language
+
+4. language-engine.md
+5. channel-layer.md
+6. conversation-engine.md
+
+These components control:
+
+- Customer language
+- Channel transport
+- Conversation behavior
+- Context continuity
+- Message presentation
+- Customer intent
+
+Channel and language must never redefine business truth.
+
+---
+
+## Product Discovery and Commercial Calculation
+
+7. product-matching-engine.md
+8. quote-engine.md
+
+These components control:
+
+- Product discovery
+- Customer-product matching
+- Pricing model selection
+- Approved price calculation
+- Commercial quote generation
+
+Brand and actor context must be available when they materially affect product access or price.
+
+---
+
+## Availability and Booking
+
+9. availability-engine.md
+10. booking-engine.md
+
+These components control:
+
+- Schedule eligibility
+- Live availability
+- Reservation requirements
+- Booking data
+- Reservation lifecycle
+- Operational booking state
+
+Availability and booking remain separate from payment and final confirmation.
+
+---
+
+## Payment
+
+11. payment-confirmation-engine.md
+12. payment-router.md
+
+payment-confirmation-engine.md determines:
+
+- What payment is required
+- Deposit/full-payment requirements
+- Payment verification
+- Balance
+- Refund-policy logic
+- Payment-related confirmation eligibility
+
+payment-router.md determines:
+
+- Which approved payment method may be used
+- Which approved payment provider may execute it
+- Routing
+- Provider fallback
+- Transaction protection
+
+Payment policy and payment execution must remain separate.
+
+---
+
+## Partners and Distribution
+
+13. partner-reseller-engine.md
+14. virtual-reseller-agent-layer.md
+
+These components control:
+
+- Partner relationships
+- Reseller commercial profiles
+- Partner permissions
+- Commission structures
+- Product access
+- Virtual sales-agent specialization
+- Sales attribution
+- Agent scope
+
+Virtual agents and partners do not create independent business truth.
+
+---
+
+## Integrations
+
+15. integration-registry.md
+
+Defines the standardized adapter and integration architecture for:
+
+- Booking systems
+- Inventory systems
+- Payment providers
+- Messaging platforms
+- CRM systems
+- Partner systems
+- Supplier integrations
+- Future external systems
+
+External integrations provide capabilities.
+
+They do not define Perico business policy.
+
+---
+
+## Human Assistance
+
+16. human-handoff-engine.md
+
+Controls escalation from any stage when automation cannot safely continue.
+
+Human Handoff preserves:
+
+- brand_id
+- Customer context
+- Product context
+- Commercial context
+- Booking context
+- Payment context
+- Partner context
+- Agent context
+
+The customer remains inside the active Perico-controlled sales environment.
+
+---
+
+The Orchestrator coordinates these components.
+
+It must not duplicate detailed business logic already maintained by the authoritative specialized component.
+
+When two components appear to overlap, the component explicitly assigned authority for that decision must control the result.
+
+If authority cannot be established safely:
+
+DATA CONFLICT
+→ PERICO HUMAN ASSISTANCE
 
 ---
 
@@ -243,16 +429,51 @@ Data visibility must be determined before generating the response.
 The standard conceptual flow is:
 
 CUSTOMER MESSAGE
+→ BRAND CONTEXT
+→ CHANNEL CONTEXT
 → LANGUAGE
 → CONVERSATION / INTENT
-→ ACTOR / PERMISSION CONTEXT WHEN REQUIRED
+→ ACTOR / IDENTITY / PERMISSION CONTEXT WHEN REQUIRED
+→ VIRTUAL AGENT CONTEXT WHEN APPLICABLE
 → PRODUCT MATCHING
+→ BRAND COMMERCIAL CONTEXT
 → QUOTE
 → AVAILABILITY
 → BOOKING
-→ PAYMENT
+→ PAYMENT REQUIREMENT
+→ PAYMENT ROUTING
+→ PAYMENT VERIFICATION
 → OPERATIONAL ACCEPTANCE
 → CONFIRMATION
+The transaction should preserve, when applicable:
+
+brand_id
+
+channel_id
+
+customer_id
+
+actor_type
+
+partner_id
+
+agent_id
+
+product_id
+
+brand_offer_id
+
+quote_id
+
+booking_id
+
+payment_id
+
+booking_integration_id
+
+payment_provider
+
+These identifiers represent different architectural concepts and must not be treated as interchangeable.
 
 Not every conversation requires every stage.
 
