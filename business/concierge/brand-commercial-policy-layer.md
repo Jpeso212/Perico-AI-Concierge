@@ -644,21 +644,47 @@ Any brand-specific rule must be explicit.
 
 # 28. POLICY PRECEDENCE
 
-Commercial policy precedence should be explicit.
+Commercial policy precedence must follow specificity and domain authority.
 
-Recommended order:
+Canonical order:
 
-PRODUCT-SPECIFIC APPROVED RULE
-→ BRAND + ACCOUNT-SPECIFIC APPROVED RULE
+TRANSACTION-SPECIFIC AUTHORIZED OVERRIDE
+→ PRODUCT-SPECIFIC APPROVED RULE
+→ BRAND + ACCOUNT/PARTNER-SPECIFIC APPROVED RULE
+→ ACCOUNT/PARTNER-SPECIFIC APPROVED RULE
 → BRAND-SPECIFIC APPROVED RULE
-→ APPROVED PARTNER/ACCOUNT RULE
-→ APPROVED PLATFORM GLOBAL RULE
+→ APPROVED B2B/PARTNER-CLASS RULE
+→ APPROVED PLATFORM/GLOBAL RULE
 → HUMAN ASSISTANCE
 
-More specific approved rules override more general rules.
+A more specific approved rule may override a more general rule only within the domain where that override is authorized.
+
+Examples:
+
+An approved Brand B + Agency X payment agreement may override Brand B's general payment rule.
+
+A Brand B general payment rule may override the platform's general payment default.
+
+A generic B2B rule must not override an approved account-specific agreement.
+
+Brand specificity does not override product operational truth, Global Guardrails, identity permissions, payment security or other unrelated domain authorities.
+
+Specialized engines remain authoritative for their assigned domains.
+
+For example:
+
+- Payment policy → payment-confirmation-engine.md
+- Partner/account relationship → partner-reseller-engine.md
+- Quote calculation → quote-engine.md
+- Cancellation policy → applicable product/account/brand policy according to approved precedence
+- Global Guardrails → global-rules.md
 
 No engine may invent missing policy.
 
+When two apparently applicable rules have equal authority or unresolved conflict:
+
+DATA CONFLICT
+→ PERICO HUMAN ASSISTANCE
 ---
 
 # 29. PRICING CONTEXT
