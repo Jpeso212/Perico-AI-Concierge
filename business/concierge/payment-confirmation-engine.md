@@ -1024,22 +1024,17 @@ The customer's approved selling price is what should normally be communicated.
 
 # 52. MULTILINGUAL PAYMENT COMMUNICATION
 
-Payment and confirmation communication should continue in the customer's established language whenever possible.
+All language detection, supported-language definitions, language switching, translation behavior and multilingual communication are controlled by:
 
-Primary supported languages include:
+`language-engine.md`
 
-- English
-- Spanish
-- French
-- Portuguese
-- German
-- Italian
-- Dutch
-- Russian
+The Payment & Confirmation Engine must not maintain an independent list of supported languages.
 
-Additional languages may be used when the Concierge can communicate reliably.
+Payment and confirmation communication should continue in the customer's established language whenever reliable communication is possible.
 
-Translation must not change:
+Language changes communication only.
+
+It must not change:
 
 - Payment amount
 - Currency
@@ -1048,12 +1043,16 @@ Translation must not change:
 - Deadline
 - Processing charge
 - Cancellation rule
-- Refund condition
-- Reservation status
+- Refund eligibility
+- Payment status
+- Booking status
+- Confirmation requirements
 
-If a critical financial condition cannot be communicated reliably:
+If language uncertainty could materially affect payment, cancellation, refund or confirmation:
 
-PERICO HUMAN ASSISTANCE.
+DO NOT GUESS.
+
+Use the Language Engine or Perico Human Assistance.
 
 ---
 
