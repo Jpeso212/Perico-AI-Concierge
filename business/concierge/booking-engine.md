@@ -836,7 +836,17 @@ The Orchestrator coordinates both.
 
 Do not collapse booking state and payment state into one generic status.
 
-# 31. READY FOR PAYMENT
+# 31. PAYMENT READINESS COORDINATION
+
+Sections 31–35 describe how the Booking Engine coordinates with the Payment & Confirmation Engine.
+
+They do not create booking states.
+
+All payment-state names and transitions remain authoritative only in:
+
+`payment-confirmation-engine.md`
+
+The Booking Engine may read payment status when determining whether a reservation can advance, but it must not independently create, redefine or transition canonical payment states.
 
 Use READY FOR PAYMENT only when:
 
@@ -850,7 +860,7 @@ This does not mean payment has been received.
 
 ---
 
-# 32. PAYMENT PENDING
+# 32.  PAYMENT-PENDING COORDINATION
 
 Once the customer has been given the approved payment process but required payment has not yet been verified:
 
@@ -870,7 +880,7 @@ unless the applicable booking rules actually authorize that status.
 
 ---
 
-# 33. PAYMENT RECEIVED
+# 33. PAYMENT VERIFICATION COORDINATION
 
 Payment status must come from an approved payment source or Perico confirmation.
 
@@ -884,7 +894,7 @@ Record the customer's statement if useful, then verify through the approved paym
 
 ---
 
-# 34. PARTIAL PAYMENT
+# 34. PARTIAL-PAYMENT COORDINATION
 
 When the applicable policy allows a deposit:
 
@@ -902,7 +912,7 @@ Follow the applicable Perico payment policy.
 
 ---
 
-# 35. FULL PAYMENT
+# 35. FULL-PAYMENT COORDINATION
 
 Full payment does not automatically mean operational confirmation.
 
