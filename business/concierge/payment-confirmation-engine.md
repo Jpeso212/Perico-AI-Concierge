@@ -812,17 +812,39 @@ Never present a pending special request as guaranteed.
 
 # 42. CANCELLATION POLICY
 
-Before processing a cancellation/refund request, use the applicable product-specific cancellation policy.
+Before processing a cancellation or refund request, determine the applicable approved cancellation policy using the platform authority hierarchy.
 
-If no product-specific override exists, use the approved Perico general cancellation policy.
+Cancellation policy must follow:
+
+TRANSACTION-SPECIFIC AUTHORIZED OVERRIDE
+→ PRODUCT-SPECIFIC APPROVED POLICY
+→ BRAND + ACCOUNT/PARTNER-SPECIFIC APPROVED POLICY
+→ ACCOUNT/PARTNER-SPECIFIC APPROVED POLICY
+→ BRAND-SPECIFIC APPROVED POLICY
+→ APPROVED B2B/PARTNER-CLASS POLICY
+→ APPROVED PERICO PLATFORM GENERAL FALLBACK
+→ HUMAN ASSISTANCE
+
+A more specific policy may override a more general policy only when it is authorized for that transaction and cancellation domain.
 
 Do not invent refund eligibility.
+
+Do not combine conflicting cancellation policies.
+
+If two apparently applicable policies have equal authority or the applicable policy cannot be established safely:
+
+DATA CONFLICT
+→ PERICO HUMAN ASSISTANCE
 
 ---
 
 # 43. GENERAL PERICO CANCELLATION FALLBACK
 
-When no verified product-specific cancellation policy overrides it:
+The general Perico cancellation policy is a fallback.
+
+It applies only when no more specific approved cancellation policy applies to the transaction.
+
+Current general fallback:
 
 More than 48 hours before the activity:
 100% of the applicable deposit refundable.
@@ -839,19 +861,63 @@ No refund.
 After activity begins:
 No refund.
 
-Operator safety cancellations follow the applicable weather/safety policy.
+Operator or safety cancellations:
+Follow the applicable product, weather, safety or operational policy.
+
+The general fallback must never silently override:
+
+- Product-specific policy
+- Brand-specific policy
+- Brand + account-specific policy
+- Account/partner-specific policy
+- Approved B2B/partner-class policy
+- Authorized transaction-specific exception
 
 ---
 
-# 44. PRODUCT-SPECIFIC CANCELLATION OVERRIDE
+# 44. CANCELLATION POLICY RESOLUTION
+
+Cancellation policy and refund execution are separate decisions.
+
+First determine:
+
+1. Active brand.
+2. Product or service.
+3. Customer/actor type.
+4. Partner/account when applicable.
+5. Applicable commercial agreement.
+6. Applicable cancellation policy.
+7. Timing of cancellation.
+8. Payment already received.
+9. Amount potentially refundable.
+10. Whether operational or safety exceptions apply.
+
+Then determine refund eligibility.
+
+The Payment Router may execute an approved refund.
+
+It does not decide whether the customer is entitled to the refund.
 
 If a verified product master establishes a different cancellation policy:
 
 PRODUCT-SPECIFIC POLICY
 
-overrides the general fallback.
+may override a more general brand, account-class or platform fallback according to the approved authority hierarchy.
 
-Do not merge conflicting policies.
+If an approved account or brand policy is more specific than a general platform fallback:
+
+use the applicable more specific approved policy.
+
+Never merge percentages or conditions from different cancellation policies.
+
+Never select whichever policy produces the easiest operational result.
+
+Use the authoritative applicable policy.
+
+If authority remains unresolved:
+
+REFUND REVIEW
+→ PERICO HUMAN ASSISTANCE
 
 ---
 
