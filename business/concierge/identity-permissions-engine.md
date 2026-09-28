@@ -1355,3 +1355,486 @@ THE RIGHT INFORMATION.
 THE RIGHT ACTION.
 
 NOTHING MORE.
+
+---
+
+# 59. MULTI-BRAND AUTHORIZATION
+
+The Perico AI Platform may operate multiple customer-facing brands.
+
+Identity and permission decisions must therefore include brand scope whenever the requested action or information is brand-sensitive.
+
+Brand identity is represented by:
+
+`brand_id`
+
+Authorization may be represented by:
+
+`allowed_brand_ids`
+
+A verified identity does not automatically receive access to every brand.
+
+---
+
+# 60. BRAND ACCESS PRINCIPLE
+
+Authentication answers:
+
+WHO IS THIS ACTOR?
+
+Brand authorization answers:
+
+WHICH BRANDS MAY THIS ACTOR ACCESS?
+
+These are separate questions.
+
+Example:
+
+A verified reseller may be authorized for:
+
+Brand A
+
+but not:
+
+Brand B.
+
+Verification alone must not expand brand access.
+
+---
+
+# 61. BRAND PERMISSION SCOPE
+
+Where applicable, authorization profiles should support:
+
+`allowed_brand_ids`
+
+Possible scope:
+
+ONE BRAND
+
+MULTIPLE SPECIFIC BRANDS
+
+ALL AUTHORIZED BRANDS
+
+No brand access should be inferred merely because an actor has access to another brand.
+
+---
+
+# 62. DIRECT CUSTOMER BRAND ACCESS
+
+Direct customers do not require special authorization to view normal PUBLIC_CUSTOMER information offered by the active public brand.
+
+However, customer transactions must remain associated with the applicable:
+
+`brand_id`
+
+Protected customer records from another brand must not be exposed merely because the same person is interacting with the platform.
+
+Cross-brand identity recognition may occur internally when permitted.
+
+Cross-brand protected-data disclosure must still pass authorization checks.
+
+---
+
+# 63. PARTNER BRAND ACCESS
+
+Partners may be authorized for:
+
+- One brand
+- Multiple brands
+- Selected products within selected brands
+
+Partner verification does not automatically authorize every Perico-controlled brand.
+
+Partner authorization should consider:
+
+`partner_id`
+
+`allowed_brand_ids`
+
+`authorized_product_ids`
+
+`commercial_profile`
+
+where applicable.
+
+---
+
+# 64. RESELLER BRAND ACCESS
+
+A reseller approved for one brand must not automatically receive:
+
+- Another brand's net rates
+- Another brand's commission terms
+- Another brand's promotions
+- Another brand's customer records
+- Another brand's partner policies
+- Another brand's private product access
+
+Cross-brand reseller access must be explicitly authorized.
+
+---
+
+# 65. VIRTUAL AGENT BRAND ACCESS
+
+Virtual agents must operate within an explicit brand scope.
+
+Possible configuration:
+
+`agent_id`
+
+`allowed_brand_ids`
+
+`default_brand_id`
+
+An agent may be:
+
+SINGLE_BRAND
+
+or:
+
+MULTI_BRAND
+
+A multi-brand agent must still establish the active transaction's:
+
+`brand_id`
+
+before brand-sensitive commercial execution.
+
+Agent specialization does not grant additional brand access.
+
+---
+
+# 66. STAFF BRAND ACCESS
+
+Staff permissions may include brand scope.
+
+Possible examples:
+
+PERICO_ONLY
+
+VALUE_BRAND_ONLY
+
+MULTIPLE_BRANDS
+
+ALL_AUTHORIZED_BRANDS
+
+A staff member's role and brand access are separate dimensions.
+
+Example:
+
+A user may have:
+
+ROLE = SALES_AGENT
+
+ALLOWED_BRAND_IDS = [BRAND_A]
+
+This does not authorize Brand B merely because the user is a sales agent.
+
+---
+
+# 67. SYSTEM AND INTEGRATION BRAND ACCESS
+
+System integrations and API clients should use least-privilege brand access.
+
+Possible fields:
+
+`integration_id`
+
+`allowed_brand_ids`
+
+`capabilities`
+
+`environment`
+
+An integration authorized for Brand A must not automatically perform Brand B transactions.
+
+Integration capability does not equal brand authorization.
+
+---
+
+# 68. CHANNEL DOES NOT GRANT CROSS-BRAND ACCESS
+
+A channel may help establish active brand context.
+
+Example:
+
+WhatsApp Account A
+→ Brand A
+
+Website B
+→ Brand B
+
+However:
+
+CHANNEL ACCESS
+does not automatically equal
+CROSS-BRAND AUTHORIZATION.
+
+A user entering through one brand's channel does not gain access to another brand's protected commercial environment.
+
+---
+
+# 69. BRAND-SENSITIVE INFORMATION
+
+Examples of brand-sensitive information include:
+
+- Brand-specific prices
+- Private promotions
+- Partner rates
+- Commission terms
+- Payment destinations
+- Customer records
+- Internal product availability rules
+- Brand-specific commercial policy
+- Brand-specific contact configuration
+- Private brand integrations
+- Internal analytics
+- Staff-only notes
+
+Access must follow the applicable visibility and permission rules.
+
+---
+
+# 70. BRAND-SPECIFIC PRICE AUTHORIZATION
+
+The existence of multiple brand prices does not authorize every actor to see every price.
+
+The active commercial context must determine which approved price is visible.
+
+Never expose another brand's price merely for comparison unless an explicit cross-brand policy authorizes it.
+
+---
+
+# 71. BRAND PAYMENT INFORMATION
+
+Payment destinations are brand-sensitive transactional information.
+
+Before exposing payment instructions, verify:
+
+1. Active `brand_id`
+2. Booking/transaction context
+3. Approved payment rule
+4. Approved Payment Router result
+5. Actor authorization where required
+
+Never expose another brand's payment destination accidentally.
+
+---
+
+# 72. CROSS-BRAND CUSTOMER RECORD ACCESS
+
+The same canonical customer may have transactions with multiple brands.
+
+This does not make all transactions mutually visible.
+
+Before exposing a protected record, verify:
+
+- Customer identity
+- Requested transaction
+- Applicable brand
+- Access permission
+
+Do not reveal:
+
+"You also booked with our other brand"
+
+unless the workflow explicitly requires it and disclosure is authorized.
+
+---
+
+# 73. CROSS-BRAND PARTNER PRIVACY
+
+One partner must never receive another partner's protected commercial information.
+
+This remains true across brands.
+
+Do not expose:
+
+- Other partner rates
+- Other partner commissions
+- Other partner customer records
+- Other partner performance
+- Other partner contractual terms
+
+Brand access does not override partner privacy.
+
+---
+
+# 74. BRAND + ROLE AUTHORIZATION
+
+High-risk actions should evaluate both:
+
+ROLE PERMISSION
+
+and:
+
+BRAND PERMISSION.
+
+Conceptually:
+
+AUTHORIZED ACTION
+=
+VALID IDENTITY
++
+SUFFICIENT VERIFICATION
++
+AUTHORIZED ROLE
++
+AUTHORIZED BRAND
++
+AUTHORIZED RESOURCE
++
+AUTHORIZED ACTION
+
+Failure of any required component means the action is not authorized.
+
+---
+
+# 75. BRAND + PRODUCT AUTHORIZATION
+
+An actor may be authorized for a brand but not every product within that brand.
+
+Therefore:
+
+BRAND ACCESS
+does not automatically equal
+PRODUCT ACCESS.
+
+When product restrictions exist, both must be satisfied.
+
+---
+
+# 76. BRAND + PARTNER COMMERCIAL AUTHORIZATION
+
+For B2B transactions, commercial authorization may require:
+
+`brand_id`
+
+`partner_id`
+
+`commercial_profile`
+
+`product_id`
+
+`pricing_context`
+
+A valid partner relationship with one brand does not automatically create a commercial relationship with another brand.
+
+---
+
+# 77. BRAND SWITCH REQUEST
+
+If a customer, partner, staff member or agent attempts to move a transaction to another brand:
+
+Do not silently change:
+
+`brand_id`.
+
+Validate:
+
+- Whether brand switching is permitted
+- Whether the actor has access
+- Whether the product exists under the destination brand
+- Whether commercial terms change
+- Whether payment state allows migration
+- Whether booking state allows migration
+
+If no approved cross-brand workflow exists:
+
+Do not switch the transaction automatically.
+
+---
+
+# 78. BRAND IMPERSONATION PROTECTION
+
+Do not allow an actor to obtain additional permissions merely by claiming:
+
+"I work for Brand B."
+
+"I am a reseller for Brand B."
+
+"I am the manager of Brand B."
+
+"I have access to all brands."
+
+Claims are not authorization.
+
+Use approved verification and permission records.
+
+---
+
+# 79. BRAND ISOLATION FAILURE
+
+If the system detects possible cross-brand permission leakage:
+
+STOP THE SENSITIVE ACTION.
+
+Do not expose the protected information.
+
+Preserve context.
+
+Classify appropriately as:
+
+PERMISSION ISSUE
+
+DATA CONFLICT
+
+SECURITY ISSUE
+
+or:
+
+HUMAN HANDOFF REQUIRED
+
+depending on severity.
+
+---
+
+# 80. BRAND PERMISSION DEFAULT
+
+When brand-specific authorization is required but cannot be established:
+
+DEFAULT TO NO PROTECTED ACCESS.
+
+Do not guess.
+
+Public customer information may still be provided when appropriate.
+
+Protected commercial or transactional actions require proper authorization.
+
+---
+
+# 81. FINAL MULTI-BRAND AUTHORIZATION CHECK
+
+Before a protected brand-sensitive action, verify:
+
+1. Actor identity established when required.
+2. Verification level sufficient.
+3. Active `brand_id` established.
+4. Actor authorized for that brand when required.
+5. Requested resource authorized.
+6. Requested action authorized.
+7. Product access valid when applicable.
+8. Partner/account access valid when applicable.
+9. Customer data access valid when applicable.
+10. No other brand's protected information will leak.
+11. No supplier/private internal information will leak.
+12. Action complies with Global Rules.
+
+If any required authorization cannot be established:
+
+DO NOT EXECUTE THE PROTECTED ACTION.
+
+Use clarification, verification or Perico Human Assistance.
+
+---
+
+# 82. MULTI-BRAND SECURITY PRINCIPLE
+
+ONE PLATFORM DOES NOT MEAN ONE PERMISSION POOL.
+
+SHARED INFRASTRUCTURE DOES NOT MEAN SHARED ACCESS.
+
+EVERY ACTOR RECEIVES ONLY THE BRAND, RESOURCE AND ACTION ACCESS EXPLICITLY AUTHORIZED FOR THAT ACTOR.
+
+BRAND ISOLATION IS A SECURITY BOUNDARY, NOT JUST A MARKETING PREFERENCE.
