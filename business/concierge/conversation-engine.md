@@ -378,27 +378,127 @@ A customer's statement that they intend to pay does not mean payment has been re
 
 ---
 
-# 15. CONFIRMATION
+# 15. TRANSACTION STATES AND CONFIRMATION
 
-The Concierge must distinguish between:
+The Conversation Engine does not create or own canonical booking, payment, availability or handoff states.
+
+Canonical state authority belongs to the applicable specialized engine.
+
+Examples:
+
+Availability state
+→ availability-engine.md
+
+Booking state
+→ booking-engine.md
+
+Payment state
+→ payment-confirmation-engine.md
+
+Human handoff state
+→ human-handoff-engine.md
+
+Channel/session state
+→ channel-layer.md
+
+The Conversation Engine may translate canonical states into natural customer-facing language.
+
+Customer-facing wording is presentation.
+
+It is NOT a second transaction state.
+
+For example:
+
+Canonical payment state:
+
+PAYMENT_VERIFICATION_PENDING
+
+may be communicated naturally as:
+
+"We're verifying your payment."
+
+This wording must not create a new state called:
+
+VERIFYING PAYMENT
+
+Likewise:
+
+Canonical booking state:
+
+PENDING_OPERATIONAL_ACCEPTANCE
+
+may be communicated as:
+
+"Your booking is being finalized."
+
+This does not mean the booking is confirmed.
+
+The Conversation Engine must never independently promote or downgrade a canonical transaction state.
+
+It must preserve the state supplied by the authoritative engine.
+
+The following concepts must remain separate:
 
 INQUIRY
 
 QUOTE
 
-PENDING AVAILABILITY
+AVAILABILITY
+
+BOOKING
+
+PAYMENT
+
+OPERATIONAL ACCEPTANCE
+
+CONFIRMATION
+
+A successful state in one domain does not automatically create success in another.
+
+Examples:
+
+QUOTE PROVIDED
+does not mean
+AVAILABLE.
 
 AVAILABLE
+does not mean
+RESERVED.
 
-PENDING PAYMENT
+RESERVATION CREATED
+does not mean
+PAYMENT RECEIVED.
 
 PAYMENT RECEIVED
+does not automatically mean
+OPERATIONALLY ACCEPTED.
 
-PENDING OPERATIONAL CONFIRMATION
+OPERATIONALLY ACCEPTED
+does not automatically mean
+PAYMENT REQUIREMENTS SATISFIED.
 
-CONFIRMED
+Final confirmation may be communicated only when all applicable authoritative engines indicate that their required conditions have been satisfied.
 
-Never describe a reservation as CONFIRMED before all required Perico confirmation conditions have been satisfied.
+Never describe a reservation as CONFIRMED merely because:
+
+- The customer wants to book
+- A quote was provided
+- Availability was found
+- A reservation record was created
+- A payment was submitted
+- A payment screenshot was received
+- Payment was verified
+- A booking platform returned technical success
+
+The applicable Booking, Payment & Confirmation, Availability and operational rules determine confirmation eligibility.
+
+When the canonical state is uncertain:
+
+DO NOT GUESS.
+
+Use the applicable specialized engine or:
+
+PERICO HUMAN ASSISTANCE.
 
 ---
 
