@@ -623,17 +623,41 @@ when not established.
 
 # 28. PAYMENT RULE PRECEDENCE
 
+Partner payment policy must follow the platform's canonical commercial-policy hierarchy.
+
 For partner transactions:
 
-PRODUCT-SPECIFIC APPROVED PAYMENT RULE
-→ ACCOUNT-SPECIFIC APPROVED COMMERCIAL RULE
-→ APPROVED B2B COMMERCIAL RULE
-→ APPROVED PERICO GLOBAL RULE
+TRANSACTION-SPECIFIC AUTHORIZED PAYMENT OVERRIDE
+→ PRODUCT-SPECIFIC APPROVED PAYMENT RULE
+→ BRAND + ACCOUNT/PARTNER-SPECIFIC APPROVED PAYMENT RULE
+→ ACCOUNT/PARTNER-SPECIFIC APPROVED COMMERCIAL RULE
+→ BRAND-SPECIFIC APPROVED PAYMENT RULE
+→ APPROVED B2B/PARTNER-CLASS PAYMENT RULE
+→ APPROVED PLATFORM/GLOBAL PAYMENT RULE
 → PERICO HUMAN ASSISTANCE
 
-Payment calculations and payment states remain controlled by:
+A more specific approved payment rule may override a more general rule only within the payment-policy domain.
+
+Brand context must be established when the applicable commercial relationship depends on brand.
+
+A partner approved for multiple brands must not automatically receive identical payment terms across those brands.
+
+Payment calculations and canonical payment states remain controlled by:
 
 payment-confirmation-engine.md
+
+Payment-method and provider selection remain controlled by:
+
+payment-router.md
+
+Partner & Reseller Engine determines which approved partner/account commercial context applies.
+
+It does not independently create payment amounts, payment states or payment-provider rules.
+
+When no authoritative payment rule can be resolved:
+
+PAYMENT TERMS PENDING
+→ PERICO HUMAN ASSISTANCE
 
 ---
 
