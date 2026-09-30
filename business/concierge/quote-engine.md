@@ -941,3 +941,211 @@ Accuracy protects:
 The Quote Engine exists to calculate what is known accurately and escalate what is not known.
 
 Never fill missing pricing information with assumptions.
+---
+
+# MULTI-BRAND QUOTE CONTEXT
+
+The Quote Engine operates within the active brand context established by the Orchestrator and Brand & Commercial Policy Layer.
+
+When brand context applies, a quote should preserve or receive:
+
+- brand_id
+- brand_offer_id when applicable
+- product_id
+- actor_type
+- customer_id when available
+- partner_id when applicable
+- pricing_profile
+- applicable approved promotion
+- currency
+- participant or configuration variables required for pricing
+
+The Quote Engine must not assume that the canonical product price is automatically the customer-facing price for every brand.
+
+A canonical operational product may support multiple approved Brand Offers.
+
+Conceptually:
+
+CANONICAL PRODUCT
+→ ACTIVE BRAND
+→ ACTIVE BRAND OFFER
+→ APPLICABLE COMMERCIAL POLICY
+→ APPROVED PRICING RULE
+→ QUOTE CALCULATION
+
+When a brand-specific approved selling price exists:
+
+Use the applicable approved Brand Offer or brand pricing rule.
+
+When a brand explicitly inherits the canonical approved retail price:
+
+Use that inherited price according to the Brand & Commercial Policy Layer.
+
+Never infer price inheritance merely because two brands sell the same product.
+
+---
+
+## BRAND PRICE ISOLATION
+
+A quote for Brand A must not accidentally use:
+
+- Brand B price
+- Brand B promotion
+- Brand B package
+- Brand B discount
+- Brand B account terms
+
+The existence of a lower or higher price under another Perico-controlled brand does not authorize its use.
+
+Do not tell a customer:
+
+"Our other brand has this cheaper."
+
+unless an explicit approved cross-brand commercial policy authorizes that behavior.
+
+---
+
+## BRAND OFFER VALIDATION
+
+Before calculating a brand-sensitive quote, establish when applicable:
+
+1. Active brand_id.
+2. Brand is authorized to sell the product.
+3. Applicable brand_offer_id.
+4. Brand Offer is active.
+5. Correct pricing profile.
+6. Correct customer/actor context.
+7. Correct partner/account context when applicable.
+8. Correct participant or product configuration.
+9. Correct approved promotion, if any.
+10. Correct currency.
+
+If a required brand-sensitive pricing element cannot be established:
+
+DO NOT FALL BACK TO ANOTHER BRAND'S PRICE.
+
+Use:
+
+QUOTE REQUIRED
+→ PERICO HUMAN ASSISTANCE
+
+---
+
+## BRAND + ACCOUNT PRICING
+
+A verified customer, agency, reseller or partner may have approved account-specific commercial terms within a brand.
+
+Apply pricing according to the platform authority hierarchy.
+
+Conceptually:
+
+GLOBAL GUARDRAILS
+→ PRODUCT / TRANSFER AUTHORITY
+→ BRAND + ACCOUNT-SPECIFIC APPROVED RULE
+→ ACCOUNT-SPECIFIC APPROVED RULE
+→ BRAND-SPECIFIC APPROVED RULE
+→ APPROVED PARTNER / B2B RULE
+→ APPROVED GENERAL RULE
+→ HUMAN ASSISTANCE
+
+Specificity applies only within the domain where the rule is authorized.
+
+Never assume an account-specific price from another brand applies to the active brand.
+
+---
+
+## BRAND PROMOTIONS
+
+Brand promotions must be explicitly authorized for the active brand.
+
+A promotion from one brand must not automatically apply to another brand.
+
+Supplier direct-customer promotions remain excluded unless Perico explicitly establishes an applicable approved commercial rule.
+
+Never redirect the customer to a supplier website to obtain a promotional price.
+
+---
+
+## BRAND QUOTE PERSISTENCE
+
+Once a quote is generated, preserve when applicable:
+
+- quote_id
+- brand_id
+- brand_offer_id
+- product_id
+- pricing_profile
+- customer/actor context
+- partner_id
+- approved base price
+- approved supplements
+- approved add-ons
+- approved promotion
+- currency
+- calculated total
+- timestamp or applicable validity metadata when supported
+
+This prevents a later booking or payment workflow from silently recalculating the transaction under another brand.
+
+A quote moving into:
+
+AVAILABILITY
+
+BOOKING
+
+PAYMENT
+
+must retain its brand context.
+
+---
+
+## BRAND CHANGE AFTER QUOTE
+
+If the active brand legitimately changes before booking:
+
+Do not reuse the previous brand's quote automatically.
+
+Revalidate:
+
+PRODUCT ACCESS
+→ BRAND OFFER
+→ PRICE
+→ PROMOTION
+→ COMMERCIAL TERMS
+→ PAYMENT REQUIREMENT
+
+A brand change may require a new quote.
+
+Never silently convert one brand's quote into another brand's transaction.
+
+---
+
+## NON-NEGOTIABLE MULTI-BRAND QUOTE RULE
+
+SAME PRODUCT
+
+does not necessarily mean
+
+SAME BRAND OFFER.
+
+SAME SUPPLIER
+
+does not necessarily mean
+
+SAME SELLING PRICE.
+
+SAME CUSTOMER
+
+does not necessarily mean
+
+SAME COMMERCIAL TERMS ACROSS BRANDS.
+
+The Quote Engine calculates only from the approved commercial context of the active transaction.
+
+When brand pricing authority is uncertain:
+
+DO NOT GUESS.
+
+DO NOT BORROW ANOTHER BRAND'S PRICE.
+
+USE PERICO HUMAN ASSISTANCE.
