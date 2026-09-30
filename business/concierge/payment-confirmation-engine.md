@@ -508,9 +508,11 @@ Never fabricate payment verification.
 
 ---
 
-# 25. PAYMENT STATUS MODEL
+# 25. CANONICAL PAYMENT STATUS MODEL
 
-Recommended payment states:
+The Payment & Confirmation Engine owns the canonical payment lifecycle.
+
+The canonical payment states are:
 
 NOT REQUIRED YET
 
@@ -544,15 +546,37 @@ Use the state that accurately reflects the transaction.
 
 # 26. PAYMENT SUBMITTED VS RECEIVED
 
+# 26. PAYMENT SUBMITTED VS VERIFIED PAYMENT
+
 PAYMENT SUBMITTED means:
 
-The customer indicates they completed or attempted payment.
+The customer indicates that they completed or attempted payment, but the payment has not yet been verified through an approved source.
 
-PAYMENT RECEIVED means:
+Verified payment must be represented by the applicable canonical state:
 
-The payment has been verified.
+PARTIAL PAYMENT RECEIVED
 
-Never treat these states as identical.
+or
+
+FULL PAYMENT RECEIVED
+
+Do not create a separate generic canonical state called:
+
+PAYMENT RECEIVED
+
+A customer statement, screenshot, receipt image or payment attempt does not automatically establish verified payment.
+
+Never treat:
+
+PAYMENT SUBMITTED
+
+as equivalent to:
+
+PARTIAL PAYMENT RECEIVED
+
+or
+
+FULL PAYMENT RECEIVED.
 
 ---
 
