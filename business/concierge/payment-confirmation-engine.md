@@ -544,8 +544,6 @@ Use the state that accurately reflects the transaction.
 
 ---
 
-# 26. PAYMENT SUBMITTED VS RECEIVED
-
 # 26. PAYMENT SUBMITTED VS VERIFIED PAYMENT
 
 PAYMENT SUBMITTED means:
