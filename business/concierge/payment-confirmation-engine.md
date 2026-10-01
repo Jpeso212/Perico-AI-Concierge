@@ -632,11 +632,61 @@ If verified payments exceed the approved reservation balance:
 
 Do not automatically determine how the excess should be handled.
 
-Status:
+Do not create a new payment status solely because an overpayment occurred.
 
-PAYMENT REVIEW REQUIRED
+Preserve the applicable canonical payment status from Section 25.
 
-Route to Perico staff.
+Add an internal review condition when supported:
+
+OVERPAYMENT_REVIEW_REQUIRED
+
+This is a review flag or exception condition.
+
+It is NOT a canonical payment status.
+
+Route to:
+
+PERICO HUMAN ASSISTANCE
+
+The handoff should preserve:
+
+- Booking ID
+- Customer ID
+- Active brand
+- Approved reservation total
+- Verified amount received
+- Currency
+- Excess amount
+- Payment transaction ID when available
+- Current canonical payment status
+- Payment provider
+- Applicable partner/account when relevant
+
+Do not automatically:
+
+- Refund the excess
+- Apply it to another booking
+- Convert it to credit
+- Treat it as a tip
+- Change the booking total
+- Change the payment status
+- Change the booking status
+
+Any disposition of the excess requires an approved rule or authorized Perico decision.
+
+An overpayment does not by itself mean the reservation is:
+
+CONFIRMED
+
+CANCELLED
+
+REFUNDED
+
+or
+
+CREDITED.
+
+The Booking Engine and Payment & Confirmation Engine must continue to maintain their separate canonical states.
 
 ---
 
