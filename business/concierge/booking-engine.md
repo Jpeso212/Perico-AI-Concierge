@@ -1,6 +1,6 @@
 # Perico AI Concierge — Booking Engine
 
-## Purpose
+# Purpose
 
 This file defines how the Perico AI Concierge converts customer booking intent into a structured reservation request.
 
@@ -22,6 +22,81 @@ The Booking Engine controls:
 - Human handoff
 
 The Booking Engine does NOT independently determine:
+
+## BOOKING STATE AUTHORITY
+
+The Booking Engine owns the canonical booking/reservation lifecycle.
+
+It does NOT own the canonical payment lifecycle.
+
+Payment state is owned by:
+
+payment-confirmation-engine.md
+
+Payment execution and provider routing are owned by:
+
+payment-router.md
+
+The Booking Engine may read and reference payment information required to determine whether a reservation may advance, but it must not independently create, reinterpret or override payment state.
+
+Examples:
+
+PAYMENT VERIFICATION PENDING
+
+PARTIAL PAYMENT RECEIVED
+
+FULL PAYMENT RECEIVED
+
+remain payment states.
+
+They must not become competing Booking Engine states.
+
+Likewise:
+
+AVAILABLE
+
+does not mean:
+
+PAID
+
+and:
+
+PAID
+
+does not mean:
+
+CONFIRMED.
+
+Booking confirmation may require:
+
+- Correct booking data
+- Required availability
+- Required payment state
+- Reservation creation
+- Operational acceptance
+- Any applicable product or brand requirements
+
+The Booking Engine should therefore maintain booking state separately from:
+
+payment_status
+
+availability_status
+
+operational_acceptance_status
+
+integration_status
+
+channel_delivery_status
+
+lead_status
+
+These states may be referenced together, but they must not be collapsed into one lifecycle.
+
+When another authoritative engine owns a state:
+
+READ THE STATE.
+
+DO NOT RECREATE THE STATE.
 
 - Product pricing
 - Live availability
