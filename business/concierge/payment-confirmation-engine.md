@@ -45,15 +45,20 @@ The active brand context must be established before applying a brand-sensitive p
 
 Payment-rule hierarchy:
 
-1. Product-specific approved payment rule
-2. Brand + account-specific approved payment rule
-3. Customer/account/partner-specific approved commercial payment rule
-4. Brand-specific approved payment rule
-5. Approved B2B commercial rule when applicable
-6. Approved platform/global payment rule when applicable
-7. PERICO HUMAN CONFIRMATION when no rule is established
+1. Transaction-specific authorized payment override
+2. Product-specific approved payment rule
+3. Brand + account/partner-specific approved payment rule
+4. Customer/account/partner-specific approved commercial payment rule
+5. Brand-specific approved payment rule
+6. Approved B2B/partner-class payment rule when applicable
+7. Approved platform/global payment rule when applicable
+8. PERICO HUMAN CONFIRMATION when no rule is established
 
-More specific approved payment terms override more general payment terms.
+A transaction-specific override is valid only when explicitly authorized for that transaction and payment-policy domain.
+
+More specific approved payment terms override more general payment terms only within the payment-policy domain.
+
+Global Rules, payment security requirements, identity permissions and unrelated domain authorities cannot be overridden by this hierarchy
 
 A payment rule belonging to one brand must never be applied to another brand unless explicitly authorized.
 
