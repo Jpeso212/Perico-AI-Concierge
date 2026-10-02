@@ -55,15 +55,28 @@ payment-confirmation-engine.md
 
 The Payment Router must not override that engine.
 
-Applicable payment-rule precedence remains:
+The active `brand_id` must be established before routing a brand-sensitive payment.
 
-PRODUCT-SPECIFIC APPROVED PAYMENT RULE
-→ CUSTOMER/ACCOUNT-SPECIFIC APPROVED COMMERCIAL RULE
-→ APPROVED B2B COMMERCIAL RULE
-→ APPROVED PERICO GLOBAL RULE
+Applicable payment-rule precedence is:
+
+TRANSACTION-SPECIFIC AUTHORIZED PAYMENT OVERRIDE
+→ PRODUCT-SPECIFIC APPROVED PAYMENT RULE
+→ BRAND + ACCOUNT/PARTNER-SPECIFIC APPROVED PAYMENT RULE
+→ CUSTOMER/ACCOUNT/PARTNER-SPECIFIC APPROVED COMMERCIAL PAYMENT RULE
+→ BRAND-SPECIFIC APPROVED PAYMENT RULE
+→ APPROVED B2B COMMERCIAL RULE WHEN APPLICABLE
+→ APPROVED PLATFORM/GLOBAL PAYMENT RULE
 → PERICO HUMAN ASSISTANCE
 
+More specific approved payment terms override more general payment terms only within the payment-policy domain.
+
+A payment rule belonging to one brand must never be applied to another brand unless explicitly authorized.
+
 The Payment Router begins only after the applicable payment requirement has been established.
+
+The Payment Router determines HOW the approved payment may be collected.
+
+It does not determine WHAT the customer owes.
 
 ---
 
