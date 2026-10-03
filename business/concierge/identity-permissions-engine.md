@@ -81,6 +81,90 @@ Additional actor types may be introduced later without changing core business lo
 
 ---
 
+---
+
+# 3.1 BRAND-SCOPED AUTHORIZATION
+
+Identity verification does not automatically grant access to every brand operating on the Perico AI Platform.
+
+When brand context is applicable, permissions must also evaluate:
+
+brand_id
+
+Possible authorization fields may include:
+
+allowed_brand_ids
+
+default_brand_id
+
+brand_role
+
+brand_permission_profile
+
+cross_brand_access
+
+An actor may be:
+
+SINGLE_BRAND
+
+MULTI_BRAND
+
+or
+
+PLATFORM_WIDE
+
+only when explicitly authorized.
+
+Never infer multi-brand access merely because the actor is:
+
+- Perico staff
+- A travel agency
+- A reseller
+- A hotel concierge
+- A virtual agent
+- An integration
+- An API client
+- An administrator in another external system
+
+Before a protected brand-sensitive action, validate:
+
+ACTOR IDENTITY
+→ VERIFICATION LEVEL
+→ ROLE
+→ ACTIVE BRAND
+→ BRAND AUTHORIZATION
+→ ACTION PERMISSION
+
+Examples:
+
+A partner authorized for Brand A must not automatically receive Brand B commercial terms.
+
+A virtual agent authorized for Brand B must not automatically operate as Brand A.
+
+A staff member authorized for one brand must not automatically access another brand's protected customer or commercial information.
+
+An integration authorized for Brand A must not automatically execute Brand B transactions.
+
+Brand authorization controls access.
+
+It does not independently determine:
+
+- Product truth
+- Price
+- Availability
+- Booking state
+- Payment state
+- Cancellation policy
+
+Those remain controlled by their authoritative engines.
+
+If brand authorization is required but cannot be established:
+
+BRAND AUTHORIZATION REQUIRED
+→ PERICO HUMAN ASSISTANCE
+
+Never bypass brand permissions merely to complete a transaction.
+
 # 4. DEFAULT ACTOR PRINCIPLE
 
 Do not force identity verification for ordinary customer questions when identity is not necessary.
