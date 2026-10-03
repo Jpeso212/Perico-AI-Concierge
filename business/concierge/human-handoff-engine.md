@@ -504,9 +504,13 @@ Do not pretend the handoff occurred.
 
 ---
 
-# 22. HANDOFF STATUS MODEL
+# 22. CANONICAL HANDOFF STATUS MODEL
 
-Recommended internal states:
+The Human Handoff Engine is the authoritative owner of the canonical human-handoff lifecycle.
+
+All other Concierge engines, brands, channels, virtual agents, partner systems and integrations must map handoff terminology into these canonical states.
+
+Canonical handoff states:
 
 NOT REQUIRED
 
@@ -526,7 +530,45 @@ RETURNED TO AUTOMATION
 
 HANDOFF DELIVERY FAILED
 
-Use the actual state.
+These states describe the human-handoff lifecycle only.
+
+They must not be used as substitutes for:
+
+- Booking state
+- Payment state
+- Availability state
+- Channel/session state
+- Integration state
+
+A handoff state does not automatically change another transaction state.
+
+Examples:
+
+HANDOFF REQUIRED
+
+does not mean:
+
+BOOKING CANCELLED
+
+PAYMENT FAILED
+
+UNAVAILABLE
+
+Likewise:
+
+HUMAN RESPONDED
+
+does not mean:
+
+BOOKING CONFIRMED
+
+PAYMENT VERIFIED
+
+AVAILABILITY CONFIRMED
+
+The applicable authoritative engine must update its own canonical state when the underlying business condition changes.
+
+Use the actual canonical handoff state.
 
 ---
 
