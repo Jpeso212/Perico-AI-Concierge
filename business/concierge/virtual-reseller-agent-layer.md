@@ -1953,6 +1953,412 @@ When an agent is retired:
 
 Do not delete business records merely because an agent is retired.
 
+# 98.1 MULTI-BRAND AGENT ARCHITECTURE
+
+Virtual Reseller Agents must operate within explicit brand authorization.
+
+Every customer-facing agent transaction must preserve:
+
+brand_id
+
+An agent may be configured as:
+
+SINGLE_BRAND
+
+or:
+
+MULTI_BRAND
+
+A SINGLE_BRAND agent may operate only for its assigned brand.
+
+A MULTI_BRAND agent may operate for multiple explicitly authorized brands, but must establish the active transaction's brand before performing brand-sensitive commercial actions.
+
+Agent specialization does not create brand authorization.
+
+---
+
+# 98.2 AGENT BRAND PROFILE
+
+Virtual agent configuration should support:
+
+agent_id
+
+allowed_brand_ids
+
+default_brand_id
+
+agent_type
+
+authorized_channels
+
+authorized_products
+
+authorized_partner_types
+
+language_profile
+
+permission_profile
+
+handoff_profile
+
+status
+
+A default brand is a routing convenience.
+
+It does not authorize access to brands outside:
+
+allowed_brand_ids
+
+---
+
+# 98.3 ACTIVE BRAND CONTEXT
+
+Before an agent performs:
+
+- Product presentation
+- Quote
+- Promotion
+- Availability request
+- Booking
+- Payment presentation
+- Confirmation
+- Cancellation assistance
+- Refund assistance
+
+the active transaction should have an established:
+
+brand_id
+
+The agent must not guess the brand.
+
+Brand context may come from approved:
+
+- Channel mapping
+- Domain mapping
+- WhatsApp account
+- Social account
+- Partner relationship
+- Existing transaction
+- Staff routing
+- Orchestrator context
+
+If brand context cannot be established safely:
+
+BRAND CONTEXT REQUIRED
+→ PERICO HUMAN ASSISTANCE
+
+---
+
+# 98.4 BRAND ISOLATION
+
+A Virtual Reseller Agent representing Brand A must not expose Brand B:
+
+- Name
+- Pricing
+- Promotions
+- Contact information
+- Payment destination
+- Commercial terms
+- Customer records
+- Partner terms
+- Internal configuration
+
+unless an explicit approved cross-brand workflow authorizes it.
+
+The existence of another Perico-controlled brand does not authorize cross-brand disclosure.
+
+---
+
+# 98.5 AGENT ID VS BRAND ID
+
+Never confuse:
+
+agent_id
+
+with:
+
+brand_id
+
+An agent identifies the virtual seller.
+
+A brand identifies the customer-facing commercial environment.
+
+The same brand may use many agents.
+
+An explicitly authorized multi-brand agent may serve several brands.
+
+These remain separate architectural dimensions.
+
+---
+
+# 98.6 AGENT ID VS CHANNEL ID
+
+Never confuse:
+
+agent_id
+
+brand_id
+
+channel_id
+
+Example:
+
+brand_id = VALUE_BRAND
+
+agent_id = VALUE_DIRECT_AGENT
+
+channel_id = VALUE_WHATSAPP
+
+Each field describes a different part of the transaction.
+
+---
+
+# 98.7 BRAND-SPECIFIC SALES STYLE
+
+An agent may adapt its customer-facing style according to the active brand's approved profile.
+
+Examples:
+
+PREMIUM_HUMANIZED
+
+FAST_VALUE
+
+LUXURY_CONCIERGE
+
+B2B_PROFESSIONAL
+
+Style may change.
+
+Business truth may not.
+
+The agent must not create unsupported promises merely to match a brand personality.
+
+---
+
+# 98.8 BRAND-SPECIFIC PRODUCT ACCESS
+
+An agent may sell only products authorized for:
+
+the active brand
+
+AND
+
+the agent's permission scope.
+
+Therefore:
+
+PRODUCT EXISTS
+
+does not automatically mean:
+
+AGENT MAY SELL IT.
+
+The Product Matching Engine should receive the active brand and permission context before presenting commercial options.
+
+---
+
+# 98.9 BRAND-SPECIFIC PRICING
+
+Virtual agents do not determine brand prices.
+
+The applicable commercial context must flow through:
+
+brand_id
+→ brand offer / commercial policy
+→ Quote Engine
+→ approved customer price
+
+The agent communicates the resulting approved price.
+
+It must never substitute:
+
+- Another brand's price
+- Supplier promotional price
+- Another partner's price
+- An internally preferred price
+
+---
+
+# 98.10 BRAND-SPECIFIC PROMOTIONS
+
+A promotion may be presented only when it is approved for the active:
+
+brand_id
+
+product
+
+customer/account when applicable
+
+channel when applicable
+
+date/eligibility conditions
+
+An agent may not transfer a promotion from one brand to another.
+
+---
+
+# 98.11 BRAND-SPECIFIC PAYMENT
+
+The agent must present only payment methods and destinations approved for the active brand and transaction.
+
+Payment routing remains controlled by:
+
+payment-router.md
+
+Payment requirements remain controlled by:
+
+payment-confirmation-engine.md
+
+The agent must never substitute another brand's payment destination merely because the underlying provider is shared.
+
+---
+
+# 98.12 BRAND-SPECIFIC CONFIRMATION
+
+Customer-facing confirmation must preserve the active brand identity.
+
+The agent must use the correct:
+
+- Brand name
+- Customer service identity
+- Product presentation
+- Contact information
+- Payment context
+- Voucher/confirmation presentation
+
+Do not leak another brand into the confirmation.
+
+---
+
+# 98.13 CROSS-BRAND CUSTOMER RECOGNITION
+
+The same customer may interact with multiple Perico-controlled brands.
+
+Internal identity recognition may occur when permitted.
+
+However, an agent must not unexpectedly tell a customer:
+
+- That they purchased from another brand
+- That another brand has a different price
+- That the brands share backend infrastructure
+- That another brand has their customer information
+
+Cross-brand protected information remains subject to Identity & Permissions rules.
+
+---
+
+# 98.14 CROSS-BRAND REDIRECTION
+
+Virtual agents must not automatically redirect customers from one Perico-controlled brand to another.
+
+If Perico later creates an approved cross-brand referral workflow, the agent must follow its:
+
+- Eligibility rules
+- Disclosure rules
+- Attribution rules
+- Brand-transition rules
+
+Until explicitly configured:
+
+NO AUTOMATIC CROSS-BRAND REDIRECTION.
+
+---
+
+# 98.15 BRAND HANDOFF
+
+When a Virtual Reseller Agent hands a conversation to a human, preserve:
+
+brand_id
+
+agent_id
+
+channel_id
+
+customer_id
+
+partner_id when applicable
+
+product context
+
+quote context
+
+booking context
+
+payment context
+
+The human should continue under the correct customer-facing brand identity.
+
+---
+
+# 98.16 BRAND ATTRIBUTION
+
+Every qualified lead and completed sale should preserve, when applicable:
+
+brand_id
+
+agent_id
+
+channel_id
+
+sales_source
+
+partner_id
+
+campaign_id
+
+product_id
+
+brand_offer_id
+
+booking_id
+
+This allows Perico to evaluate:
+
+brand performance
+
+agent performance
+
+channel performance
+
+without confusing these dimensions.
+
+---
+
+# 98.17 MULTI-BRAND AGENT SAFETY RULE
+
+A MULTI_BRAND agent must never carry commercial state from Brand A into Brand B merely because the same agent handles both.
+
+When active brand changes through an authorized workflow:
+
+Re-evaluate:
+
+- Product access
+- Price
+- Promotion
+- Payment policy
+- Payment destination
+- Cancellation policy
+- Contact identity
+- Partner permissions
+
+Customer identity may persist when permitted.
+
+Commercial brand state must be recalculated.
+
+---
+
+# 98.18 NON-NEGOTIABLE BRAND RULE
+
+A VIRTUAL AGENT MAY REPRESENT MULTIPLE BRANDS ONLY WHEN EXPLICITLY AUTHORIZED.
+
+EVERY BRAND-SENSITIVE TRANSACTION MUST HAVE AN ACTIVE brand_id.
+
+THE AGENT MAY CHANGE ITS SALES STYLE.
+
+THE AGENT MAY NOT CHANGE BUSINESS TRUTH.
+
+THE AGENT MAY NOT LEAK ONE BRAND'S COMMERCIAL ENVIRONMENT INTO ANOTHER.
+
 ---
 
 # 99. FINAL AGENT VALIDATION
