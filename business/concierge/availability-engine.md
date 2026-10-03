@@ -10,6 +10,148 @@ Product operating information remains inside the applicable product master.
 
 Live inventory must come from an approved availability source or Perico operational confirmation.
 
+## BRAND-AWARE AVAILABILITY AUTHORITY
+
+The Availability Engine determines operational and inventory availability.
+
+It does not independently determine whether every brand is authorized to sell that inventory.
+
+When the Perico AI Platform operates multiple brands, availability must distinguish:
+
+CANONICAL PRODUCT AVAILABILITY
+
+from:
+
+BRAND OFFER ELIGIBILITY.
+
+A canonical product may have real operational availability while a specific Brand Offer is:
+
+- PAUSED
+- SEASONAL
+- INTERNAL_ONLY
+- DISABLED
+- RETIRED
+- Not authorized for the active channel
+- Not authorized for the active market
+- Otherwise unavailable for sale through that brand
+
+Therefore:
+
+OPERATIONALLY AVAILABLE
+
+does not automatically mean:
+
+SELLABLE THROUGH THE ACTIVE BRAND.
+
+When brand context applies, the availability request should preserve or receive:
+
+- `brand_id`
+- `brand_offer_id` when applicable
+- `product_id`
+- `channel_id` when relevant
+- `partner_id` when relevant
+- Requested date/time
+- Participant or capacity requirements
+- Applicable inventory mapping
+
+The Brand & Commercial Policy Layer determines whether the product or Brand Offer is authorized for sale through the active brand.
+
+The Availability Engine determines whether the underlying operational product or inventory is available.
+
+The Orchestrator combines these decisions before presenting customer-facing availability.
+
+Conceptually:
+
+ACTIVE BRAND
+→ AUTHORIZED BRAND OFFER
+→ CANONICAL PRODUCT
+→ AUTHORITATIVE INVENTORY SOURCE
+→ AVAILABILITY RESULT
+→ BRAND-SELLABLE AVAILABILITY
+
+If the canonical product is available but the Brand Offer is not authorized:
+
+DO NOT present the product as available for sale through that brand.
+
+If the Brand Offer is active but underlying inventory is unavailable:
+
+UNAVAILABLE.
+
+If Brand Offer eligibility cannot be established:
+
+BRAND OFFER ELIGIBILITY UNKNOWN
+→ PERICO HUMAN ASSISTANCE
+
+Do not guess.
+
+### SHARED INVENTORY ACROSS BRANDS
+
+Multiple brands may sell the same underlying operational inventory.
+
+Brand separation must not create imaginary independent inventory.
+
+Example:
+
+BRAND A
+→ PRODUCT X
+
+BRAND B
+→ PRODUCT X
+
+may both reference:
+
+ONE AUTHORITATIVE INVENTORY SOURCE.
+
+A sale through Brand A may therefore affect availability for Brand B.
+
+The Availability Engine must rely on the authoritative inventory source rather than maintaining independent capacity merely because the customer-facing brands are different.
+
+### BRAND-SPECIFIC INVENTORY ALLOCATION
+
+Separate inventory by brand only when Perico has explicitly configured a real allocation.
+
+Do not infer brand-specific capacity.
+
+### BRAND CONTEXT PERSISTENCE
+
+Availability results used in a transaction should preserve:
+
+- `brand_id`
+- `brand_offer_id` when applicable
+- `product_id`
+- Inventory source
+- Availability state
+- Availability timestamp/freshness
+- Relevant capacity
+- Applicable integration mapping
+
+An availability result obtained for one Brand Offer must not automatically be reused for another Brand Offer when authorization, allocation, product mapping or inventory source differs.
+
+### CUSTOMER-FACING RULE
+
+Never expose internal shared-inventory architecture to the customer unless operationally necessary.
+
+The customer needs the correct availability result for the active brand.
+
+They do not need internal information about:
+
+- Other Perico-controlled brands
+- Shared supplier inventory
+- Inventory mappings
+- Supplier systems
+- Internal capacity allocation
+
+### NON-NEGOTIABLE BRAND AVAILABILITY RULE
+
+NEVER CONFUSE:
+
+OPERATIONAL AVAILABILITY
+
+WITH:
+
+BRAND AUTHORIZATION TO SELL.
+
+AND NEVER CREATE SEPARATE INVENTORY MERELY BECAUSE TWO BRANDS SELL THE SAME CANONICAL PRODUCT.
 ---
 
 # 1. CORE AVAILABILITY PRINCIPLE
