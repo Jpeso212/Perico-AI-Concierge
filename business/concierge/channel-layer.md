@@ -45,7 +45,8 @@ MANY COMMUNICATION CHANNELS.
 Conceptual inbound flow:
 
 CUSTOMER / PARTNER
-→ CHANNEL
+→ CHANNEL INSTANCE
+→ BRAND CONTEXT
 → CHANNEL ADAPTER
 → NORMALIZED MESSAGE
 → IDENTITY / SESSION CONTEXT
@@ -131,6 +132,8 @@ Each channel integration may eventually define:
 
 channel_id
 
+brand_id
+
 channel_type
 
 provider
@@ -170,6 +173,72 @@ session_behavior
 last_verified
 
 Do not invent unsupported capabilities.
+
+# 5.1 BRAND CONTEXT
+
+Every customer-facing channel instance should be associated with an approved brand when brand context is applicable.
+
+Examples:
+
+PERICO WHATSAPP ACCOUNT
+→ brand_id = PERICO
+
+VALUE BRAND WHATSAPP ACCOUNT
+→ brand_id = VALUE_BRAND
+
+PERICO WEBSITE CHAT
+→ brand_id = PERICO
+
+VALUE BRAND WEBSITE CHAT
+→ brand_id = VALUE_BRAND
+
+The channel type alone does not establish brand identity.
+
+For example:
+
+WHATSAPP
+
+is a channel type.
+
+A specific WhatsApp Business account is a channel instance.
+
+The channel instance may establish the applicable:
+
+brand_id
+
+when explicitly configured.
+
+The Channel Layer must preserve brand context from the first customer interaction through the Orchestrator and all subsequent transactional stages.
+
+Brand context should remain available for:
+
+- Conversation
+- Product discovery
+- Product access
+- Quote
+- Availability
+- Booking
+- Payment
+- Confirmation
+- Human handoff
+- Customer support
+- Reporting
+
+If a customer-facing channel could represent multiple brands and the active brand cannot be established safely:
+
+DO NOT GUESS.
+
+Resolve the brand from approved channel configuration, authenticated context, existing transaction context or Perico Human Assistance.
+
+The Channel Layer must never silently substitute one brand for another.
+
+Channel Layer transports brand context.
+
+It does not create brand commercial policy.
+
+Brand commercial authority remains controlled by:
+
+brand-commercial-policy-layer.md
 
 ---
 
