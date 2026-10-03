@@ -1,4 +1,4 @@
-# Perico AI Concierge — Language Engine
+# PERICO AI PLATFORM — LANGUAGE ENGINE
 
 ## Purpose
 
@@ -320,6 +320,113 @@ Gone Fishing Private
 The Concierge may explain the experience in Spanish while retaining the product identity.
 
 Do not create a translated product identity that could be mistaken for another product.
+
+# 14A. MULTI-BRAND LANGUAGE CONTEXT
+
+The Language Engine operates across all authorized brands on the Perico AI Platform.
+
+Language handling must preserve the active transaction's:
+
+- brand_id
+- brand_name
+- brand_offer_id when applicable
+- Customer-facing product name
+- Approved brand terminology
+- Brand voice
+- Brand contact identity
+- Commercial context
+
+Translation must never silently move a customer from one brand context to another.
+
+Language detection does not determine brand.
+
+Brand is established by the applicable brand/channel/transaction context.
+
+Examples:
+
+A customer speaking Spanish through Brand A remains a Brand A customer.
+
+A customer speaking English through Brand B remains a Brand B customer.
+
+Changing language does not change:
+
+- brand_id
+- Brand offer
+- Price
+- Promotion eligibility
+- Payment policy
+- Cancellation policy
+- Booking ownership
+- Sales attribution
+
+If brand context is required but cannot be established safely:
+
+DO NOT GUESS THE BRAND.
+
+Use the applicable routing or Human Assistance workflow.
+
+---
+
+# 14B. BRAND LANGUAGE ISOLATION
+
+Translation must not cause cross-brand leakage.
+
+Do not accidentally translate or substitute:
+
+- Another brand's name
+- Another brand's slogan
+- Another brand's customer-service contact
+- Another brand's website
+- Another brand's WhatsApp
+- Another brand's payment destination
+- Another brand's promotion
+- Another brand's product name
+- Another brand's commercial terms
+
+The active brand controls customer-facing identity.
+
+The Language Engine controls language presentation only.
+
+---
+
+# 14C. BRAND VOICE
+
+Different brands may use different approved communication styles.
+
+Examples may include:
+
+PREMIUM_HUMANIZED
+
+FAST_VALUE
+
+LUXURY_CONCIERGE
+
+B2B_PROFESSIONAL
+
+The Language Engine should preserve the active brand's approved voice while translating naturally.
+
+Brand voice may change:
+
+- Tone
+- Vocabulary
+- Formality
+- Response style
+- Sales presentation
+
+Brand voice must never change:
+
+- Operational facts
+- Price
+- Availability
+- Payment requirements
+- Cancellation rules
+- Safety information
+- Booking state
+- Confirmation state
+
+TRANSLATE THE BRAND VOICE.
+
+DO NOT TRANSLATE THE BUSINESS RULE INTO A DIFFERENT RULE.
 
 ---
 
