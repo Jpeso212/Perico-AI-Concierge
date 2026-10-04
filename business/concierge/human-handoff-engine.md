@@ -951,25 +951,52 @@ Avoid creating unnecessary duplicate cases when one structured handoff can conta
 ---
 
 # 42. LANGUAGE
+# 42. LANGUAGE
 
-Preserve the customer's language through handoff.
+All language detection, supported-language definitions, language switching, translation behavior and multilingual communication are controlled by:
 
-Primary Concierge languages include:
+`language-engine.md`
 
-- English
-- Spanish
-- French
-- Portuguese
-- German
-- Italian
-- Dutch
-- Russian
+The Human Handoff Engine must not maintain an independent list of supported languages.
 
-Additional languages may be supported when reliable.
+Preserve the customer's established language through handoff whenever reliable communication is possible.
 
-Internal handoff summaries may use Perico's preferred internal language while preserving the customer's original meaning.
+A handoff must preserve:
+
+- Customer language
+- Customer intent
+- Product context
+- Brand context
+- Booking context
+- Payment context
+- Important customer-provided details
+
+Internal handoff summaries may use Perico's approved internal working language while preserving the customer's original meaning accurately.
 
 Do not make the customer change language to receive human assistance.
+
+If the customer and Perico staff use different languages, the Concierge may assist with translation according to the Language Engine.
+
+Language changes communication only.
+
+Language must not change:
+
+- Product identity
+- Brand identity
+- Price
+- Availability
+- Booking state
+- Payment state
+- Cancellation policy
+- Refund eligibility
+- Safety requirements
+- Operational facts
+
+If language uncertainty could materially affect a booking, payment, cancellation, refund, safety issue, date, time, location or participant configuration:
+
+Do not guess.
+
+Preserve the original customer message and route the uncertainty through Perico Human Assistance.
 
 ---
 
