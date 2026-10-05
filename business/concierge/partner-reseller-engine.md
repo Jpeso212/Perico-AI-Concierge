@@ -1389,16 +1389,35 @@ unless an explicit automated rule exists.
 
 A partner may have approved cancellation terms different from Perico's general customer fallback.
 
-Applicable hierarchy:
+Cancellation policy must follow the platform's canonical authority hierarchy.
 
-PRODUCT-SPECIFIC APPROVED CANCELLATION RULE
-→ ACCOUNT/PARTNER-SPECIFIC APPROVED RULE
-→ APPROVED B2B RULE
-→ PERICO GLOBAL FALLBACK
+For partner transactions:
 
-When unresolved:
+TRANSACTION-SPECIFIC AUTHORIZED CANCELLATION OVERRIDE
+→ PRODUCT-SPECIFIC APPROVED CANCELLATION POLICY
+→ BRAND + ACCOUNT/PARTNER-SPECIFIC APPROVED CANCELLATION POLICY
+→ ACCOUNT/PARTNER-SPECIFIC APPROVED CANCELLATION POLICY
+→ BRAND-SPECIFIC APPROVED CANCELLATION POLICY
+→ APPROVED B2B/PARTNER-CLASS CANCELLATION POLICY
+→ APPROVED PERICO PLATFORM GENERAL FALLBACK
+→ PERICO HUMAN ASSISTANCE
 
-PERICO HUMAN ASSISTANCE.
+A more specific approved cancellation policy may override a more general policy only when it is authorized for that transaction and cancellation-policy domain.
+
+Global Rules, product operational truth, identity permissions, payment security and unrelated domain authorities cannot be overridden by this hierarchy.
+
+Never combine conditions or refund percentages from different cancellation policies.
+
+Never select whichever policy produces the easiest or most favorable operational result.
+
+If two apparently applicable policies have equal authority, conflict, or cannot be resolved safely:
+
+DATA CONFLICT
+→ PERICO HUMAN ASSISTANCE
+
+The applicable cancellation policy determines cancellation/refund eligibility.
+
+The Payment Router may execute an approved refund through an authorized provider, but it does not determine refund entitlement.
 
 ---
 
