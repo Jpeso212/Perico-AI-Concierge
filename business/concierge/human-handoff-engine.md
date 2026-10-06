@@ -285,7 +285,9 @@ Do not delay emergency guidance merely to complete a Perico handoff.
 
 # 13. PRESERVE ALL CONTEXT
 
-Before handoff, preserve all relevant information already collected.
+Before handoff, preserve relevant information already collected, following [transaction-context-contract.md](transaction-context-contract.md). Share only what the assigned staff are authorized to use for the active brand and transaction, consistent with sections 48–49.
+
+Preserve applicable brand/customer/account/partner/agent and quote/booking/payment references, evidence sources and freshness, scoped policy approvals, completed actions and unresolved attempt references. Claimed payment and verified payment must remain distinguishable; do not pass secret credentials or raw sensitive payment data.
 
 Possible fields include:
 
@@ -576,7 +578,9 @@ Use the actual canonical handoff state.
 
 A human handoff does not necessarily end automation permanently.
 
-After Perico staff provides the missing information or approval, the Concierge may resume the workflow.
+After authorized Perico staff provides scoped information or approval, the relevant decision owner must validate it and update its own facts or canonical state before the Concierge resumes affected actions.
+
+Recheck current permissions, affected quote validity, inventory and unresolved transaction attempts. A RESOLVED handoff does not grant blanket authority or prove booking/payment completion. Resume from the validated workflow point without repeating actions completed by staff; reconcile uncertain actions before retry or fallback.
 
 Example:
 
@@ -1103,9 +1107,9 @@ Do not expose one customer's information to another customer.
 
 # 50. HUMAN RESPONSE
 
-When Perico staff resolves the issue, update the applicable status.
+When Perico staff resolves the issue, route the scoped evidence or approval to the relevant authoritative engine. That owner validates and updates its own facts or state; the Human Handoff Engine updates only the handoff lifecycle.
 
-Examples:
+The following are descriptions of resolution evidence, not additional canonical handoff, booking, payment or availability states:
 
 PRICE APPROVED
 
@@ -1149,7 +1153,7 @@ After the human resolves the issue, communicate the result naturally.
 
 Example:
 
-"Good news — we've confirmed the 8:30 AM private charter for your requested date. The next step is payment."
+"Good news — availability has been verified for the 8:30 AM private charter on your requested date. The next step is payment. Your reservation is not yet confirmed."
 
 Do not expose internal staff notes unnecessarily.
 

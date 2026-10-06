@@ -57,18 +57,9 @@ The Payment Router must not override that engine.
 
 The active `brand_id` must be established before routing a brand-sensitive payment.
 
-Applicable payment-rule precedence is:
+Consume the payment requirement established by the Payment & Confirmation Engine using [policy-authority-matrix.md](policy-authority-matrix.md). The Router must not independently resolve a competing payment-rule hierarchy.
 
-TRANSACTION-SPECIFIC AUTHORIZED PAYMENT OVERRIDE
-→ PRODUCT-SPECIFIC APPROVED PAYMENT RULE
-→ BRAND + ACCOUNT/PARTNER-SPECIFIC APPROVED PAYMENT RULE
-→ CUSTOMER/ACCOUNT/PARTNER-SPECIFIC APPROVED COMMERCIAL PAYMENT RULE
-→ BRAND-SPECIFIC APPROVED PAYMENT RULE
-→ APPROVED B2B COMMERCIAL RULE WHEN APPLICABLE
-→ APPROVED PLATFORM/GLOBAL PAYMENT RULE
-→ PERICO HUMAN ASSISTANCE
-
-More specific approved payment terms override more general payment terms only within the payment-policy domain.
+Apply [transaction-context-contract.md](transaction-context-contract.md) to preserve the active brand, quote/booking, eligible account/partner, amount/currency, approved policy references and original attempt context when required. Validate current actor authorization and approved provider/integration scope before execution. Missing or conflicting context requires clarification or Perico Human Assistance, not invented payment terms.
 
 A payment rule belonging to one brand must never be applied to another brand unless explicitly authorized.
 
@@ -811,7 +802,7 @@ Only use an approved partner commercial agreement.
 
 Some payments may require manual Perico processing.
 
-Possible state:
+Routing condition (not a canonical payment state):
 
 MANUAL_PAYMENT_REQUIRED
 
@@ -823,7 +814,7 @@ Do not redirect them to a supplier.
 
 # 39. AUTOMATIC VERIFICATION
 
-Providers supporting automatic verification are preferred when appropriate because they can return verified payment state directly.
+Providers supporting automatic verification are preferred when appropriate because they can return payment evidence through an approved integration. The Payment & Confirmation Engine validates that evidence and updates canonical payment state.
 
 Automatic verification may use:
 
@@ -832,7 +823,7 @@ Automatic verification may use:
 - Provider transaction lookup
 - Other approved integration
 
-Provider verification must map into canonical Perico payment states.
+Adapters normalize provider evidence; the Payment & Confirmation Engine maps verified evidence into its canonical payment states. Apply the Registry authentication, transaction correlation, scope, duplication and ordering checks before an event can affect those states.
 
 ---
 
@@ -898,7 +889,7 @@ payment_provider
 
 payment_method
 
-transaction_id
+external_transaction_id
 
 currency
 
@@ -936,7 +927,9 @@ payment-confirmation-engine.md
 
 The Payment Router must not create competing payment states.
 
-Provider-specific terminology must be mapped through the payment adapter.
+Provider-specific terminology must be normalized through the payment adapter, with qualified external references as defined in transaction-context-contract.md. A provider field called transaction_id maps to external_transaction_id, not the internal workflow transaction_id.
+
+The Payment & Confirmation Engine validates normalized evidence and performs canonical payment-state transitions. The Router preserves provider/technical outcomes separately; it does not directly mutate payment or booking state.
 
 ---
 
@@ -983,7 +976,7 @@ Some providers may return:
 
 PENDING
 
-The router must preserve this state.
+The Router preserves PENDING as the provider outcome. It does not create a canonical payment state called PENDING; the Payment & Confirmation Engine evaluates the evidence using its existing state model.
 
 Do not retry immediately through another provider if the original transaction may still complete.
 
@@ -1061,6 +1054,8 @@ Repeated:
 
 must not create duplicate charges.
 
+Reuse the same operation reference/key for the same intended action, not for a changed amount or scope. Reconcile an uncertain original attempt through its original provider before retry or fallback. Do not automatically retry a potentially duplicating action without safe idempotency protection; use Human Assistance if its outcome cannot be established.
+
 ---
 
 # 52. DUPLICATE PAYMENT DETECTION
@@ -1084,17 +1079,15 @@ STOP
 
 # 53. OVERPAYMENT
 
-If verified amount exceeds the amount due:
+If verified payments exceed the approved reservation balance, follow the overpayment handling in payment-confirmation-engine.md, section 30.
 
-Do not automatically refund the difference.
+Preserve its canonical payment status and use the internal review flag when supported:
 
-State:
+OVERPAYMENT_REVIEW_REQUIRED
 
-OVERPAYMENT REVIEW REQUIRED
+This is not a Router or canonical payment state. Pass the verified amount, approved total, currency, booking, active brand and original payment references to authorized Perico Human Assistance.
 
-→ PERICO HUMAN ASSISTANCE
-
-unless an approved automatic overpayment rule exists.
+Do not automatically refund, apply credit or change the booking total/status. Any disposition requires an approved rule or authorized Perico decision; an applicable approved automatic rule must be validated by the authoritative engine before execution through the Router.
 
 ---
 

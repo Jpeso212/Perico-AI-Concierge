@@ -872,21 +872,9 @@ PARTNER PERMISSION REQUIRED
 
 # 35. COMMERCIAL TERMS PRECEDENCE
 
-When commercial terms apply, use the approved authority hierarchy.
+When commercial terms apply, verify whether the current actor is entitled to use the approved brand/product/account/partner terms. Resolve policy precedence through [policy-authority-matrix.md](policy-authority-matrix.md); this engine must not maintain separate payment or pricing hierarchies.
 
-For payment:
-
-Product-specific approved payment rule
-→ customer/account-specific approved commercial rule
-→ approved B2B commercial rule
-→ approved Perico global rule
-→ Human Assistance if unresolved
-
-For pricing:
-
-Product-specific approved Perico price
-+
-applicable authorized customer/account/partner pricing rule
+The Payment & Confirmation Engine interprets payment requirements; the Quote Engine calculates approved pricing. Supply verified identity, record-access scope and current permissions through [transaction-context-contract.md](transaction-context-contract.md). A verified role or access to a brand alone does not authorize every customer record, partner agreement or transaction within that brand.
 
 The exact pricing calculation remains controlled by quote-engine.md.
 
@@ -965,7 +953,7 @@ Global sales-channel protection remains in force.
 
 # 40. VIRTUAL RESELLER PERMISSIONS
 
-Each virtual reseller should eventually have a permission profile.
+Before a virtual reseller performs a protected action, validate its current approved permission profile and the acting customer/partner context. The agent profile does not establish the customer’s identity or transfer partner privileges. Missing or unverifiable permission must not be treated as granted.
 
 Possible fields:
 

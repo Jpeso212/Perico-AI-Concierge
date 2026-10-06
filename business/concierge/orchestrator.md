@@ -2,7 +2,9 @@
 
 ## 1. PURPOSE
 
-The Orchestrator is the central routing and authority layer of the Perico AI Concierge.
+The Orchestrator is the central routing and coordination layer of the Perico AI Concierge.
+
+It applies established authority; it does not create a competing policy hierarchy or own specialized engine states.
 
 It coordinates:
 
@@ -58,6 +60,15 @@ The Orchestrator coordinates the following authoritative architecture components
 1. global-rules.md
 
 Defines the highest-level rules that apply across the entire Perico AI Platform.
+
+---
+
+## Shared Architecture Contracts
+
+- [policy-authority-matrix.md](policy-authority-matrix.md): resolves applicable policy by decision dimension and authorized scope.
+- [state-ownership-contract.md](state-ownership-contract.md): identifies the owner of each canonical state dimension.
+
+- [transaction-context-contract.md](transaction-context-contract.md): defines scoped engine exchanges, evidence references, separate state dimensions, revalidation and safe continuation. Apply its conditional requirements; not every inquiry requires every transaction field.
 
 ---
 
@@ -259,7 +270,7 @@ DATA CONFLICT
 
 global-rules.md applies across the entire Concierge.
 
-No channel, reseller, virtual agent, booking platform, payment provider or integration may override a Global Rule unless an explicitly approved Perico rule establishes an authorized exception.
+No channel, reseller, virtual agent, booking platform, payment provider or integration may independently override a Global Rule. Any exception must be established through the higher-authority process permitted by global-rules.md and satisfy policy-authority-matrix.md; ordinary commercial approval or a transaction-specific staff override does not grant that authority.
 
 Global Rules include customer sales-channel protection and restrictions against exposing external supplier or competitor booking destinations.
 
@@ -321,22 +332,21 @@ A more specific commercial rule does not cancel a Global Guardrail.
 
 After Global Guardrails have been satisfied, the system determines the most specific applicable approved business rule.
 
-General precedence:
+Policy precedence is defined by:
 
-1. Explicit current authorized Perico operational override for the specific transaction
-2. Product-specific or transfer-specific approved rule
-3. Brand + account-specific approved commercial rule
-4. Customer/account-specific approved commercial agreement
-5. Brand-specific approved commercial rule
-6. Approved partner/B2B/reseller-specific rule
-7. Applicable specialized Concierge engine rule
-8. Approved Perico general/default business rule
-9. Verified supplier operational information when Perico has not established a conflicting approved rule
-10. Human confirmation when authoritative information is missing or conflicting
+[policy-authority-matrix.md](policy-authority-matrix.md)
 
-This hierarchy applies only when the sources address the same business decision.
+Use its applicable dimension-specific precedence for pricing, promotions, payment requirements, cancellation and other decisions. Do not substitute one universal ordered list for these different dimensions.
 
-A rule from one domain must not override an unrelated authority.
+The Orchestrator supplies the verified brand, product, actor, account/partner and transaction context. The specialized engine applies the applicable approved policy within its domain, using the shared matrix rather than inventing its own precedence.
+
+Verified supplier operational information may be used within its approved domain when Perico has not established a conflicting approved rule; it must not become an independent commercial policy.
+
+Validate policy scope, approval, status and effective dates. Preserve applicable policy references for transaction auditing; a new policy must not silently rewrite an existing confirmed booking.
+
+An authorized transaction-specific human override remains scoped as described in section 4.7 and the matrix. It cannot bypass Global Guardrails or unrelated domain authority.
+
+If applicable policies conflict without established precedence, route to Perico Human Assistance. Human confirmation is a resolution path, not a lower-priority data source that automatically overrides a verified rule.
 
 ---
 
@@ -711,7 +721,8 @@ CUSTOMER MESSAGE
 → LANGUAGE
 → CONVERSATION / INTENT
 → ACTOR / IDENTITY / PERMISSION CONTEXT WHEN REQUIRED
-→ VIRTUAL AGENT CONTEXT WHEN APPLICABLE
+→ VERIFIED PARTNER / ACCOUNT COMMERCIAL CONTEXT WHEN APPLICABLE
+→ AUTHORIZED VIRTUAL AGENT CONTEXT WHEN APPLICABLE
 → PRODUCT MATCHING
 → BRAND COMMERCIAL CONTEXT
 → QUOTE
@@ -722,6 +733,13 @@ CUSTOMER MESSAGE
 → PAYMENT VERIFICATION
 → OPERATIONAL ACCEPTANCE
 → CONFIRMATION
+
+This is a conceptual routing flow, not a fixed sequence that authorizes every action. Partner terms come from partner-reseller-engine.md; identity-permissions-engine.md verifies entitlement to use them. Agent attribution does not establish customer or partner identity.
+
+Before each protected action, revalidate current permissions and applicable brand/product/partner/agent scope. Unverified customer statements, channel metadata and external payloads must not establish privileged identity or commercial authority.
+
+Before presenting an offer as sellable, combine Brand & Commercial Policy Layer eligibility with Availability Engine operational availability. Neither result substitutes for the other.
+
 The transaction should preserve, when applicable:
 
 brand_id
@@ -783,6 +801,10 @@ Examples:
 - Partner/reseller identity
 
 Do not repeatedly ask for information already known and still valid.
+
+Preserve provenance and freshness for price, availability, payment and acceptance evidence. Customer-provided details are input, not proof of an approved price, verified payment or authorization.
+
+When the product, date/time, participants/configuration, brand offer or commercial eligibility changes, route affected decisions back to their owning engines for revalidation before executing dependent actions. Do not silently reuse a stale quote or inventory result. Existing confirmed bookings follow the approved modification workflow; they are not silently repriced.
 
 ---
 
@@ -947,17 +969,19 @@ CREATE_RESERVATION
 
 HOLD_INVENTORY
 
-UPDATE_RESERVATION
+MODIFY_RESERVATION
 
 CANCEL_RESERVATION
 
-RETRIEVE_RESERVATION
+GET_RESERVATION
 
-RETRIEVE_PICKUP_INFORMATION
+GET_PICKUP_INFORMATION
 
-RETRIEVE_VOUCHER
+GET_VOUCHER
 
-CONFIRM_RESERVATION_STATUS
+Reservation status is retrieved through GET_RESERVATION and interpreted by the Booking Engine; a provider status must not directly confirm a Perico booking.
+
+Use the capability names defined in integration-registry.md. Provider-specific action names belong in adapter mappings, not in a competing Orchestrator capability vocabulary.
 
 Not every platform will support every capability.
 
@@ -1169,7 +1193,7 @@ payment_provider
 
 payment_method
 
-transaction_id
+external_transaction_id
 
 booking_id
 
@@ -1202,6 +1226,8 @@ verified_at
 The exact external provider format may differ.
 
 Adapters should normalize provider responses into the Perico payment model.
+
+A provider field named transaction_id maps to external_transaction_id, qualified by provider/integration and environment under transaction-context-contract.md. It must not overwrite the internal workflow transaction_id or select a booking by identifier resemblance.
 
 ---
 
@@ -1249,7 +1275,7 @@ PAYMENT INTEGRATION FAILURE
 
 Then:
 
-- Try another authorized Perico payment method when permitted
+- Reconcile any submitted transaction before trying another authorized Perico payment method when permitted
 or
 - Use Perico Human Assistance.
 
@@ -1292,6 +1318,10 @@ PERICO HUMAN ASSISTANCE
 ---
 
 # 30. CONFIRMATION AUTHORITY
+
+CONFIRMED is a canonical booking state owned by booking-engine.md, as specified in state-ownership-contract.md.
+
+The Payment & Confirmation Engine supplies payment status and payment-related confirmation eligibility. The Availability Engine supplies availability evidence. The Booking Engine evaluates the complete applicable requirements and records the booking transition; the Orchestrator coordinates these decisions and the Conversation Engine communicates the recorded result.
 
 A reservation becomes CONFIRMED only when all conditions required by the applicable workflow are satisfied.
 
@@ -1374,11 +1404,13 @@ Never solve a handoff by redirecting the customer to a supplier.
 
 # 33. HANDOFF CONTEXT
 
-The Orchestrator must pass all relevant known context into Human Handoff.
+The Orchestrator must pass relevant known context into Human Handoff through authorized internal channels, limited to the assigned staff permissions and the active brand/transaction scope. Never include secret credentials or raw sensitive payment data.
 
 The human should receive enough information to continue the transaction without forcing the customer to repeat the conversation.
 
 After resolution, automation should resume from the appropriate workflow state whenever possible.
+
+A resolved handoff is not proof of payment, availability or booking confirmation. The applicable state owner must validate the staff evidence or scoped approval and update its own state. Recheck current permissions, quote validity, inventory and unresolved transaction attempts before resuming affected actions. Do not repeat an action already completed during handoff.
 
 ---
 
@@ -1438,7 +1470,9 @@ They do not redefine Perico business logic.
 
 # 36. CHANNEL SESSION CONTINUITY
 
-When technically possible, customer context should survive movement between authorized Perico channels.
+When identity can be safely linked, customer context may survive movement between authorized Perico channels, following channel-layer.md and identity-permissions-engine.md.
+
+Require verified identity linking and authorization to access the specific brand and transaction before restoring protected context. Matching names, hotels, products or similar contact details are insufficient. A canonical customer ID does not grant visibility across brands or partners.
 
 Example:
 
@@ -1453,7 +1487,9 @@ The customer should not have to restart merely because the communication channel
 
 # 37. INTEGRATION REGISTRY
 
-External integrations should eventually be registered in a centralized Integration Registry.
+Before use, external integrations must be approved and selected through integration-registry.md for the required capability, environment and brand/product/account scope. The existence of an adapter or a supported capability alone does not authorize execution.
+
+Do not use a test integration for a production transaction or treat a test result as a real booking or payment.
 
 Each integration should define:
 
@@ -1566,7 +1602,13 @@ Do not create duplicate reservations or duplicate payment requests unnecessarily
 
 # 41. IDEMPOTENCY
 
-External booking and payment actions should use idempotency protection whenever supported.
+External booking and payment actions should use idempotency protection whenever supported, following integration-registry.md and payment-router.md.
+
+Reuse the same operation reference/idempotency key for retries of the same intended action. A new key or provider does not resolve an uncertain previous outcome.
+
+After a timeout or lost response to a state-changing action, reconcile with the original integration using its transaction reference before retry or fallback. Do not automatically retry potentially duplicating actions without idempotency protection. If the outcome cannot be established safely, preserve the technical uncertainty and use Human Assistance rather than assuming failure.
+
+Subsequent changes, cancellation and retrieval normally use the integration holding the existing reservation. Do not create a second booking in another system to work around an outage.
 
 Repeated webhook delivery, retry or network timeout must not automatically create:
 
@@ -1604,7 +1646,13 @@ PICKUP_UPDATED
 
 VOUCHER_READY
 
-The Orchestrator must validate the source and map the event into canonical Perico states.
+The Integration Registry and approved adapter validate the event source using the provider's approved authentication mechanism, normalize provider fields and enforce integration scope before dispatch. Payload appearance or a claimed booking/payment ID is insufficient authentication.
+
+Correlate the external reference with the stored Perico transaction, integration, environment and brand; verify product/account scope where applicable. Missing or conflicting mappings must not update a guessed transaction. If authenticity cannot be established, obtain verified facts through an approved retrieval path or Human Assistance before any business-state change.
+
+Deduplicate events and reconcile out-of-order or conflicting events according to integration-registry.md. An older or replayed event must not blindly overwrite a newer verified state.
+
+The Orchestrator routes verified evidence to the applicable state owner in state-ownership-contract.md. That engine validates the evidence and performs its canonical transition. A PAYMENT_VERIFIED event does not directly set booking_status = CONFIRMED; confirmation still follows section 30.
 
 ---
 
@@ -1741,8 +1789,8 @@ They do not become the customer's required destination unless Perico explicitly 
 
 Before sending a customer-facing response, validate:
 
-1. Correct customer language.
-2. Correct actor permissions.
+1. Correct customer language and active brand presentation.
+2. Current actor permissions and authorization for the specific brand/transaction.
 3. Correct product.
 4. Correct approved price if quoted.
 5. Correct availability status.
@@ -1770,7 +1818,8 @@ UNDERSTAND
 → RETRIEVE DATA
 → VALIDATE
 → EXECUTE AUTHORIZED ACTION
-→ UPDATE STATE
+→ STATE OWNER VALIDATES AND UPDATES ITS OWN STATE
+→ VALIDATE RESPONSE VISIBILITY
 → RESPOND
 
 If validation fails:

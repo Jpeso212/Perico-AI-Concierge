@@ -696,7 +696,9 @@ Do not merge two conversations solely because:
 - Phone looks similar
 - Email display name matches
 
-Cross-channel linking must use appropriate verified identifiers.
+Cross-channel linking must use appropriate verified identifiers and Identity & Permissions approval to access the specific brand/customer/partner transaction. Apply [transaction-context-contract.md](transaction-context-contract.md); a matching canonical customer or linked channel thread does not authorize cross-brand history or every booking in the conversation.
+
+If channel configuration and an existing transaction indicate conflicting brands, resolve the conflict through the authoritative components before restoring protected context. Do not overwrite the transaction brand or import another brand’s quote/payment destination.
 
 ---
 
@@ -1253,7 +1255,9 @@ when technically possible.
 
 # 52. MESSAGE IDEMPOTENCY
 
-Outbound transactional messages should use message identifiers or idempotency protection when supported.
+Outbound transactional messages should use message identifiers or idempotency protection when supported. Reuse the message reference for safe retries of the same intended delivery; delivery retry must not recreate the underlying booking, payment or refund action.
+
+Before dispatch or retry, validate the authorized recipient, active brand/transaction scope and current authoritative content. Do not resend an obsolete quote, invalid payment destination or superseded confirmation merely because it remains queued. Failed delivery does not reverse a completed business action.
 
 This is especially important for:
 
@@ -1300,7 +1304,7 @@ Example:
 
 "Hi, I'm back about the Saona trip for Friday."
 
-Use available verified context.
+Use available verified context after current record-access checks. Revalidate affected quote validity, inventory and permissions through their owners before resuming protected actions. Preserve completed actions and unresolved attempt references so re-entry does not repeat a booking or charge.
 
 Do not unnecessarily restart discovery.
 
@@ -1493,7 +1497,7 @@ Do not expose internal architecture.
 
 # 68. CHANNEL SECURITY
 
-Channel adapters should validate provider events when supported.
+Channel adapters must establish provider event authenticity through an approved mechanism before routing the event as trusted system evidence. If authenticity cannot be established, do not grant privileged identity, restore protected context or mutate business state from that event. Resolve through an approved verification path or Human Assistance.
 
 Examples:
 

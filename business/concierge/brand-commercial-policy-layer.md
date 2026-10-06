@@ -646,16 +646,9 @@ Any brand-specific rule must be explicit.
 
 Commercial policy precedence must follow specificity and domain authority.
 
-Canonical order:
+Use the decision-specific precedence in [policy-authority-matrix.md](policy-authority-matrix.md). Pricing, promotions, payment requirements and cancellation must not share an independent universal order maintained here.
 
-TRANSACTION-SPECIFIC AUTHORIZED OVERRIDE
-→ PRODUCT-SPECIFIC APPROVED RULE
-→ BRAND + ACCOUNT/PARTNER-SPECIFIC APPROVED RULE
-→ ACCOUNT/PARTNER-SPECIFIC APPROVED RULE
-→ BRAND-SPECIFIC APPROVED RULE
-→ APPROVED B2B/PARTNER-CLASS RULE
-→ APPROVED PLATFORM/GLOBAL RULE
-→ HUMAN ASSISTANCE
+Supply the approved brand/offer and account/partner context to the authoritative decision engine using [transaction-context-contract.md](transaction-context-contract.md). Preserve scoped approvals, effective dates and applicable existing-booking terms. A missing brand policy does not authorize importing another brand's terms.
 
 A more specific approved rule may override a more general rule only within the domain where that override is authorized.
 
@@ -1655,7 +1648,7 @@ A staff user with access to Brand A does not automatically require access to Bra
 
 # 88. BRAND PERMISSIONS
 
-Identity & Permissions should eventually support:
+Before protected brand access or execution, Identity & Permissions must validate the actor’s current approved brand scope. The architecture requires:
 
 allowed_brand_ids
 
@@ -1675,7 +1668,7 @@ API clients
 
 # 89. INTEGRATION BRAND SCOPE
 
-Integration Registry should eventually support:
+Before executing a brand-sensitive capability, the Integration Registry and approved adapter must validate configured brand scope, including:
 
 allowed_brand_ids
 

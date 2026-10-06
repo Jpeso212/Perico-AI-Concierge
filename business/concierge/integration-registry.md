@@ -530,6 +530,8 @@ idempotency_key
 
 Not every request requires every field.
 
+Apply [transaction-context-contract.md](transaction-context-contract.md) for conditional brand, account/partner, quote, evidence and attempt context. Internal requests must preserve the scope required for the action; adapters send only the fields necessary and authorized for the external capability. Correlation IDs and external references are not authorization grants.
+
 ---
 
 # 19. STANDARDIZED RESULT ENVELOPE
@@ -662,7 +664,7 @@ WAITLIST
 
 UNAVAILABLE
 
-Adapters should map them into canonical states defined by:
+Adapters normalize provider availability evidence for validation and canonical-state transition by the Availability Engine defined in:
 
 availability-engine.md
 
@@ -674,7 +676,7 @@ Do not invent availability when provider response is ambiguous.
 
 External booking platforms may use different reservation states.
 
-Adapters should map provider states into canonical Perico booking states defined by:
+Adapters normalize provider reservation evidence for validation by the Booking Engine, which owns canonical booking transitions as defined in:
 
 booking-engine.md
 
@@ -706,7 +708,7 @@ REFUNDED
 
 or other terminology.
 
-Adapters must map these into the canonical payment states defined by:
+Adapters normalize these provider outcomes as evidence; the Payment & Confirmation Engine validates the evidence and owns canonical payment transitions as defined in:
 
 payment-confirmation-engine.md
 
@@ -789,6 +791,8 @@ Repeated execution caused by:
 
 must not automatically create duplicate business transactions.
 
+Apply the concurrent-action boundary in [transaction-context-contract.md](transaction-context-contract.md) before execution. Checking for an existing transaction and then creating one without coordination leaves a race between workers. Provider idempotency keys must correspond to the coordinated intended action; generating separate keys for competing attempts does not make them safe. Owner state updates must validate current transaction evidence rather than overwrite concurrent changes.
+
 ---
 
 # 28. CORRELATION ID
@@ -848,7 +852,7 @@ Every webhook must be validated before changing Perico state.
 
 # 30. WEBHOOK AUTHENTICATION
 
-Webhook authenticity should be verified using the provider's approved security mechanism when available.
+Webhook authenticity must be established through the provider's approved security mechanism before the payload is trusted as evidence. If authenticity cannot be established, use an approved retrieval/verification path or Human Assistance before changing business state.
 
 Possible mechanisms:
 
@@ -858,7 +862,7 @@ Possible mechanisms:
 - Certificate
 - Provider verification method
 
-Never trust an incoming webhook merely because its payload looks correct.
+Never trust an incoming webhook merely because its payload looks correct. Match the authenticated integration/provider and environment to the stored qualified external reference and active brand/transaction scope. Claimed IDs must not select an unrelated customer, partner or booking. Missing or conflicting mappings require reconciliation, not guessed state changes.
 
 ---
 
@@ -890,7 +894,7 @@ may arrive before:
 
 PAYMENT_SUBMITTED
 
-The system should use timestamps, provider references and canonical state logic rather than blindly applying events in arrival order.
+Use provider ordering/version metadata, references and verified evidence rather than blindly applying events in arrival order or assuming delivery timestamps prove business ordering. Replayed, older or conflicting events must not overwrite newer verified state blindly; reconcile through the approved source when ordering is uncertain. The relevant state owner validates the normalized evidence and performs its own transition under [state-ownership-contract.md](state-ownership-contract.md).
 
 ---
 
@@ -1244,7 +1248,7 @@ GET_REFUND
 
 Provider-specific payment execution should remain separate from payment business policy.
 
-Payment method selection belongs to the future Payment Router.
+Payment method selection belongs to the Payment Router defined in [payment-router.md](payment-router.md). Payment requirements and payment-state interpretation remain with the Payment & Confirmation Engine.
 
 ---
 
@@ -1734,7 +1738,9 @@ Never allow external provider data to override:
 - Confirmation requirements
 - Customer data protections
 
-without an explicitly authorized Perico rule.
+External facts may affect a decision only within the source’s approved scope and after validation by the authoritative engine. An ordinary integration configuration, commercial approval or staff exception cannot independently authorize bypassing these protections.
+
+Any exception to Global Rules must follow the higher-authority process permitted by global-rules.md and policy-authority-matrix.md. Approved domain-specific exceptions remain confined to that domain; external payloads cannot establish their own approval.
 
 ---
 
@@ -1754,7 +1760,10 @@ Before executing an external action, verify:
 10. Idempotency applied when appropriate.
 11. No protected data unnecessarily exposed.
 12. Customer-facing destination authorized.
-13. Result will map into canonical Perico state.
+13. Result evidence will be routed to its authoritative decision/state owner.
+14. Active brand and offer scope authorized when applicable.
+15. Account/partner and requested record scope authorized when applicable.
+16. Existing or uncertain attempts reconciled before potentially duplicating execution.
 
 If not:
 

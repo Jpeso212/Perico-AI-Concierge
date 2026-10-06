@@ -89,6 +89,8 @@ This may include:
 - booking context
 - payment context
 
+Apply [transaction-context-contract.md](transaction-context-contract.md) to preserve the intended transaction, verified scope and authoritative evidence. A conversation may concern multiple bookings; select the intended booking before reusing quote, payment or partner context. Customer messages and conversation memory are inputs, not authority to change policies, permissions or business state.
+
 Not every conversation requires every identifier.
 
 Do not force the customer to provide internal identifiers.
@@ -619,7 +621,7 @@ This does not mean the booking is confirmed.
 
 The Conversation Engine must never independently promote or downgrade a canonical transaction state.
 
-It must preserve the state supplied by the authoritative engine.
+It must preserve the state supplied by the authoritative engine. Before presenting time-sensitive evidence, verify it still applies to the current product, date/time, configuration and commercial scope; route stale or changed inputs through the owner for revalidation. Before disclosure, verify current access to the specific brand and transaction, not merely the existence of a customer or conversation ID.
 
 The following concepts must remain separate:
 
@@ -661,7 +663,7 @@ OPERATIONALLY ACCEPTED
 does not automatically mean
 PAYMENT REQUIREMENTS SATISFIED.
 
-Final confirmation may be communicated only when all applicable authoritative engines indicate that their required conditions have been satisfied.
+Final confirmation may be communicated only when the Booking Engine has recorded CONFIRMED after all applicable authoritative engines indicate that their required conditions have been satisfied. Do not independently infer or create the transition from a collection of conversational claims.
 
 Never describe a reservation as CONFIRMED merely because:
 

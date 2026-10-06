@@ -623,20 +623,9 @@ when not established.
 
 # 28. PAYMENT RULE PRECEDENCE
 
-Partner payment policy must follow the platform's canonical commercial-policy hierarchy.
+Partner payment terms are approved commercial inputs to the Payment & Confirmation Engine, which resolves the PAYMENT REQUIREMENT dimension using [policy-authority-matrix.md](policy-authority-matrix.md). Do not maintain a competing payment precedence list here.
 
-For partner transactions:
-
-TRANSACTION-SPECIFIC AUTHORIZED PAYMENT OVERRIDE
-→ PRODUCT-SPECIFIC APPROVED PAYMENT RULE
-→ BRAND + ACCOUNT/PARTNER-SPECIFIC APPROVED PAYMENT RULE
-→ ACCOUNT/PARTNER-SPECIFIC APPROVED COMMERCIAL RULE
-→ BRAND-SPECIFIC APPROVED PAYMENT RULE
-→ APPROVED B2B/PARTNER-CLASS PAYMENT RULE
-→ APPROVED PLATFORM/GLOBAL PAYMENT RULE
-→ PERICO HUMAN ASSISTANCE
-
-A more specific approved payment rule may override a more general rule only within the payment-policy domain.
+Use [transaction-context-contract.md](transaction-context-contract.md) to preserve the active brand, verified account/partner, applicable agreement and transaction scope. Identity & Permissions must verify entitlement before protected terms are used or exposed; a partner claim or agent attribution is insufficient.
 
 Brand context must be established when the applicable commercial relationship depends on brand.
 
@@ -1389,22 +1378,9 @@ unless an explicit automated rule exists.
 
 A partner may have approved cancellation terms different from Perico's general customer fallback.
 
-Cancellation policy must follow the platform's canonical authority hierarchy.
+Resolve applicable partner cancellation terms through the CANCELLATION and REFUND dimensions in [policy-authority-matrix.md](policy-authority-matrix.md), preserving approved transaction-specific overrides and existing-booking terms. Do not maintain an independent precedence list here.
 
-For partner transactions:
-
-TRANSACTION-SPECIFIC AUTHORIZED CANCELLATION OVERRIDE
-→ PRODUCT-SPECIFIC APPROVED CANCELLATION POLICY
-→ BRAND + ACCOUNT/PARTNER-SPECIFIC APPROVED CANCELLATION POLICY
-→ ACCOUNT/PARTNER-SPECIFIC APPROVED CANCELLATION POLICY
-→ BRAND-SPECIFIC APPROVED CANCELLATION POLICY
-→ APPROVED B2B/PARTNER-CLASS CANCELLATION POLICY
-→ APPROVED PERICO PLATFORM GENERAL FALLBACK
-→ PERICO HUMAN ASSISTANCE
-
-A more specific approved cancellation policy may override a more general policy only when it is authorized for that transaction and cancellation-policy domain.
-
-Global Rules, product operational truth, identity permissions, payment security and unrelated domain authorities cannot be overridden by this hierarchy.
+Specific terms apply only within their approved brand/product/account/partner and policy scope. Global Rules, product operational truth, identity permissions, payment security and unrelated domain authorities remain enforced.
 
 Never combine conditions or refund percentages from different cancellation policies.
 

@@ -21,6 +21,10 @@ Product masters remain language-independent operational sources of truth.
 
 The Language Engine translates customer-facing communication while preserving the exact operational meaning of Perico's data.
 
+Apply [transaction-context-contract.md](transaction-context-contract.md) to the active brand, intended transaction and authoritative evidence. Translate only information approved for the current recipient and scope; access to internal source text does not authorize its disclosure in another language.
+
+Business decisions and canonical-state transitions belong to their authoritative engines. The Language Engine preserves their meaning and identifiers rather than recalculating policy or inferring payment/booking completion. A language switch alone does not invalidate a transaction; changed business inputs or stale evidence must be revalidated by the appropriate owner.
+
 ---
 
 # 1. CORE LANGUAGE PRINCIPLE
