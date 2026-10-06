@@ -530,6 +530,8 @@ idempotency_key
 
 Not every request requires every field.
 
+Apply [transaction-context-contract.md](transaction-context-contract.md) for conditional brand, account/partner, quote, evidence and attempt context. Internal requests must preserve the scope required for the action; adapters send only the fields necessary and authorized for the external capability. Correlation IDs and external references are not authorization grants.
+
 ---
 
 # 19. STANDARDIZED RESULT ENVELOPE
@@ -1244,7 +1246,7 @@ GET_REFUND
 
 Provider-specific payment execution should remain separate from payment business policy.
 
-Payment method selection belongs to the future Payment Router.
+Payment method selection belongs to the Payment Router defined in [payment-router.md](payment-router.md). Payment requirements and payment-state interpretation remain with the Payment & Confirmation Engine.
 
 ---
 

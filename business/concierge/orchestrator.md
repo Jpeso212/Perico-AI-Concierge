@@ -68,7 +68,7 @@ Defines the highest-level rules that apply across the entire Perico AI Platform.
 - [policy-authority-matrix.md](policy-authority-matrix.md): resolves applicable policy by decision dimension and authorized scope.
 - [state-ownership-contract.md](state-ownership-contract.md): identifies the owner of each canonical state dimension.
 
-transaction-context-contract.md is currently empty and does not define a shared context schema. Until it is defined, use the context requirements in this document and the applicable engines; do not assume the empty file validates a transaction.
+- [transaction-context-contract.md](transaction-context-contract.md): defines scoped engine exchanges, evidence references, separate state dimensions, revalidation and safe continuation. Apply its conditional requirements; not every inquiry requires every transaction field.
 
 ---
 
