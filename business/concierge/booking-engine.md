@@ -23,6 +23,18 @@ The Booking Engine controls:
 
 The Booking Engine does NOT independently determine:
 
+- Product prices or pricing formulas
+- Brand-specific commercial policies
+- Live availability
+- Payment requirements or deposit percentages
+- Payment methods or providers
+- Cancellation or refund eligibility
+- Actor identity or permissions
+- Supplier operational acceptance
+
+Those responsibilities belong to their applicable Perico engines and product masters.
+
+
 ## BOOKING STATE AUTHORITY
 
 The Booking Engine owns the canonical booking/reservation lifecycle.
@@ -102,8 +114,6 @@ DO NOT RECREATE THE STATE.
 - Live availability
 - Payment rules
 - Final operational confirmation
-
-Those responsibilities belong to their applicable Perico engines and product masters.
 
 ---
 
