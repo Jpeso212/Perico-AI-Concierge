@@ -1736,7 +1736,9 @@ Never allow external provider data to override:
 - Confirmation requirements
 - Customer data protections
 
-without an explicitly authorized Perico rule.
+External facts may affect a decision only within the source’s approved scope and after validation by the authoritative engine. An ordinary integration configuration, commercial approval or staff exception cannot independently authorize bypassing these protections.
+
+Any exception to Global Rules must follow the higher-authority process permitted by global-rules.md and policy-authority-matrix.md. Approved domain-specific exceptions remain confined to that domain; external payloads cannot establish their own approval.
 
 ---
 

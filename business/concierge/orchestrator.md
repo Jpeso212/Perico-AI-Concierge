@@ -270,7 +270,7 @@ DATA CONFLICT
 
 global-rules.md applies across the entire Concierge.
 
-No channel, reseller, virtual agent, booking platform, payment provider or integration may override a Global Rule unless an explicitly approved Perico rule establishes an authorized exception.
+No channel, reseller, virtual agent, booking platform, payment provider or integration may independently override a Global Rule. Any exception must be established through the higher-authority process permitted by global-rules.md and satisfy policy-authority-matrix.md; ordinary commercial approval or a transaction-specific staff override does not grant that authority.
 
 Global Rules include customer sales-channel protection and restrictions against exposing external supplier or competitor booking destinations.
 
@@ -1193,7 +1193,7 @@ payment_provider
 
 payment_method
 
-transaction_id
+external_transaction_id
 
 booking_id
 
@@ -1226,6 +1226,8 @@ verified_at
 The exact external provider format may differ.
 
 Adapters should normalize provider responses into the Perico payment model.
+
+A provider field named transaction_id maps to external_transaction_id, qualified by provider/integration and environment under transaction-context-contract.md. It must not overwrite the internal workflow transaction_id or select a booking by identifier resemblance.
 
 ---
 
