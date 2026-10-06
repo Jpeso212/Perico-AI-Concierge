@@ -1035,18 +1035,9 @@ QUOTE REQUIRED
 
 A verified customer, agency, reseller or partner may have approved account-specific commercial terms within a brand.
 
-Apply pricing according to the platform authority hierarchy.
+Apply the PRICING dimension in [policy-authority-matrix.md](policy-authority-matrix.md), and the PROMOTIONS dimension when applicable. Do not maintain a competing pricing order here. Global Guardrails and canonical operational truth remain enforced; approved commercial policy determines the applicable selling price within its authorized scope.
 
-Conceptually:
-
-GLOBAL GUARDRAILS
-→ PRODUCT / TRANSFER AUTHORITY
-→ BRAND + ACCOUNT-SPECIFIC APPROVED RULE
-→ ACCOUNT-SPECIFIC APPROVED RULE
-→ BRAND-SPECIFIC APPROVED RULE
-→ APPROVED PARTNER / B2B RULE
-→ APPROVED GENERAL RULE
-→ HUMAN ASSISTANCE
+Use [transaction-context-contract.md](transaction-context-contract.md) to retain verified brand/product/account/partner scope, approved sources, policy references and quote evidence. Identity & Permissions verifies entitlement to protected rates before they are used or exposed.
 
 Specificity applies only within the domain where the rule is authorized.
 
@@ -1086,6 +1077,8 @@ Once a quote is generated, preserve when applicable:
 - timestamp or applicable validity metadata when supported
 
 This prevents a later booking or payment workflow from silently recalculating the transaction under another brand.
+
+Retain the quote’s input configuration and applicable validity metadata alongside its approved amount/currency and policy references. Do not invent a universal expiry period. When price-relevant inputs or commercial eligibility change, validate the affected pricing through this engine before booking or payment; a historical quote must not silently apply to a changed request. Existing confirmed bookings follow the approved modification and policy-snapshot rules.
 
 A quote moving into:
 

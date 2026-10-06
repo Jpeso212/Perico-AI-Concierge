@@ -20,6 +20,14 @@ The Product Matching Engine does NOT maintain a duplicate product catalog.
 
 Authoritative product information remains in the applicable Perico product masters.
 
+## BRAND AND ACCESS BOUNDARY
+
+Apply [transaction-context-contract.md](transaction-context-contract.md) for the active brand, customer intent, product configuration and applicable verified partner/account/agent scope. Before presenting a product as a commercial option, obtain brand/offer eligibility from the Brand & Commercial Policy Layer and applicable permissions from Identity & Permissions using approved partner terms.
+
+Canonical catalog existence and product suitability do not grant permission to sell through every brand, channel or partner. Filter out unauthorized offers before recommendation; if required eligibility is unknown, clarify or use Human Assistance rather than revealing protected offers or another brand’s prices.
+
+This engine determines product fit. The Quote Engine calculates the approved scoped price; the Availability Engine verifies schedule/inventory; the Booking Engine owns reservation confirmation. A customer preference, budget or similar product name cannot create an approved price or external product mapping.
+
 ---
 
 # 1. CORE MATCHING PRINCIPLE
@@ -1387,6 +1395,8 @@ Before recommending a product, verify when relevant:
 13. Availability is not falsely implied
 14. Supplier information is not exposed
 15. Customer is not redirected externally
+16. Active brand/offer is authorized for sale when applicable
+17. Applicable channel, partner/account and agent access is verified before protected offers are presented
 
 If a material suitability factor remains uncertain:
 
