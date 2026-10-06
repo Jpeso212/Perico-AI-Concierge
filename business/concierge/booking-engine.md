@@ -35,6 +35,8 @@ The Booking Engine does NOT independently determine:
 Those responsibilities belong to their applicable Perico engines and product masters.
 
 
+Apply [transaction-context-contract.md](transaction-context-contract.md) for scoped engine exchanges and evidence, and [state-ownership-contract.md](state-ownership-contract.md) for state ownership. Resolve applicable policies through [policy-authority-matrix.md](policy-authority-matrix.md); the Booking Engine must not create another precedence hierarchy.
+
 ## BOOKING STATE AUTHORITY
 
 The Booking Engine owns the canonical booking/reservation lifecycle.
@@ -758,13 +760,17 @@ A reservation should not be represented as created against unavailable inventory
 
 Use the Availability Engine.
 
-Possible states include:
+Read the canonical availability state from availability-engine.md. Examples include:
 
-AVAILABILITY CONFIRMED
+AVAILABLE
 
-PENDING AVAILABILITY CONFIRMATION
+PENDING SUPPLIER CONFIRMATION
+
+PENDING PERICO CONFIRMATION
 
 UNAVAILABLE
+
+These are availability states, not booking states. Customer-facing phrases such as "availability confirmed" must reflect the actual scoped evidence, not create alternate canonical values.
 
 If unavailable:
 
@@ -1481,7 +1487,7 @@ Use Perico human assistance when:
 - Conflicting product data affects the booking
 - Any required reservation element cannot be safely resolved
 
-Pass the information already collected to the human team.
+Pass relevant collected context and outstanding attempt references to authorized staff using human-handoff-engine.md and transaction-context-contract.md. A resolved handoff does not bypass owner validation or remaining booking requirements.
 
 Never make the customer repeat the entire booking.
 
@@ -1495,15 +1501,11 @@ Do not tell the customer the product is unavailable unless that is actually know
 
 Do not discard the booking information.
 
-Status should reflect the actual problem.
+Preserve technical failure separately from canonical business state. Use PENDING RESERVATION CREATION only when its booking conditions are established; payment and availability state remain with their owners. Do not introduce alternate canonical values such as BOOKING CREATION PENDING or AVAILABILITY CHECK PENDING.
 
-Examples:
+If submission may have completed, retain the original integration, operation/idempotency reference and external reference when available. Reconcile the original attempt before retry or fallback; an uncertain technical result does not prove the reservation was not created. Do not automatically retry a potentially duplicating action without safe idempotency protection.
 
-BOOKING CREATION PENDING
-
-PAYMENT VERIFICATION PENDING
-
-AVAILABILITY CHECK PENDING
+Subsequent retrieval, modification and cancellation normally use the system holding the existing reservation. An outage does not authorize a second reservation elsewhere.
 
 Then route to Perico human assistance.
 

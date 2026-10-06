@@ -10,6 +10,8 @@ Product operating information remains inside the applicable product master.
 
 Live inventory must come from an approved availability source or Perico operational confirmation.
 
+Apply [transaction-context-contract.md](transaction-context-contract.md) to preserve the scope, provenance and freshness of availability evidence. [state-ownership-contract.md](state-ownership-contract.md) identifies state ownership; this engine validates normalized provider or authorized staff evidence and updates its own canonical state.
+
 ## BRAND-AWARE AVAILABILITY AUTHORITY
 
 The Availability Engine determines operational and inventory availability.
@@ -968,7 +970,7 @@ Double buggy → quad
 
 October 10 → October 11
 
-Recheck the affected inventory.
+Recheck the affected inventory. Preserve the earlier result for audit without reusing it for changed scope. Validate brand/offer and partner eligibility separately before presenting operational inventory as sellable; a scope change cannot silently move the transaction to another brand or source.
 
 ---
 
@@ -978,9 +980,7 @@ If an availability integration fails:
 
 Do not interpret the error as unavailable.
 
-Status:
-
-AVAILABILITY CHECK UNAVAILABLE
+AVAILABILITY CHECK UNAVAILABLE describes the failed technical check; it is not a canonical availability state. Preserve integration failure separately. If no valid scoped evidence establishes availability, use UNKNOWN or the applicable canonical pending state from section 11. A previously verified result remains historical evidence and must not be presented as current merely because the new check failed.
 
 Then:
 
