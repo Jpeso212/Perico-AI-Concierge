@@ -951,6 +951,10 @@ Excursion Specialist
 
 The customer should not restart.
 
+Before transferring protected context, Identity & Permissions must verify that the receiving agent is active and authorized for the specific brand, partner/account, customer record and requested action. Preserve the active transaction and applicable evidence using [transaction-context-contract.md](transaction-context-contract.md); share only the context needed within that scope. Lead ownership or agent assignment does not grant data access.
+
+A transfer does not change the transaction brand, pricing policy, payment destination or booking state. If an approved cross-brand workflow applies, validate its authority and preserve origin/current brand attribution rather than silently relabeling an existing transaction.
+
 ---
 
 # 42. AGENT TRANSFER PACKAGE
@@ -1313,7 +1317,7 @@ Payment alone may not be sufficient.
 
 # 63. CANCELLATION
 
-Agents must use applicable approved cancellation hierarchy.
+Agents must use the applicable CANCELLATION and REFUND dimensions in [policy-authority-matrix.md](policy-authority-matrix.md), with eligibility interpreted by the authoritative engines. Agent scope does not create a separate policy hierarchy.
 
 Product-specific policy overrides more general fallback policy when established.
 
