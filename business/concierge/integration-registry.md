@@ -664,7 +664,7 @@ WAITLIST
 
 UNAVAILABLE
 
-Adapters should map them into canonical states defined by:
+Adapters normalize provider availability evidence for validation and canonical-state transition by the Availability Engine defined in:
 
 availability-engine.md
 
@@ -676,7 +676,7 @@ Do not invent availability when provider response is ambiguous.
 
 External booking platforms may use different reservation states.
 
-Adapters should map provider states into canonical Perico booking states defined by:
+Adapters normalize provider reservation evidence for validation by the Booking Engine, which owns canonical booking transitions as defined in:
 
 booking-engine.md
 
@@ -708,7 +708,7 @@ REFUNDED
 
 or other terminology.
 
-Adapters must map these into the canonical payment states defined by:
+Adapters normalize these provider outcomes as evidence; the Payment & Confirmation Engine validates the evidence and owns canonical payment transitions as defined in:
 
 payment-confirmation-engine.md
 
@@ -850,7 +850,7 @@ Every webhook must be validated before changing Perico state.
 
 # 30. WEBHOOK AUTHENTICATION
 
-Webhook authenticity should be verified using the provider's approved security mechanism when available.
+Webhook authenticity must be established through the provider's approved security mechanism before the payload is trusted as evidence. If authenticity cannot be established, use an approved retrieval/verification path or Human Assistance before changing business state.
 
 Possible mechanisms:
 
@@ -860,7 +860,7 @@ Possible mechanisms:
 - Certificate
 - Provider verification method
 
-Never trust an incoming webhook merely because its payload looks correct.
+Never trust an incoming webhook merely because its payload looks correct. Match the authenticated integration/provider and environment to the stored qualified external reference and active brand/transaction scope. Claimed IDs must not select an unrelated customer, partner or booking. Missing or conflicting mappings require reconciliation, not guessed state changes.
 
 ---
 
@@ -892,7 +892,7 @@ may arrive before:
 
 PAYMENT_SUBMITTED
 
-The system should use timestamps, provider references and canonical state logic rather than blindly applying events in arrival order.
+Use provider ordering/version metadata, references and verified evidence rather than blindly applying events in arrival order or assuming delivery timestamps prove business ordering. Replayed, older or conflicting events must not overwrite newer verified state blindly; reconcile through the approved source when ordering is uncertain. The relevant state owner validates the normalized evidence and performs its own transition under [state-ownership-contract.md](state-ownership-contract.md).
 
 ---
 
@@ -1756,7 +1756,10 @@ Before executing an external action, verify:
 10. Idempotency applied when appropriate.
 11. No protected data unnecessarily exposed.
 12. Customer-facing destination authorized.
-13. Result will map into canonical Perico state.
+13. Result evidence will be routed to its authoritative decision/state owner.
+14. Active brand and offer scope authorized when applicable.
+15. Account/partner and requested record scope authorized when applicable.
+16. Existing or uncertain attempts reconciled before potentially duplicating execution.
 
 If not:
 
