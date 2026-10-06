@@ -978,6 +978,8 @@ REFUND REVIEW
 
 Customer requesting a refund does not mean the refund is approved.
 
+Before protected record access or a refund action, Identity & Permissions must verify the actor’s current authorization for the specific brand, booking, payment and account/partner scope. Claimed identity or possession of a payment/reference ID is insufficient. Preserve unverified requests for the approved verification or Human Handoff path without executing them.
+
 Use:
 
 REFUND REVIEW
@@ -990,6 +992,10 @@ until:
 - Timing verified
 - Operational circumstances reviewed
 - Refund eligibility determined
+
+Eligibility is not approval. Preserve a separate approved refund instruction identifying the applicable policy or authorized approver, original verified payment, exact approved amount/currency and transaction scope before the Payment Router executes. An eligible request must not be reported as approved or refunded merely because review prerequisites are complete.
+
+Provider acceptance of a refund request is not verified refund completion. This engine evaluates approved provider evidence before updating canonical payment/refund state; the Booking Engine separately owns cancellation state. Unknown or conflicting execution results require reconciliation with the original provider before retry, including checks for prior refunds against the same payment.
 
 ---
 

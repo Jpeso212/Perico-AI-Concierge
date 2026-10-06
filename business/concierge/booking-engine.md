@@ -1262,7 +1262,7 @@ Recheck affected information.
 
 When a customer requests cancellation:
 
-Identify the reservation.
+Identify the reservation and verify the actor’s current authorization to access and cancel that specific brand/customer/partner booking through Identity & Permissions. A booking reference, customer name or claimed partner role alone does not authorize cancellation. If verification is required but unresolved, preserve the request without executing cancellation or exposing protected records.
 
 Determine:
 
@@ -1274,17 +1274,17 @@ Determine:
 
 Do not promise a refund before the applicable policy and payment record are verified.
 
+Record cancellation intent separately from completed cancellation. The Booking Engine updates its lifecycle only from validated evidence. Execute through the approved integration holding the reservation; reconcile an uncertain cancellation attempt before retry. A provider timeout does not establish CANCELLED, and refund completion is not proof that reservation cancellation succeeded.
+
 ---
 
 # 50. REFUND REQUEST
 
 A refund request is not the same as an approved refund.
 
-Use:
+Refer the request to the Payment & Confirmation Engine, which owns the payment state REFUND REVIEW and its transitions. The Booking Engine may read that state but must not copy it into booking_status.
 
-REFUND REVIEW
-
-until the applicable policy and payment transaction have been reviewed.
+Review requires the applicable policy, verified payment and current actor authorization for the specific transaction. Cancellation does not by itself prove refund approval or execution.
 
 Never invent refund eligibility.
 
