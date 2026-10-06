@@ -128,6 +128,16 @@ After a timeout or lost response, reconcile the original attempt before retry or
 
 For events, the approved adapter verifies authenticity and scope, correlates qualified external references, and handles duplication/ordering before dispatch to the decision owner. Preserve event identity and provider ordering/version metadata when available. Do not invent a universal ordering rule from delivery time alone. Conflicting or unverifiable events require approved retrieval/reconciliation or Human Assistance before business-state mutation.
 
+### CONCURRENT ACTIONS
+
+A lookup followed by creation is not sufficient duplicate protection when multiple channels, staff or workers can act simultaneously. Before a state-changing action, coordinate the intended operation against the authoritative transaction/attempt record so only one executor can submit that action. Use supported atomic operation registration, serialization or equivalent execution control; do not assume an in-memory flag in one agent protects other actors.
+
+Provider idempotency protects retries of one operation; it does not by itself prevent two independently generated keys from charging the same outstanding amount or refunding the same payment twice. Reconcile existing pending/verified attempts and approved amounts under the same coordination boundary. Independent approved actions retain distinct operation references; matching customer/product/date alone must not collapse legitimately separate bookings.
+
+Before a state owner records a transition, check that the transaction/evidence revision it validated remains current. If another actor changed the relevant booking, payment, configuration or authorization, reload and revalidate the affected decision instead of overwriting it with a stale result. Do not blindly re-execute an external action merely because its local state update conflicted; reconcile its original attempt first.
+
+Staff actions and automation share these operation references and concurrency controls. A handoff or agent transfer does not release an unresolved attempt for another executor. If safe coordination cannot be established for a potentially duplicating action, stop that action and route to authorized Human Assistance for reconciliation rather than creating another attempt.
+
 ## 9. HANDOFF, PRIVACY AND AUDIT
 
 Handoff shares the minimum relevant context with authorized staff through approved internal channels. Preserve unresolved decisions, completed actions, outstanding attempts and scoped human approvals so automation can continue without repeating customer questions or duplicating transactions.
@@ -148,4 +158,6 @@ These are review criteria for implementations, not claims that runtime tests cur
 - A provider captures payment but acceptance remains pending: payment state may advance through its owner; the booking remains unconfirmed.
 - A reservation request times out: the original attempt is reconciled before retry/fallback; no second booking is created merely because the response was lost.
 - A duplicated, older or incorrectly mapped webhook arrives: it cannot duplicate an action, overwrite newer verified state blindly or update another brand's transaction.
+- Two workers submit the same intended payment/refund concurrently: execution is coordinated before submission; separate keys cannot bypass outstanding-attempt reconciliation.
+- Two brands read the last available seat: each booking must satisfy the authoritative source’s capacity/hold rules; neither read alone reserves the seat.
 - Staff resolves a handoff after a permission or inventory change: automation revalidates affected conditions and does not repeat completed actions.

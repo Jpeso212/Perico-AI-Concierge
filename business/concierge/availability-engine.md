@@ -108,6 +108,8 @@ A sale through Brand A may therefore affect availability for Brand B.
 
 The Availability Engine must rely on the authoritative inventory source rather than maintaining independent capacity merely because the customer-facing brands are different.
 
+An availability read is evidence at a point in time, not an inventory reservation. Concurrent brand sales must use the approved inventory source’s actual hold or reservation capacity enforcement; separate local checks do not secure the same remaining capacity for both customers. Revalidate relevant evidence when booking and honor the source’s actual result. If inventory cannot be secured or verified safely, use Perico operational assistance without claiming a hold or confirmation. Do not invent hold support, allocation or expiry terms.
+
 ### BRAND-SPECIFIC INVENTORY ALLOCATION
 
 Separate inventory by brand only when Perico has explicitly configured a real allocation.

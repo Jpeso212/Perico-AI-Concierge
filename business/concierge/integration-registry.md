@@ -791,6 +791,8 @@ Repeated execution caused by:
 
 must not automatically create duplicate business transactions.
 
+Apply the concurrent-action boundary in [transaction-context-contract.md](transaction-context-contract.md) before execution. Checking for an existing transaction and then creating one without coordination leaves a race between workers. Provider idempotency keys must correspond to the coordinated intended action; generating separate keys for competing attempts does not make them safe. Owner state updates must validate current transaction evidence rather than overwrite concurrent changes.
+
 ---
 
 # 28. CORRELATION ID
