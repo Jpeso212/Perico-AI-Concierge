@@ -16,22 +16,18 @@ This file defines how the Perico AI Concierge handles:
 - Processing charges
 - Failed or pending payments
 - Refund-related status
-- Operational acceptance
-- Reservation confirmation
+- Payment-related eligibility for operational progression
+- Payment-related eligibility for reservation confirmation
 
 The Payment & Confirmation Engine does NOT create prices.
 
 Customer pricing comes from the applicable product master and Quote Engine.
 
-The objective is to move a valid reservation from:
+The objective is to satisfy and verify the applicable payment requirement without falsely claiming that money was received or that a reservation was secured.
 
-READY FOR PAYMENT
+The Booking Engine owns reservation state, operational acceptance coordination and the transition to CONFIRMED. This engine owns payment state and supplies payment-related confirmation eligibility; it does not perform the booking transition. Payment execution and provider selection belong to the Payment Router.
 
-to
-
-CONFIRMED
-
-without falsely claiming that money was received or that a reservation was secured.
+Apply [transaction-context-contract.md](transaction-context-contract.md) for scoped evidence and engine exchanges, and [state-ownership-contract.md](state-ownership-contract.md) for canonical state ownership.
 
 ---
 
@@ -43,22 +39,11 @@ Determine the applicable payment rule before requesting payment.
 
 The active brand context must be established before applying a brand-sensitive payment rule.
 
-Payment-rule hierarchy:
+Resolve payment requirements using the PAYMENT REQUIREMENT dimension in [policy-authority-matrix.md](policy-authority-matrix.md). Do not maintain a competing hierarchy here.
 
-1. Transaction-specific authorized payment override
-2. Product-specific approved payment rule
-3. Brand + account/partner-specific approved payment rule
-4. Customer/account/partner-specific approved commercial payment rule
-5. Brand-specific approved payment rule
-6. Approved B2B/partner-class payment rule when applicable
-7. Approved platform/global payment rule when applicable
-8. PERICO HUMAN CONFIRMATION when no rule is established
+Validate the applicable product, brand, account/partner scope, approval and effective dates. A transaction-specific override must be explicitly authorized for that transaction and payment-policy domain. Global Rules, payment security, identity permissions and unrelated domain authorities remain enforced.
 
-A transaction-specific override is valid only when explicitly authorized for that transaction and payment-policy domain.
-
-More specific approved payment terms override more general payment terms only within the payment-policy domain.
-
-Global Rules, payment security requirements, identity permissions and unrelated domain authorities cannot be overridden by this hierarchy
+If no applicable approved rule is established, preserve PAYMENT TERMS PENDING and use Perico Human Assistance rather than selecting an unrelated default.
 
 A payment rule belonging to one brand must never be applied to another brand unless explicitly authorized.
 
@@ -782,7 +767,9 @@ Do not invent operational acceptance.
 
 # 36. CONFIRMATION REQUIREMENTS
 
-Before marking a reservation CONFIRMED, verify all requirements applicable to that reservation.
+The Booking Engine evaluates and records the CONFIRMED booking transition. This engine supplies verified payment state and payment-related eligibility, while the Orchestrator coordinates the other required evidence.
+
+Before communicating confirmation, verify all requirements applicable to that reservation against their authoritative records.
 
 Normally this includes:
 
@@ -802,7 +789,7 @@ Use:
 
 CONFIRMED
 
-only when all required conditions have been satisfied.
+only when the Booking Engine has recorded that state after all required conditions have been satisfied.
 
 Only then may the Concierge say:
 
@@ -889,20 +876,9 @@ Never present a pending special request as guaranteed.
 
 # 42. CANCELLATION POLICY
 
-Before processing a cancellation or refund request, determine the applicable approved cancellation policy using the platform authority hierarchy.
+Before processing a cancellation or refund request, resolve the applicable approved policy using the CANCELLATION and REFUND dimensions in [policy-authority-matrix.md](policy-authority-matrix.md), including scoped authorized overrides and the existing-booking rules. Do not maintain a separate precedence list here.
 
-Cancellation policy must follow:
-
-TRANSACTION-SPECIFIC AUTHORIZED OVERRIDE
-→ PRODUCT-SPECIFIC APPROVED POLICY
-→ BRAND + ACCOUNT/PARTNER-SPECIFIC APPROVED POLICY
-→ ACCOUNT/PARTNER-SPECIFIC APPROVED POLICY
-→ BRAND-SPECIFIC APPROVED POLICY
-→ APPROVED B2B/PARTNER-CLASS POLICY
-→ APPROVED PERICO PLATFORM GENERAL FALLBACK
-→ HUMAN ASSISTANCE
-
-A more specific policy may override a more general policy only when it is authorized for that transaction and cancellation domain.
+A more specific policy applies only within its approved transaction and cancellation/refund scope. This engine interprets eligibility and payment/refund state; the Booking Engine owns reservation cancellation, and the Payment Router executes only an approved refund through its authorized path.
 
 Do not invent refund eligibility.
 
@@ -1234,7 +1210,7 @@ Before saying:
 
 "Your reservation is confirmed"
 
-verify:
+verify the Booking Engine has recorded CONFIRMED and the applicable evidence remains consistent:
 
 1. Booking information complete
 2. Correct product/variant
