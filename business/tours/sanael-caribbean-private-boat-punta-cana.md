@@ -60,9 +60,16 @@ Exact timing, route, snorkeling, and water activities remain subject to weather,
 
 Transportation terms vary in the supplier documents and must be confirmed for the specific booking before being promised to the customer.
 
-## Menu Packages – Tour Operator Rates
+## Menu Packages – Internal Supplier Cost and Customer Retail Pricing
 
-### Dominican Snack – US$55 per person
+IMPORTANT: Supplier/tour-operator rates are confidential internal costs and must never be quoted, displayed, or exposed to customers.
+
+Perico customer retail pricing is calculated by adding 20% to the supplier package rate. Transportation is not included in the package retail price and must be calculated and added separately according to the customer's pickup area and group size.
+
+### Dominican Snack
+
+- Internal supplier cost: US$55 per person
+- Perico customer retail price: US$66 per person
 
 3 hours aboard.
 
@@ -79,7 +86,10 @@ Includes:
 
 Optional international open bar: US$25 per person.
 
-### Tropical Snack – US$65 per person
+### Tropical Snack
+
+- Internal supplier cost: US$65 per person
+- Perico customer retail price: US$78 per person
 
 3 hours aboard.
 
@@ -96,7 +106,10 @@ Includes:
 
 This package is presented as appetizers plus open bar.
 
-### Grill Menu – US$80 per person
+### Grill Menu
+
+- Internal supplier cost: US$80 per person
+- Perico customer retail price: US$96 per person
 
 3 hours aboard.
 
@@ -108,13 +121,19 @@ Includes:
 - Fried plantain.
 - Flambéed banana or pineapple dessert.
 
-### Seafood Menu – US$95 per person
+### Seafood Menu
+
+- Internal supplier cost: US$95 per person
+- Perico customer retail price: US$114 per person
 
 3 hours aboard.
 
 The supplied 2027 rate document lists this package at US$95 per person. The written ingredient list in that document appears to repeat portions of the Grill Menu, while the separate Sanael menu/photo material identifies this package as Seafood. Do not promise a specific seafood selection until Sanael confirms the current menu.
 
-### Mix Grill – US$110 per person
+### Mix Grill
+
+- Internal supplier cost: US$110 per person
+- Perico customer retail price: US$132 per person
 
 3 hours aboard.
 
@@ -133,12 +152,14 @@ Includes:
 
 The supplier's separate menu/photo catalog identifies a VIP Premium Canapés option, but the supplied rate document does not provide a price. Quote only after supplier confirmation.
 
-## Taxes and Retail Pricing
+## Pricing Rules – Internal vs Customer-Facing
 
-- The supplied menu/rate document states that taxes are not included.
-- Rates above are supplier/tour-operator rates and must not automatically be presented as Perico Ripiao Tours retail prices.
-- Perico retail selling prices and commissions/markup must be configured separately.
-- Do not invent a retail price when none has been approved.
+- Supplier/tour-operator rates are confidential internal costs and must never be given to customers.
+- Perico customer retail price = supplier package rate + 20%.
+- Approved customer package prices are: Dominican Snack US$66 pp; Tropical Snack US$78 pp; Grill US$96 pp; Seafood US$114 pp; Mix Grill US$132 pp.
+- Transportation is NOT included in these retail package prices and must be quoted separately based on pickup area and group size.
+- The supplied rate document states that taxes are not included. Any applicable tax treatment must be confirmed before final customer quotation.
+- VIP Premium Canapés has no approved supplier cost/retail price in the supplied rate sheet and requires manual confirmation.
 
 ## Events and Special Uses
 
@@ -219,10 +240,11 @@ When a customer asks about Sanael Caribbean Boat:
 - Explain that extra hours may be requested but must be confirmed.
 - Explain that the supplier uses a 20-person minimum billing basis.
 - Do not promise a specific capacity for a large group until the vessel configuration is confirmed.
-- Do not present supplier/tour-operator rates as Perico retail rates unless an approved Perico selling price has been configured.
+- NEVER disclose supplier/tour-operator rates to customers.
+- Quote only the approved Perico retail package prices, which include the 20% increase.
 - Do not quote the VIP Premium Canapés package without confirming its current price.
 - Do not promise a specific Seafood Menu composition until the current ingredients are confirmed with Sanael.
-- Confirm transportation terms for the booking before promising that transportation is included.
+- Transportation is separate from the package price. Ask for the hotel/pickup area and group size, calculate the applicable transportation charge, and add it separately to the customer quote.
 - Mention wheelchair accessibility when relevant, but confirm the guest's specific accessibility needs before booking.
 - Explain that children under 3 are free and ages 3–9 receive the supplier's 50% package discount only when the minimum of 20 adults is met.
 - Do not mix Sanael supplier payment/cancellation terms with Perico customer-facing policies.
