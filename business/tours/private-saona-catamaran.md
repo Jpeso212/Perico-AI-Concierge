@@ -112,11 +112,11 @@ Refer the request to Perico Ripiao Tours for a custom group arrangement.
 
 # PRICING AND QUOTING FLOW
 
-Customer-facing starting price:
+Customer-facing pricing:
 
-**From US$1,300 total per private group**
+**Price on request / quote based on group size and availability.**
 
-There is no published per-vessel pricing.
+There is no published fleet-wide starting price and no published per-vessel pricing.
 
 Before confirming a final price:
 
@@ -136,7 +136,7 @@ Customer:
 
 AI:
 
-"Our Private Saona Island Catamaran experience starts at US$1,300 total for the private group. We have different catamaran capacities, and the vessel is assigned according to your group size and availability. Let me check your requested date to confirm availability and the final price."
+"Our Private Saona Island Catamaran is quoted according to your group size, requested date, hotel location, and vessel availability. Let me check your date and group details so we can confirm the best available option and final price."
 
 The AI must not tell the customer that a particular boat corresponds to US$1,300.
 
@@ -347,8 +347,10 @@ Perico Ripiao Tours operates/manages this private experience.
 
 Current customer-facing commercial structure:
 
-- Starting price: **US$1,300 total per private group**
-- Do not assign a price to an individual vessel.
+- Public pricing: **Price on request / quote-only**
+- Do not advertise US$1,300 as the fleet starting price.
+- Internal US$1,300 reference: **small-boat arrangement only, maximum 4 guests, subject to confirmation and availability**
+- Do not assign a published price to an individual 45-, 65-, or 75-passenger vessel.
 - Boat 1 capacity: **up to 45 guests**
 - Boat 2 capacity: **up to 65 guests**
 - Boat 3 capacity: **up to 75 guests**
