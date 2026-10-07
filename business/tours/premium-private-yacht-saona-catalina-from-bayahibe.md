@@ -1,7 +1,7 @@
-# Premium Private Yacht to Saona or Catalina Island from Bayahibe
+# Sea Ray 49 – Private Yacht to Saona or Catalina Island from Bayahibe
 
 ## Internal Product Name
-Premium Private Yacht Saona or Catalina from Bayahibe — US$3,200
+Sea Ray 49 – Private Yacht Saona or Catalina from Bayahibe
 
 ## Product Category
 Private Yacht / Premium Island Excursion
@@ -23,40 +23,30 @@ ACTIVE / SUBJECT TO AVAILABILITY
 
 # PRODUCT SUMMARY
 
-This is the higher-tier premium private yacht option for a full-day island experience departing from Bayahibe.
+This is a full-day private yacht experience aboard the Sea Ray 49, departing from Bayahibe.
 
 Guests may choose:
 
 1. Saona Island by Premium Private Yacht
 2. Catalina Island by Premium Private Yacht
 
-The experience starts from **US$3,200 total per private group**, including round-trip transportation between the customer's hotel/accommodation and Bayahibe.
+Pricing is **quote-only / on request**. Round-trip transportation between the customer's hotel/accommodation and Bayahibe is included.
 
-This is a separate product from the US$2,500 private yacht option. Do not merge the two yachts or assume they are interchangeable at the same price.
+The former US$2,500 Riviera yacht product is not an active catalog option. Do not offer or recommend it.
 
 The exact yacht, requested date, group size, destination, operational requirements, and special requests must be checked before final confirmation.
 
 ---
 
-# STARTING PRICE
+# PRICE
 
-**From US$3,200 total per private group**
+**Price on request / quote-only**
 
-This is a starting price, not a guaranteed fixed price for every request.
+Do not publish or quote a starting price for this yacht.
 
-Final price may depend on:
+Final price depends on the requested date, yacht availability, destination, number of guests, hotel/accommodation and transportation requirements, special requests, food/beverage upgrades, event requirements, and other optional services.
 
-- Requested date
-- Yacht availability
-- Destination
-- Number of guests
-- Hotel/accommodation and transportation requirements
-- Special requests
-- Additional food or beverages
-- Event or celebration requirements
-- Other optional services
-
-The AI must never confirm US$3,200 as the final price until availability and the complete request have been checked.
+The AI must collect the booking details and obtain the confirmed quote before presenting a final price.
 
 ---
 
@@ -85,29 +75,21 @@ Do not promise a specific vehicle or exact pickup time until confirmed.
 
 # YACHT IDENTIFICATION AND SPECIFICATIONS
 
-This product uses the second, higher-priced Bori yacht supplied to Perico Ripiao Tours in the product photographs.
+This product uses a **Sea Ray 49** supplied through Bori.
 
-The exact manufacturer, model, year, length, beam, engines, cruising speed, cabin configuration, bathroom configuration, and technical specifications have **not yet been supplier-confirmed**.
+Confirmed product identification:
+- Make/model: **Sea Ray 49**
+- Maximum day-charter capacity: **12 passengers**
 
-Do not identify the yacht as a specific make/model or publish guessed measurements based solely on photographs.
-
-Technical specifications should be added only after reliable identification or supplier confirmation.
+Do not invent or publish unconfirmed year, beam, engines, cruising speed, cabin configuration, bathroom configuration, or other technical specifications.
 
 ---
 
 # PASSENGER CAPACITY
 
-Maximum authorized day-charter passenger capacity is **pending supplier confirmation**.
+Maximum authorized day-charter capacity: **12 passengers**.
 
-Do not infer passenger capacity from:
-
-- Yacht size
-- Photographs
-- Seating visible in photographs
-- Sleeping capacity
-- Similar yacht models
-
-The AI must collect the total number of guests and verify suitability before confirming the yacht.
+The AI must collect the total number of guests before confirming the yacht. Do not accept more than 12 passengers for this product.
 
 ---
 
@@ -291,11 +273,9 @@ Never tell the customer this yacht is available until actual availability has be
 
 Approved wording:
 
-**"Our premium private yacht experience from Bayahibe to Saona Island or Catalina Island starts at US$3,200 total per private group, including round-trip hotel transportation. Final availability and price depend on your date, group size, hotel location, selected destination, and any special requests."**
+**"Our Sea Ray 49 private yacht experience from Bayahibe is available for Saona Island or Catalina Island. Pricing is provided by quote based on your date, group size, hotel location, selected destination, and special requests. Round-trip hotel transportation is included."**
 
-Do not present US$3,200 as a per-person price.
-
-Do not present it as an unconditional fixed price.
+Do not publish or quote a starting price.
 
 ---
 
@@ -337,36 +317,30 @@ The AI must never make an independent marine-safety determination.
 
 # PAYMENT AND CANCELLATION
 
-Do not copy payment, cancellation, refund, or weather terms from another boat product unless Perico confirms they apply to this yacht.
+## Confirmed Payment Terms
 
-Until confirmed, escalate before promising:
+- **50% deposit is required at the time of reservation** to secure the yacht.
+- **Remaining 50% is due 2 days before the excursion.**
+- The yacht must not be treated as confirmed until the required initial 50% payment has been received.
+- These product-specific 50/50 payment terms override Perico's standard payment/deposit policy for this yacht.
 
-- Deposit percentage
-- Balance deadline
-- Cancellation deadline
-- Refund conditions
-- Weather refund conditions
-
----
+Cancellation, refund, and weather-related refund terms must not be invented or copied from another boat product unless Perico confirms they apply to this yacht.
 
 # INTENT MAPPING
 
 "Premium yacht Saona"
-→ This product may apply; compare with the other yacht option based on budget and availability.
+→ This Sea Ray 49 product may apply; collect date, group size, and hotel, then check availability and quote.
 
 "Premium yacht Catalina"
-→ This product may apply.
+→ This Sea Ray 49 product may apply.
 
-"Luxury yacht Saona"
-→ Present available private yacht options without implying availability.
-
-"Luxury yacht Catalina"
-→ Present available private yacht options without implying availability.
+"Luxury yacht Saona" or "Luxury yacht Catalina"
+→ Present the Sea Ray 49 subject to availability and confirmed quote.
 
 "Yacht from Bayahibe"
-→ Clarify destination, group size, date, and preferred budget/yacht level.
+→ Clarify destination, group size, date, and hotel/accommodation.
 
-If the customer is comparing the US$2,500 and US$3,200 yacht options, explain that they are different vessels and both are subject to availability. Do not claim differences in size, capacity, amenities, speed, or model unless those differences are confirmed.
+Do not offer the removed Riviera yacht as an active alternative.
 
 ---
 
@@ -375,13 +349,11 @@ If the customer is comparing the US$2,500 and US$3,200 yacht options, explain th
 NEVER INVENT OR ASSUME:
 
 - Yacht availability
-- Manufacturer/model
 - Year
 - Length
 - Beam
 - Engine configuration
 - Cruising speed
-- Maximum passenger capacity
 - Cabin count
 - Bathroom count
 - Exact pickup time
@@ -405,22 +377,24 @@ Always distinguish confirmed operational information from information still awai
 
 Recommended customer-facing product name:
 
-**Premium Private Yacht to Saona or Catalina Island**
+**Sea Ray 49 – Private Yacht to Saona or Catalina Island**
 
 Suggested positioning:
 
-A higher-tier private yacht experience departing from Bayahibe for travelers seeking a premium private day at Saona Island or Catalina Island, with round-trip hotel transportation included.
+A private Sea Ray 49 yacht experience departing from Bayahibe for travelers seeking a private day at Saona Island or Catalina Island, with round-trip hotel transportation included.
 
 Key confirmed selling points:
 
-- Premium private yacht
+- Sea Ray 49 private yacht
 - Choice of Saona or Catalina
 - Bayahibe departure
 - Round-trip hotel transportation included
 - Full-day private experience
 - Private group
 - Subject to availability
-- Starting from US$3,200 total
+- Maximum 12 passengers
+- Quote-only pricing
+- 50% deposit at reservation; remaining 50% due 2 days before excursion
 
 Do not publish unverified yacht specifications until confirmed.
 
@@ -430,26 +404,24 @@ Do not publish unverified yacht specifications until confirmed.
 
 Current approved commercial structure:
 
-- Starting retail price: **US$3,200 total**
-- Price basis: private group / yacht
+- Public price: **quote-only / on request**
+- Yacht: **Sea Ray 49**
+- Maximum capacity: **12 passengers**
 - Transportation: **included**
 - Departure: **Bayahibe**
 - Destinations: **Saona Island or Catalina Island**
 - Availability: **must be checked**
-- Supplier/fleet context: **second, higher-priced Bori yacht**
-- Maximum charter passenger capacity: **pending supplier confirmation**
-- Exact make/model: **pending**
-- Length/beam/year/engines: **pending**
-- Cabin/bathroom configuration: **pending confirmation**
-
-This yacht must remain separate from the US$2,500 Riviera yacht product.
+- Payment: **50% at reservation; remaining 50% due 2 days before excursion**
+- Supplier/fleet context: **Bori**
+- Riviera yacht: **removed from active catalog**
+- Other technical specifications: **do not invent; confirm before publishing**
 
 ---
 
 # SOURCE / VERIFICATION NOTES
 
-Operational structure, starting price, transportation inclusion, Bayahibe departure, destination choices, and availability rules were provided/approved directly by Perico Ripiao Tours.
+Operational structure, Sea Ray 49 identification, 12-passenger maximum, quote-only pricing, payment terms, transportation inclusion, Bayahibe departure, destination choices, and availability rules were provided/approved directly by Perico Ripiao Tours.
 
-Product photographs were supplied by Perico Ripiao Tours for this second, higher-priced Bori yacht.
+Product photographs were supplied by Perico Ripiao Tours for this Bori yacht.
 
 Technical yacht specifications have not yet been confirmed and must not be invented.
