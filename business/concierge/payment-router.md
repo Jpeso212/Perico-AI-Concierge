@@ -1060,7 +1060,9 @@ Reuse the same operation reference/key for the same intended action, not for a c
 
 # 52. DUPLICATE PAYMENT DETECTION
 
-Before creating another payment request, check when technically possible for:
+Before creating another payment request, require the coordinated transaction execution boundary defined in [transaction-context-contract.md](transaction-context-contract.md). Check existing pending and verified attempts against the approved outstanding balance and coordinate the intended operation across channels, staff and workers before provider submission. A lookup alone cannot prevent concurrent charges; separate idempotency keys do not authorize competing payment attempts. Preserve legitimate separately approved installments and reconcile uncertain original attempts before another charge.
+
+Potential duplicate indicators include:
 
 - Existing pending payment
 - Existing verified payment
