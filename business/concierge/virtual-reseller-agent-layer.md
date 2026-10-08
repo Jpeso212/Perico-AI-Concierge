@@ -2290,6 +2290,8 @@ booking context
 
 payment context
 
+Before sharing the handoff package, Identity & Permissions must authorize the specific receiving staff identity for the active brand, partner/account and customer transaction; apply the least-necessary context rules in [transaction-context-contract.md](transaction-context-contract.md). A staff assignment or handoff queue does not itself grant record access. If the recipient or scope cannot be verified, withhold protected context and route to an authorized resolution path. Revalidate access at acceptance and before protected follow-up actions. Preserve unresolved booking/payment attempt references so the recipient does not repeat an uncertain charge or reservation.
+
 The human should continue under the correct customer-facing brand identity.
 
 ---

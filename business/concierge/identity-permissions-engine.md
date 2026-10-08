@@ -742,6 +742,8 @@ A marketing agent does not need customer payment credentials.
 
 Before exposing an existing customer reservation, payment or private record, verify that the requester is authorized to access it.
 
+For protected record access and actions, validate authorization against the specific resource, current actor, active brand, customer or transaction ownership, and applicable partner or agent delegation. Follow [transaction-context-contract.md](transaction-context-contract.md) for scoped evidence. A booking reference, linked contact detail, authenticated session, or customer identifier alone does not grant access. Deny access if resource scope is missing or conflicting, and recheck current permissions after channel or agent handoff.
+
 Possible verification may use approved combinations of:
 
 - Booking reference

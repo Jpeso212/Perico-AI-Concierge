@@ -1583,7 +1583,7 @@ Use another authorized verification path or Human Assistance.
 
 # 40. DUPLICATE TRANSACTION PROTECTION
 
-Before creating a reservation or payment transaction, the Orchestrator should check for an existing matching transaction when technically possible.
+Before dispatching a state-changing reservation, charge or refund action, the Orchestrator must require the coordinated execution boundary defined in [transaction-context-contract.md](transaction-context-contract.md). Check existing transaction and attempt records, then atomically register or serialize the intended action across channels, staff and workers before submission. A read-then-create lookup or agent-local flag is not sufficient duplicate protection. The owning engines retain canonical business state; the Orchestrator coordinates the required checks.
 
 Potential duplicate indicators:
 

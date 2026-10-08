@@ -714,6 +714,8 @@ payment-confirmation-engine.md
 
 External "PAID" does not automatically mean Perico booking "CONFIRMED."
 
+For booking or payment callbacks (including Bókun when its approved integration supports them), the adapter must preserve the authenticated provider, environment, qualified external reference, transaction/brand scope, event reference and verification evidence. Route normalized reservation evidence to the Booking Engine and payment evidence to the Payment & Confirmation Engine through the Orchestrator; neither an adapter nor a provider callback may directly set Perico `booking_status = CONFIRMED`. The Booking Engine must recheck applicable availability, verified payment eligibility and operational acceptance before recording confirmation, using the current transaction revision. If the provider's booking and payment evidence disagree, retain the separate states and reconcile through their owners or Human Assistance before customer-facing confirmation.
+
 ---
 
 # 25. PROVIDER ERROR NORMALIZATION
