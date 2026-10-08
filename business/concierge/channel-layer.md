@@ -1449,6 +1449,8 @@ Possible state:
 
 HUMAN_CONTROLLED
 
+Before granting human control or exposing protected conversation context, Identity & Permissions must verify the receiving staff member's current authorization for the active brand and specific customer/transaction. Preserve the handoff reference and use [transaction-context-contract.md](transaction-context-contract.md) to restrict shared data. A channel takeover does not confer broader record access, payment authority or booking approval. If the staff recipient is not authorized, withhold protected context and use the approved Human Handoff path.
+
 Automation may continue supporting the staff member internally if authorized.
 
 ---
